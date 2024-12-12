@@ -1,0 +1,9 @@
+{
+  "$dtid": "716b71f1-bcf5-42e1-ac6c-c9da5247a8ba",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:ui:category;1"
+  },
+  "Name": "Details",
+  "Priority": 1
+}

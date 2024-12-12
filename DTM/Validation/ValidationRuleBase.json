@@ -1,0 +1,15 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:validation:rule:base;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Name",
+            "description": "Represents the name of the Event."
+        }
+    ]
+}

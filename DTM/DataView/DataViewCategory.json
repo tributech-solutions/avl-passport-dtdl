@@ -1,0 +1,33 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:ui:category;1",
+    "@type": "Interface",
+    "displayName": "Dataview Category",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Name",
+            "description": "Represents the name of the Data View."
+        },
+        {
+            "@type": "Property",
+            "name": "Priority",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Priority of current Category",
+            "description": "Represents the priority of the category for sorting within the UI."
+        }, 
+        {
+            "@type": "Relationship",
+            "name": "DataViewGroups",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 100,
+            "target": "dtmi:avl:passport:ui:groups;1",
+            "displayName": "Data View Groups",
+            "description": "Contains all groups within one category which should be displayed on the ui for a specific Product Model / Product Unit."
+        }      
+    ]
+  }

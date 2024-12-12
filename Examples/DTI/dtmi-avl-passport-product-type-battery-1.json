@@ -1,0 +1,56 @@
+{
+  "$dtId": "bc105124-5ed6-450e-bd38-32d00aaaad1a",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:product:type:battery;1"
+  },
+  "BatteryApplicationType": "4a0a7d8c-67b5-40e2-8178-620a518e6192",
+  "BatterChemistryType": "7da852e0-1877-46ea-9e7e-80da88c5f33b",
+  "SoH": 93,
+  "PowerCapability": 66.08192048254764,
+  "RatedCapacityAh": 21.929597098893407,
+  "RatedCapacitykWh": 97.38860293660643,
+  "NumberOfCells": 61,
+  "Weight": 14.84605443264747,
+  "ExpectedLiftime": 2.3714323398167925,
+  "WarrantyPeriod": 90,
+  "OperatingTemperatureMIN": 10.932281564847123,
+  "OperatingTemperatureMAX": 89.5736122798982,
+  "VoltageLimitMIN": 75.98693124527193,
+  "VoltageLimitMAX": 42.66868351761614,
+  "VoltageLimitNOM": 59.62687486640632,
+  "ManufactureEntityName": "cb637bbc-9dae-4234-9208-ff64c04daec2",
+  "ManufactureEntityAddress": "406a11a7-b1e0-4b66-8e14-776da69802b0",
+  "ManufactureEntityZipCode": "46a72bd1-bacc-43dd-8cb2-9a79ac6d0995",
+  "ManufactureEntityCountry": "6fbdd719-882f-478c-8e1c-bfdc887eaf35",
+  "ManufactureEntityCity": "906e09b8-5e11-4a8b-b313-4d2a34cd98cb",
+  "Co2Footprints": [
+    {
+      "Category": 2,
+      "Description": "cc4c78ed-507f-4329-a3b3-3dcb587acf4f",
+      "DataCategory": 2,
+      "DQRRating": 88.17220908087349,
+      "Co2Footprint": 9.669062855789134
+    },
+    {
+      "Category": 2,
+      "Description": "cc4c78ed-507f-4329-a3b3-3dcb587acf4f",
+      "DataCategory": 2,
+      "DQRRating": 88.17220908087349,
+      "Co2Footprint": 9.669062855789134
+    },
+    {
+      "Category": 2,
+      "Description": "cc4c78ed-507f-4329-a3b3-3dcb587acf4f",
+      "DataCategory": 2,
+      "DQRRating": 88.17220908087349,
+      "Co2Footprint": 9.669062855789134
+    }
+  ],
+  "CreationDate": "2024-12-05T14:23:35.8161303Z",
+  "LastModifiedDate": "2024-12-05T14:23:35.8161372Z",
+  "ItemNumber": "30651b6f-7d27-4ab1-b871-a74fd998e778",
+  "ProofState": 0,
+  "VerificationState": 4,
+  "Name": "c43e5834-6686-4eb2-8337-f341b1d83f70"
+}

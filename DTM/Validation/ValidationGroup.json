@@ -1,0 +1,33 @@
+{
+  "@context": "dtmi:dtdl:context;3",
+  "@id": "dtmi:avl:passport:validation:group;1",
+  "@type": "Interface",
+  "displayName": "Validation Group",
+  "contents": [
+      {
+          "@type": "Property",
+          "name": "Name",
+          "schema": "string",
+          "writable": true,
+          "displayName": "Name",
+          "description": "Represents the name of the Validation Group."
+      },
+      {
+          "@type": "Property",
+          "name": "DTMIReference",
+          "schema": "string",
+          "writable": true,
+          "displayName": "Digital Twin Model Identifier Reference",
+          "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
+      }, 
+      {
+          "@type": "Relationship",
+          "name": "ValidationAttributes",
+          "minMultiplicity": 0,
+          "maxMultiplicity": 100,
+          "target": "dtmi:avl:passport:validation:attribute:base;1",
+          "displayName": "Validation Attributes",
+          "description": "Contains all attributes where a validation should be applied to a Product Model / Product Unit."
+      }      
+  ]
+}

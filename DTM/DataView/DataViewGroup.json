@@ -1,0 +1,33 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:ui:group;1",
+    "@type": "Interface",
+    "displayName": "Dataview Group",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Name",
+            "description": "Represents the name of the Data View."
+        },
+        {
+            "@type": "Property",
+            "name": "Priority",
+            "schema": "integer",
+            "writable": true,
+            "displayName": "Priority of current Group",
+            "description": "Represents the priority of the group for sorting within the UI."
+        }, 
+        {
+            "@type": "Relationship",
+            "name": "DataViewGroupAttributes",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 100,
+            "target": "dtmi:avl:passport:ui:attribute:base;1",
+            "displayName": "Data View Group Attributes",
+            "description": "Contains all attributes (properties, fields) within one group which should be displayed on the ui for a specific Product Model / Product Unit."
+        }   
+    ]
+  }

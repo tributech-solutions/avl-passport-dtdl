@@ -1,0 +1,10 @@
+{
+  "$dtid": "891ef25d-a235-4a85-9e2f-961f934a9680",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:validation:rule:threshold;1"
+  },
+  "Threshold": 14.418982429294946,
+  "ThresholdType": 2,
+  "Name": "Threshhold Rule"
+}

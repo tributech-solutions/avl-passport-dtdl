@@ -1,0 +1,16 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:product:unit:battery:validation:InternalResistance;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:passport:validation:attribute:base;1",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "InternalResistance",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:avl:passport:product:unit:battery:InternalResistance;1",
+            "displayName": "Internal Resistance Validation"
+        }
+    ]
+}

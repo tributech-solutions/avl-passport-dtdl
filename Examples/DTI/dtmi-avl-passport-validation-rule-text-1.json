@@ -1,0 +1,9 @@
+{
+  "$dtid": "bf395d2c-08b0-47de-8cca-cb5a18e9c816",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:validation:rule:text;1"
+  },
+  "Regex": "67231308-2c32-4a12-bfae-fb4d26a77e35",
+  "Name": "fe75b9c7-516f-42d4-a053-63dc536a68ea"
+}

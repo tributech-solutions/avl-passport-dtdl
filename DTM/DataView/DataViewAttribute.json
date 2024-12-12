@@ -1,0 +1,56 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:ui:attribute:base;1",
+    "@type": "Interface",
+    "displayName": "Dataview Attribute",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents a user friendly name of the UI attribute assignment."
+        },
+        {
+            "@type": "Property",
+            "name": "Visibility",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "None",
+                        "enumValue": 0,
+                        "displayName": "None",
+                        "description": "Attribute should not be displayed."
+                    },
+                    {
+                        "name": "Private",
+                        "enumValue": 1,
+                        "displayName": "Private",
+                        "description": "Attribute should only be visible for authenticated users."
+                    },
+                    {
+                        "name": "Public",
+                        "enumValue": 2,
+                        "displayName": "Public",
+                        "description": "Attribute should be visible for all users."
+                    }
+                ]
+            },
+            "writable": true,
+            "displayName": "Visibility",
+            "description": "Defines if and where the Attribute should be displayed."
+        },
+        {
+            "@type": "Relationship",
+            "name": "Models",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:passport:product:model:base;1",
+            "displayName": "Passport Models",
+            "description": "Reference to the Passport Models where the validation should be applied to."
+        }
+    ]
+}

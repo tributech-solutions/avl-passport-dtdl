@@ -1,0 +1,120 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:product:type:base;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:passport:product:model:base;1",
+    "contents": [
+        {
+            "@id": "dtmi:avl:passport:product:type:base:CreationDate;1",
+            "@type": "Property",
+            "name": "CreationDate",
+            "schema": "dateTime",
+            "writable": false,
+            "displayName": "Creation Timestamp",
+            "description": "Represents the creation time of the Product Type."
+        }, 
+        {
+            "@id": "dtmi:avl:passport:product:type:base:LastModifiedDate;1",
+            "@type": "Property",
+            "name": "LastModifiedDate",
+            "schema": "dateTime",
+            "writable": true,
+            "displayName": "Last Modified Timestamp",
+            "description": "Represents the last modification time of the Product Type."
+        }, 
+        {
+            "@id": "dtmi:avl:passport:product:type:base:ItemNumber;1",
+            "@type": "Property",
+            "name": "ItemNumber",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Item Number",
+            "description": "Represents the item number of the Product Type."
+        },
+        {
+            "@id": "dtmi:avl:passport:product:type:base:ProofState;1",
+            "@type": "Property",
+            "name": "ProofState",
+            "schema":  {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "NotAvailable",
+                        "enumValue": 0,
+                        "displayName": "Not Available",
+                        "description": "Proof does not exist (yet)."
+                    },
+                    {
+                        "name": "Verified",
+                        "enumValue": 1,
+                        "displayName": "Verified",
+                        "description": "Proof was successfully build and verified."
+                    },
+                    {
+                        "name": "Failed",
+                        "enumValue": 2,
+                        "displayName": "Failed",
+                        "description": "Proof was successfully build but the verification failed."
+                    }
+                ]
+            },
+            "writable": true,
+            "displayName": "Proof State",
+            "description": "Represents the tempering protection State of the Product Type."
+        },
+        {
+            "@id": "dtmi:avl:passport:product:type:base:VerificationState;1",
+            "@type": "Property",
+            "name": "VerificationState",
+            "schema":  {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "NotAvailable",
+                        "enumValue": 0,
+                        "displayName": "Not Available",
+                        "description": "No verification was applied to the type."
+                    },
+                    {
+                        "name": "Open",
+                        "enumValue": 1,
+                        "displayName": "Open",
+                        "description": "Verification of the product type is still pending."
+                    },
+                    {
+                        "name": "ReadyForReview",
+                        "enumValue": 2,
+                        "displayName": "Ready for Review",
+                        "description": "Product type was verified but the QA check is still pending."
+                    }, 
+                    {
+                        "name": "Validated",
+                        "enumValue": 3,
+                        "displayName": "Validated",
+                        "description": "Product type was successfully validated."
+                    },
+                    {
+                        "name": "Failed",
+                        "enumValue": 4,
+                        "displayName": "Failed",
+                        "description": "Product type verification failed."
+                    }
+                ]
+            },
+            "writable": true,
+            "displayName": "Product Verification State",
+            "description": "Represents the data validation of the Product Type."
+        }, 
+        {
+            "@type": "Relationship",
+            "name": "ProductUnits",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:passport:product:unit:base;1",
+            "displayName": "Product Units",
+            "description": "Reference to the specific product unit of a given type."
+        }
+    ]
+}

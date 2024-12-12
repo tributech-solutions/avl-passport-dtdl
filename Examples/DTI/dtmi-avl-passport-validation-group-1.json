@@ -1,0 +1,9 @@
+{
+  "$dtid": "b6839ae6-d531-4e97-9f99-7b5cfeaa392b",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:validation:group;1"
+  },
+  "Name": "Battery Passport Validation Group",
+  "DTMIReference": "31599bf3-6a81-4248-942e-fa42bc0cc619"
+}

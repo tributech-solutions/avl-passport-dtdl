@@ -1,0 +1,10 @@
+{
+  "$dtid": "7c4c0e43-b4ff-4161-9c70-a532aa13e681",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:validation:rule:minmax;1"
+  },
+  "Min": 70.30376209947956,
+  "Max": 76.95009878049996,
+  "Name": "Test Rule"
+}

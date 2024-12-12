@@ -1,0 +1,25 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:product:event:base;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Name",
+            "description": "Represents the name of the Product Unit Event."
+        },
+        {
+            "@type": "Relationship",
+            "name": "Stream",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:io:tributech:stream:base;1",
+            "displayName": "Tributech Stream",
+            "description": "Source of the given Event."
+        }
+
+    ]
+}

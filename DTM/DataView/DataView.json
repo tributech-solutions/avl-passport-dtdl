@@ -1,0 +1,33 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:ui:dataview;1",
+    "@type": "Interface",
+    "displayName": "Dataview",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Name",
+            "description": "Represents the name of the Data View."
+        },
+        {
+            "@type": "Property",
+            "name": "DTMIReference",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Digital Twin Model Identifier Reference",
+            "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
+        }, 
+        {
+            "@type": "Relationship",
+            "name": "DataViewCategories",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 100,
+            "target": "dtmi:avl:passport:ui:category;1",
+            "displayName": "Data View Categories",
+            "description": "Contains all categories which should be displayed on the ui for a specific Product Model / Product Unit."
+        }      
+    ]
+  }

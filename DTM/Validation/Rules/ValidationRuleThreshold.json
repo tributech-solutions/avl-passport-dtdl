@@ -1,0 +1,54 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:validation:rule:threshold;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:passport:validation:rule:base;1",
+    "displayName": "Number Threshold Validation Rule",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Threshold",
+            "schema": "double",
+            "writable": true,
+            "displayName": "Threshold",
+            "description": "Limit for a specific Value."
+        }, 
+        {
+            "@type": "Property",
+            "name": "ThresholdType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "LowerThresholdAlert",
+                        "enumValue": 0,
+                        "displayName": "Lower Threshold Alert",
+                        "description": "Alert when the value is below the threshold."
+                    },
+                    {
+                        "name": "LowerThresholdWarning",
+                        "enumValue": 1,
+                        "displayName": "Lower Threshold Warning",
+                        "description": "Warning when the value is below the threshold."
+                    },
+                    {
+                        "name": "UpperThresholdWarning",
+                        "enumValue": 2,
+                        "displayName": "Upper Threshold Warning",
+                        "description": "Warning when the value is above the threshold."
+                    },
+                    {
+                        "name": "UpperThresholdAlert",
+                        "enumValue": 3,
+                        "displayName": "Upper Threshold Alert",
+                        "description": "Alert when the value is above the threshold."
+                    }
+                ]
+            },
+            "writable": true,
+            "displayName": "Threshold Type",
+            "description": "Defines at when the Threshold should be applied to."
+        }
+    ]
+}

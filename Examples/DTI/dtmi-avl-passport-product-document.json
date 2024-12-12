@@ -1,0 +1,9 @@
+{
+    "$dtid": "b5bdc834-fe4b-49a1-9d99-85990e1f91e1",
+    "$etag": "128",
+    "$metadata": {
+      "$model": "dtmi:avl:passport:product:model:document;1"
+    },
+    "Name": "ExampleDocument.pdf",
+    "Category": 2
+}

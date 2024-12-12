@@ -1,0 +1,9 @@
+{
+  "$dtid": "548da1a9-f3af-4da4-81dd-70054df92126",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:product:unit:battery:ui:InternalResistance;1"
+  },
+  "Name": "a0b9b878-1ef7-4312-bf6b-12d519958f2a",
+  "Visibility": 1
+}

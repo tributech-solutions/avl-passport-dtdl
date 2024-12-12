@@ -1,0 +1,9 @@
+{
+  "$dtid": "4919d7bb-2a4e-4967-ba31-f7a44eb0eb0c",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:product:type:battery:validation:ManufactureEntityName;1"
+  },
+  "Name": "c9be4100-7663-4662-9c7a-0739193d2fd0",
+  "IsActive": true
+}
