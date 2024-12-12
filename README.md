@@ -6,7 +6,7 @@ DTDL allows us to describe Physical Things in a machine readable manner and woul
 Those Models in this repository might be used as the Standard Components as a Bootstrap but this is also point of a discussion. 
 
 ## Disclaimer
-This Repository is still heavily in progress, this is just an outlook how the Digital Twin Models could look like and still subject to change. 
+This Repository is still heavily in progress, this is just an outlook how the Digital Twin Models could look like and is still subject to change. 
 
 ## Subjects to Change
 Currently some aspects are still under validation in regard of the Graph Database queries and performance.
