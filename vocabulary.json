@@ -1,0 +1,28 @@
+{
+    "name": "AVL Passport Vocabulary",
+    "tags": ["avl", "avl-twins", "iot", "passport"],
+    "issuer": "AVL List GmbH",
+    "issuerURL": "https://www.avl.com/",
+    "documentationURL": "https://github.com/tributech-solutions/avl-passport-dtdl",
+    "references": [
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/PassportBaseModel.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/PassportDocumentModel.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/ProductEventBase.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/ProductTypeBase.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/ProductUnitBase.json",
+
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/DataView/DataView.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/DataView/DataViewAttribute.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/DataView/DataViewCategory.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/DataView/DataViewGroup.json",
+
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/Validation/ValidationAttribute.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/Validation/ValidationGroup.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/Validation/ValidationRuleBase.json",
+
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/Validation/Rules/ValidationRuleMinMax.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/Validation/Rules/ValidationRuleString.json",
+        "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/feature/passwport-migration-ls/DTM/Validation/Rules/ValidationRuleThreshold.json"       
+        
+    ]
+}
