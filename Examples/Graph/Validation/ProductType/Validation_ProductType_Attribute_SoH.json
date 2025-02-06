@@ -1,0 +1,11 @@
+{
+  "$dtid": "bbe739f6-ab88-4978-b339-49eca5774bd5",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:validation:attribute:base;1"
+  },
+  "displayName": "Validation Attribute",
+  "Name": "Product Type Validation SoH Range",
+  "FieldDTMI": "dtmi:avl:passport:product:type:battery:SoH;1",
+  "IsActive": true
+}

@@ -1,0 +1,25 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:avl:passport:component:email;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:avl:passport:component:email:MailAddress;1",
+            "name": "MailAddress",
+            "@type": "Property",
+            "schema": "string"            
+        },
+        {
+            "@id": "dtmi:avl:passport:component:email:Description;1",
+            "name": "description",
+            "@type": "Property",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:avl:passport:component:email:DisplayName;1",
+            "name": "displayName",
+            "@type": "Property",
+            "schema": "string"
+        }
+    ]
+}

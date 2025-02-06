@@ -1,0 +1,168 @@
+{
+  "digitalTwins": [
+    {
+      "$dtid": "3e672575-4561-4939-8fe4-b9627a84bb23",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:product:type:battery;1"
+      },
+      "displayName": "Battery Passport",
+      "BatteryApplicationType": "51442b9a-3975-4530-ae5d-1e3f9bf99251",
+      "BatteryChemistryType": "fe381e1f-c363-426a-9ca0-90322ede55e0",
+      "NumberOfCells": 94,
+      "ExpectedLiftime": 39.56266202648378,
+      "ManufactureEntityName": "3a11c399-6385-444d-a12d-96166a44729b",
+      "ManufactureEntityAddress": "7f6f3d1a-41e4-4380-a8db-b7484f8d4b31",
+      "ManufactureEntityZipCode": "d5143e9b-bcc2-40bc-89d3-6d2ee51717b1",
+      "ManufactureEntityCountry": "e7628775-0fc0-43b2-8dfc-8257a0e31d8b",
+      "ManufactureEntityCity": "245745e5-ce77-4567-b7e7-1bd40868d0f7",
+      "SpecificationOfElectrodes": {
+        "url": "42f601fc-83a1-48c1-9fac-059c0be1c5c1",
+        "name": "8537e499-c60c-4ad7-8fc4-b2fa2a31187e",
+        "description": "2135d2d1-fbdd-4818-989a-5336c5d48250",
+        "displayName": "4c4ac73c-f8b0-4f53-a9a9-68332151fe0e"
+      },
+      "PrimaryRawMaterials": {
+        "url": "ef9d8fd0-575b-452b-a66f-09c64edf5209",
+        "name": "81dd3d4c-08d6-4f62-b558-ea1e1e768c19",
+        "description": "88ef0c29-7394-4f1b-ab85-8b3fbeb47c3a",
+        "displayName": "451d113b-724f-42f0-89e6-4669f0c75133"
+      },
+      "FullMaterialDisclosure": {
+        "url": "4157a683-a8cc-4c0b-9a33-c8bfb887aa9b",
+        "name": "e8ac3b29-5d31-4bba-bb4c-6565617a480f",
+        "description": "6101e1dd-b04e-4c04-b25c-eb793ca89266",
+        "displayName": "9d1ffa3c-dc1d-431d-b633-20100990c785"
+      },
+      "PartNumbersOfComponents": {
+        "url": "47257b7c-766c-4e65-8ab8-170688f84d32",
+        "name": "966bb43f-2a80-49bf-b635-37eea9a38b10",
+        "description": "d3295cf7-1b6c-4042-80d2-e952a36e77ec",
+        "displayName": "0a6cd01b-a962-40d1-92ea-4e2258c027fc"
+      },
+      "BatteryManufacturerInformation": {
+        "url": "bcb24484-c6ba-4ebb-8dda-b8e8450ea746",
+        "name": "786fd7e9-c035-4d31-ad15-5e511408cd5f",
+        "description": "d69cf107-d12d-4065-84e7-1f241877fe19",
+        "displayName": "376611cf-c618-4d19-8e55-292f30f68069"
+      },
+      "CriticalRawMaterials": {
+        "url": "96ccabc1-cbb2-401c-a4c9-859e518f3286",
+        "name": "afa5c016-becf-440d-92ee-92b39d926e39",
+        "description": "bc2db529-3739-44b6-92cf-de28b61bbb20",
+        "displayName": "ee987686-26aa-41bf-b38c-5736105fca32"
+      },
+      "SecondaryRawMaterials": {
+        "url": "80d969eb-9944-41ea-b38e-70e77dfd185c",
+        "name": "207b7395-1217-4d2f-8751-b62529ab5eed",
+        "description": "06fd7bca-0bbb-45ed-b01d-59d02b2d77d3",
+        "displayName": "a4a81f5a-e168-4337-a54a-086bf7e89957"
+      },
+      "DismantlingInstructions": {
+        "url": "be41951f-1fb1-4533-aa11-776c49f205ed",
+        "name": "fb53e248-9ad8-40c6-934b-2ef115a4731a",
+        "description": "9b1207b6-e78c-40f7-a5d7-d35c15badcc3",
+        "displayName": "25d9d4cc-7681-4805-b7cc-f000d6a220f1"
+      },
+      "Co2Footprints": [
+        {
+          "Category": 2,
+          "Description": "424c9953-f190-49fb-ba9b-7c260077e054",
+          "DataCategory": 1,
+          "DQRRating": 14.755518605010698,
+          "Co2Footprint": 16.379034650905965
+        },
+        {
+          "Category": 2,
+          "Description": "b4aa0619-fcf7-48c0-b32f-0bfb9ca5233e",
+          "DataCategory": 1,
+          "DQRRating": 78.07097989724538,
+          "Co2Footprint": 77.0788433110018
+        }
+      ],
+      "CreationDate": "2025-02-06T11:38:33.6045502Z",
+      "LastModifiedDate": "2025-02-06T11:38:33.6052500Z",
+      "ItemNumber": "4a26c9ae-f8f7-4dae-b67f-ff8ed08744be",
+      "ProofState": 1,
+      "DataValidationState": 3,
+      "Name": "My Batter Type Sample"
+    },
+    {
+      "$dtid": "44357848-c1e6-4916-8cfc-d3939f3e0a59",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:product:unit:battery;1"
+      },
+      "displayName": "Battery Passport",
+      "BatchNumber": 26,
+      "Co2Footprints": [
+        {
+          "Category": 1,
+          "Description": "c79b8629-d670-4327-b3ac-99b1f2ed3310",
+          "DataCategory": 1,
+          "DQRRating": 9.5371566612524,
+          "Co2Footprint": 96.72019253708108
+        },
+        {
+          "Category": 3,
+          "Description": "2ec16eb0-7643-446b-90e4-206e37b9444a",
+          "DataCategory": 2,
+          "DQRRating": 47.37875063075374,
+          "Co2Footprint": 95.46571515292939
+        }
+      ],
+      "State": 1,
+      "DataValidationState": 1,
+      "DataProofState": 3,
+      "ProductionDate": "2025-02-06T11:39:02.9723800Z",
+      "SerialNumber": "8571816a-9768-4c93-a9d3-9cd44ae9d890",
+      "ProofState": 1,
+      "ValidationState": 1,
+      "Placement": 1,
+      "QRCodeState": 1,
+      "LifeCycleState": 0,
+      "Name": "My Battery Unit Sample"
+    },
+    {
+      "$dtid": "41f86799-a0ce-4988-a260-e25e7558a583",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:product:configuration:battery;1"
+      },
+      "displayName": "Battery Passport Configuration",
+      "MainProductProductionCalculationType": 1,
+      "MainProductProductionEnergyCarbonIntensity": 62.22262147734584,
+      "ProductUsageEnergyCarbonIntensity": 28.30401239203566,
+      "MinimumCo2ThresholdPerUnit": 25.891364317582934,
+      "MaximumCo2ThresholdPerUnit": 70.98697845340324,
+      "PrimaryDataDQRMinimum": 91.01021265016824,
+      "SecondaryDataDQRMinimum": 25.902025515931005,
+      "AggregatedDataDQRMinimum": 1.7961355456457717,
+      "IsPublicViewEnabled": true,
+      "IsPublicViewCustomLinkEnabled": true,
+      "PublicViewCustomLink": {
+        "url": "7795553b-e8c6-44cc-8a55-ef6a26191a6b",
+        "name": "62b25a4b-0a7f-434a-8874-2e5d15df77db",
+        "description": "08681d4f-8c18-4ff4-9a8f-905b72925018",
+        "displayName": "132a3a55-a19b-4081-94da-123dfa83a8fb"
+      },
+      "Name": "My Battery Configuration Sample"
+    }
+  ],
+  "relationships": [
+    {
+      "$relationshipId": "eeba6ec2-ebc2-4fe1-b097-4cd47bd11400",
+      "$etag": "128",
+      "$relationshipName": "Configuration",
+      "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
+      "$targetId": "41f86799-a0ce-4988-a260-e25e7558a583"
+    },
+    {
+      "$relationshipId": "7abfd11c-ed9b-4cd3-aef1-e7938b6e15a0",
+      "$etag": "128",
+      "$relationshipName": "ProductUnits",
+      "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
+      "$targetId": "44357848-c1e6-4916-8cfc-d3939f3e0a59"
+    }
+  ]
+}

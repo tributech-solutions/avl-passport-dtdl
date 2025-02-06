@@ -18,7 +18,7 @@
             "@type": "Property",
             "name": "SerialNumber",
             "schema": "string",
-            "writable": true,
+            "writable": false,
             "displayName": "Serial Number",
             "description": "Represents the serial number of the Product Unit."
         },
@@ -50,7 +50,7 @@
                     }
                 ]
             },
-            "writable": true,
+            "writable": false,
             "displayName": "Proof State",
             "description": "Represents the tempering protection State of the Product Type."
         },
@@ -88,7 +88,7 @@
                     }
                 ]
             },
-            "writable": true,
+            "writable": false,
             "displayName": "Validation State",
             "description": "Represents the data validation of the Product Unit."
         }, 
@@ -120,7 +120,7 @@
                     }
                 ]
             },
-            "writable": true,
+            "writable": false,
             "displayName": "Product Placement State",
             "description": "Represents the placement of the unit."
         },
@@ -152,7 +152,7 @@
                     }
                 ]
             },
-            "writable": true,
+            "writable": false,
             "displayName": "QR Code State",
             "description": "Represents the public available QR Code for a given Product Unit."
         },
@@ -196,7 +196,7 @@
                     }
                 ]
             },
-            "writable": true,
+            "writable": false,
             "displayName": "Product Unit Lifecycle State",
             "description": "Represents the current Lifecycle of the given Unit."
         }, 

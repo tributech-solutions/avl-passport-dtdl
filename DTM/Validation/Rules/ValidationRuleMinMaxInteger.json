@@ -1,0 +1,25 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:validation:rule:minmax:integer;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:passport:validation:rule:base;1",
+    "displayName": "Integer Number Min/Max Validation Rule",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Min",
+            "schema": "integer",
+            "writable": false,
+            "displayName": "Minimum Value",
+            "description": "Property number is not allowed to be less than this value. (Min Value Included)"
+        },
+        {
+            "@type": "Property",
+            "name": "Max",
+            "schema": "integer",
+            "writable": false,
+            "displayName": "Maximum Value",
+            "description": "Property number is not allowed to be greater than this value. (Max Value Included)"
+        }
+    ]
+}

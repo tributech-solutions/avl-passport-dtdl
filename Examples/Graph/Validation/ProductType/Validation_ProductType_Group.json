@@ -1,0 +1,10 @@
+{
+  "$dtid": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:validation:group;1"
+  },
+  "displayName": "Validation Group",
+  "Name": "Product Type Validation Group",
+  "DTMIReference": "dtmi:avl:passport:product:type:battery;1"
+}

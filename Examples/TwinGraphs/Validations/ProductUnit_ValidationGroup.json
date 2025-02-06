@@ -1,0 +1,51 @@
+{
+  "digitalTwins": [
+    {
+      "$dtid": "9c589621-05d7-4932-a3cd-4218cba51378",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:validation:group;1"
+      },
+      "displayName": "Validation Group",
+      "Name": "Product Unit Validation Group",
+      "DTMIReference": "dtmi:avl:passport:product:unit:battery;1"
+    },
+    {
+      "$dtid": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:validation:attribute:base;1"
+      },
+      "displayName": "Validation Attribute",
+      "Name": "Product Unit Validation Attribute Enum",
+      "FieldDTMI": "dtmi:avl:passport:product:unit:battery:DataValidationState;1",
+      "IsActive": true
+    },
+    {
+      "$dtid": "36b29f7b-123d-4ae4-a248-7758c83fe742",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:validation:rule:enum;1"
+      },
+      "displayName": "Enum Validation Rule",
+      "allowed_values": [1, 2, 3],
+      "Name": "DataValidationState Rule"
+    }
+  ],
+  "relationships": [
+    {
+      "$relationshipId": "08dc54b5-10a4-42cf-aae9-cdd576bbdcd8",
+      "$etag": "128",
+      "$relationshipName": "ValidationAttributes",
+      "$sourceId": "9c589621-05d7-4932-a3cd-4218cba51378",
+      "$targetId": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c"
+    },
+    {
+      "$relationshipId": "39e5994c-96de-4790-bd33-a061d60f5d46",
+      "$etag": "128",
+      "$relationshipName": "ValidationRules",
+      "$sourceId": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c",
+      "$targetId": "36b29f7b-123d-4ae4-a248-7758c83fe742"
+    }
+  ]
+}

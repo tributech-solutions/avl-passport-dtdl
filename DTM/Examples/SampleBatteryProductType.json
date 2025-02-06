@@ -1,292 +1,289 @@
 {
-   "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1"
-    ],
-    "@id": "dtmi:avl:passport:product:type:battery;1",
-    "extends": "dtmi:avl:passport:product:type:base;1",
-    "@type": "Interface",
-    "displayName": "Battery Passport",
-    "contents": [
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:BatteryApplicationType;1",
-        "@type": "Property",
-        "name": "BatteryApplicationType",
-        "schema": "string",
-        "writable": false,
-        "displayName": "Battery application type"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:BatterChemistryType;1",
-        "@type": "Property",
-        "name": "BatterChemistryType",
-        "schema": "string",
-        "writable": false,
-        "displayName": "Battery chemistry type"
-      }, 
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:SoH;1",
-        "@type": ["Property", "Concentration"],
-        "name": "SoH",
-        "schema": "integer",
-        "writable": false,
-        "displayName": "State of Health",
-        "unit": "percent"
-      }, 
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:PowerCapability;1",
-        "@type": ["Property", "EnergyRate"],
-        "name": "PowerCapability",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Power Capability",
-        "unit": "watt"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:RatedCapacityAh;1",
-        "@type": ["Property", "ElectricCharge"],
-        "name": "RatedCapacityAh",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Rated capacity in Ah",
-        "unit": "ampereHour"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:RatedCapacitykWh;1",
-        "@type": ["Property", "Energy"],
-        "name": "RatedCapacitykWh",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Rated capacity in Ah",
-        "unit": "kilowattHour"
-      }, 
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:NumberOfCells;1",
-        "@type": "Property", 
-        "name": "NumberOfCells",
-        "schema": "long",
-        "writable": false,
-        "displayName": "Total Number of cells"
-      }, 
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:Weight;1",
-        "@type": ["Property", "Mass"],
-        "name": "Weight",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Weight",
-        "unit": "kilogram"
-      },
-      {
-        "@type": "Property",
-        "name":"ExpectedLiftime",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Expected Liftime in cycles"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:WarrantyPeriod;1",
-        "@type": ["Property", "TimeSpan"],
-        "name": "WarrantyPeriod",
-        "schema": "long",
-        "displayName": "Warranty Period",
-        "unit": "day"
-      }, 
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:OperatingTemperatureMIN;1",
-        "@type": ["Property", "Temperature"],
-        "name": "OperatingTemperatureMIN",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Operating Minimum Temperature",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:OperatingTemperatureMAX;1",
-        "@type": ["Property", "Temperature"],
-        "name": "OperatingTemperatureMAX",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Operating Maximum Temperature",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:VoltageLimitMIN;1",
-        "@type": ["Property", "Voltage"],
-        "name": "VoltageLimitMIN",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Voltage Minimum Limit",
-        "unit": "volt"
-      }, 
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:VoltageLimitMAX;1",
-        "@type": ["Property", "Voltage"],
-        "name": "VoltageLimitMAX",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Voltage Maximum Limit",
-        "unit": "volt"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:VoltageLimitNOM;1",
-        "@type": ["Property", "Voltage"],
-        "name": "VoltageLimitNOM",
-        "schema": "double",
-        "writable": false,
-        "displayName": "Voltage Nominal Limit",
-        "unit": "volt"
-      }, 
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityName;1",
-        "@type": "Property",
-        "name": "ManufactureEntityName",
-        "schema": "string",
-        "writable": false,
-        "displayName": "Name",
-        "description": "Name of the manufacturer"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityAddress;1",
-        "@type": "Property",
-        "name": "ManufactureEntityAddress",
-        "schema": "string",
-        "writable": false,
-        "displayName": "Address",
-        "description": "Address of the manufacturer"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityZipCode;1",
-        "@type": "Property",
-        "name": "ManufactureEntityZipCode",
-        "schema": "string",
-        "writable": false,
-        "displayName": "Zip Code",
-        "description": "Zio Code of the manufacturer"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityCountry;1",
-        "@type": "Property",
-        "name": "ManufactureEntityCountry",
-        "schema": "string",
-        "writable": false,
-        "displayName": "Country",
-        "description": "Country of the manufacturer"
-      },
-      {
-        "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityCity;1",
-        "@type": "Property",
-        "name": "ManufactureEntityCity",
-        "schema": "string",
-        "writable": false,
-        "displayName": "City",
-        "description": "City of the manufacturer"
-      },
-     { 
-        "@id": "dtmi:avl:passport:product:type:battery:Co2Footprints;1",
-        "@type": "Property",
-        "name" : "Co2Footprints",
-        "displayName": "Co2 Footprints",
-        "schema": {
-            "@type": "Array",
-            "elementSchema": {
-                "@type": "Object",
-                "fields": [
-                    {
-                        "@id": "dtmi:avl:passport:product:type:battery:Co2Footprints:Category;1",
-                        "@type": "Field",
-                        "name": "Category",
-                        "schema": {
-                            "@type": "Enum",
-                            "valueSchema": "integer",
-                            "enumValues": [
-                                {
-                                    "name": "None",
-                                    "enumValue": 0,
-                                    "displayName": "None",
-                                    "description": "Category does not exist."
-                                },
-                                {
-                                    "name": "RawMaterialAcquisitionAndPreProcessing",
-                                    "enumValue": 1,
-                                    "displayName": "Raw Material Acquisition And PreProcessing"
-                                },
-                                {
-                                    "name": "MainProductProduction",
-                                    "enumValue": 2,
-                                    "displayName": "Main Product Production"
-                                },
-                                {
-                                    "name": "DistributionPointOfSale",
-                                    "enumValue": 3,
-                                    "displayName": "Distribution Point Of Sale"
-                                },
-                                {
-                                    "name": "EndOfLifeAndRecycling",
-                                    "enumValue": 4,
-                                    "displayName": "End Of Life And Recycling"
-                                },
-                                {
-                                    "name": "ProductUsage",
-                                    "enumValue": 5,
-                                    "displayName": "Product Usage",
-                                    "comment": "User should not be able to create CO2 Footprint with this category. CO2 Footprint for this category is calculated on backend."
-                                }
-                            ]
-                        }                       
-                    },
-                    {
-                        "@id": "dtmi:avl:passport:product:type:battery:Co2Footprints:Description;1",
-                        "@type": "Field",
-                        "name": "Description",
-                        "schema": "string",
-                        "displayName": "Description"
-                    },
-                    {
-                        "@id": "dtmi:avl:passport:product:type:battery:Co2Footprints:DataCategory;1",
-                        "@type": "Field",
-                        "name": "DataCategory",
-                        "schema": {
-                            "@type": "Enum",
-                            "valueSchema": "integer",
-                            "enumValues": [
-                                {
-                                    "name": "None",
-                                    "enumValue": 0,
-                                    "displayName": "None",
-                                    "description": "Category does not exist."
-                                },
-                                {
-                                    "name": "Primary",
-                                    "enumValue": 1,
-                                    "displayName": "Primary"
-                                },
-                                {
-                                    "name": "Secondary",
-                                    "enumValue": 2,
-                                    "displayName": "Secondary"
-                                }
-                            ]
-                        }  
-                    },
-                    {
-                        "@id": "dtmi:avl:passport:product:type:battery:Co2Footprints:DQRRating;1",
-                        "@type": "Field",
-                        "name": "DQRRating",
-                        "schema": "double",
-                        "displayName": "DQR Rating"
-                    },
-                    {
-                        "@id": "dtmi:avl:passport:product:type:battery:Co2Footprints:Co2Footprint;1",
-                        "@type": "Field",
-                        "name": "Co2Footprint",
-                        "schema": "double",
-                        "displayName": "Co2 Footprint"
-                    }
-                ]
-            }
+  "@context": [
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ],
+  "@id": "dtmi:avl:passport:product:type:battery;1",
+  "extends": "dtmi:avl:passport:product:type:base;1",
+  "@type": "Interface",
+  "displayName": "Battery Passport",
+  "contents": [
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:BatteryApplicationType;1",
+      "@type": "Property",
+      "name": "BatteryApplicationType",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Battery application type"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:BatteryChemistryType;1",
+      "@type": "Property",
+      "name": "BatteryChemistryType",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Battery chemistry type"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:SoH;1",
+      "@type": [
+        "Property",
+        "Concentration"
+      ],
+      "name": "SoH",
+      "schema": "integer",
+      "writable": false,
+      "displayName": "State of Health",
+      "unit": "percent"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:PowerCapability;1",
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
+      "name": "PowerCapability",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Power Capability",
+      "unit": "watt"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:RatedCapacityAh;1",
+      "@type": [
+        "Property",
+        "ElectricCharge"
+      ],
+      "name": "RatedCapacityAh",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Rated capacity in Ah",
+      "unit": "ampereHour"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:RatedCapacitykWh;1",
+      "@type": [
+        "Property",
+        "Energy"
+      ],
+      "name": "RatedCapacitykWh",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Rated capacity in Ah",
+      "unit": "kilowattHour"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:NumberOfCells;1",
+      "@type": "Property",
+      "name": "NumberOfCells",
+      "schema": "long",
+      "writable": false,
+      "displayName": "Total Number of cells"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:Weight;1",
+      "@type": [
+        "Property",
+        "Mass"
+      ],
+      "name": "Weight",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Weight",
+      "unit": "kilogram"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:ExpectedLiftime;1",
+      "@type": "Property",
+      "name": "ExpectedLiftime",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Expected Liftime in cycles"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:WarrantyPeriod;1",
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "name": "WarrantyPeriod",
+      "schema": "long",
+      "displayName": "Warranty Period",
+      "unit": "day"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:OperatingTemperatureMIN;1",
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "OperatingTemperatureMIN",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Operating Minimum Temperature",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:OperatingTemperatureMAX;1",
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "OperatingTemperatureMAX",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Operating Maximum Temperature",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:VoltageLimitMIN;1",
+      "@type": [
+        "Property",
+        "Voltage"
+      ],
+      "name": "VoltageLimitMIN",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Voltage Minimum Limit",
+      "unit": "volt"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:VoltageLimitMAX;1",
+      "@type": [
+        "Property",
+        "Voltage"
+      ],
+      "name": "VoltageLimitMAX",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Voltage Maximum Limit",
+      "unit": "volt"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:VoltageLimitNOM;1",
+      "@type": [
+        "Property",
+        "Voltage"
+      ],
+      "name": "VoltageLimitNOM",
+      "schema": "double",
+      "writable": false,
+      "displayName": "Voltage Nominal Limit",
+      "unit": "volt"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityName;1",
+      "@type": "Property",
+      "name": "ManufactureEntityName",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Name",
+      "description": "Name of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityAddress;1",
+      "@type": "Property",
+      "name": "ManufactureEntityAddress",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Address",
+      "description": "Address of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityZipCode;1",
+      "@type": "Property",
+      "name": "ManufactureEntityZipCode",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Zip Code",
+      "description": "Zip Code of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityCountry;1",
+      "@type": "Property",
+      "name": "ManufactureEntityCountry",
+      "schema": "string",
+      "writable": false,
+      "displayName": "Country",
+      "description": "Country of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:ManufactureEntityCity;1",
+      "@type": "Property",
+      "name": "ManufactureEntityCity",
+      "schema": "string",
+      "writable": false,
+      "displayName": "City",
+      "description": "City of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:SpecificationOfElectrodes;1",
+      "@type": "Component",
+      "name": "SpecificationOfElectrodes",
+      "schema": "dtmi:avl:passport:component:document:pdf;1",
+      "displayName": "Specification of electrodes"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:PrimaryRawMaterials;1",
+      "@type": "Component",
+      "name": "PrimaryRawMaterials",
+      "schema": "dtmi:avl:passport:component:document:pdf;1",
+      "displayName": "Primary raw materials"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:FullMaterialDisclosure;1",
+      "@type": "Component",
+      "name": "FullMaterialDisclosure",
+      "schema": "dtmi:avl:passport:component:document:pdf;1",
+      "displayName": "Full material disclosure"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:PartNumbersOfComponents;1",
+      "@type": "Component",
+      "name": "PartNumbersOfComponents",
+      "schema": "dtmi:avl:passport:component:document:pdf;1",
+      "displayName": "Part numbers of components"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:BatteryManufacturerInformation;1",
+      "@type": "Component",
+      "name": "BatteryManufacturerInformation",
+      "schema": "dtmi:avl:passport:component:document:pdf;1",
+      "displayName": "Battery manufacturer information"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:CriticalRawMaterials;1",
+      "@type": "Component",
+      "name": "CriticalRawMaterials",
+      "schema": "dtmi:avl:passport:component:document:pdf;1",
+      "displayName": "Critical raw materials"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:SecondaryRawMaterials;1",
+      "@type": "Component",
+      "name": "SecondaryRawMaterials",
+      "schema": "dtmi:avl:passport:component:document:pdf;1",
+      "displayName": "Secondary raw materials"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:DismantlingInstructions;1",
+      "@type": "Component",
+      "name": "DismantlingInstructions",
+      "schema": "dtmi:avl:passport:component:document:pdf;1",
+      "displayName": "Dismantling instructions"
+    },
+    {
+      "@id": "dtmi:avl:passport:product:type:battery:Co2Footprints;1",
+      "@type": "Property",
+      "name": "Co2Footprints",
+      "displayName": "Co2 Footprints",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+            "@type": "Component",
+            "schema": "dtmi:avl:passport:component:co2Footprint;1"
         }
-     }
-
-    ]
-  }
+    }
+    }
+  ]
+}

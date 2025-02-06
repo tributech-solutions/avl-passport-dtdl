@@ -1,0 +1,36 @@
+{
+  "$dtid": "44357848-c1e6-4916-8cfc-d3939f3e0a59",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:product:unit:battery;1"
+  },
+  "displayName": "Battery Passport",
+  "BatchNumber": 26,
+  "Co2Footprints": [
+    {
+      "Category": 1,
+      "Description": "c79b8629-d670-4327-b3ac-99b1f2ed3310",
+      "DataCategory": 1,
+      "DQRRating": 9.5371566612524,
+      "Co2Footprint": 96.72019253708108
+    },
+    {
+      "Category": 3,
+      "Description": "2ec16eb0-7643-446b-90e4-206e37b9444a",
+      "DataCategory": 2,
+      "DQRRating": 47.37875063075374,
+      "Co2Footprint": 95.46571515292939
+    }
+  ],
+  "State": 1,
+  "DataValidationState": 1,
+  "DataProofState": 3,
+  "ProductionDate": "2025-02-06T11:39:02.9723800Z",
+  "SerialNumber": "8571816a-9768-4c93-a9d3-9cd44ae9d890",
+  "ProofState": 1,
+  "ValidationState": 1,
+  "Placement": 1,
+  "QRCodeState": 1,
+  "LifeCycleState": 0,
+  "Name": "My Battery Unit Sample"
+}

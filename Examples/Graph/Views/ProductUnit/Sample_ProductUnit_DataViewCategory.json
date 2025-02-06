@@ -1,0 +1,10 @@
+{
+  "$dtid": "129494f9-62be-408d-85d6-16f3e81d041b",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:ui:category;1"
+  },
+  "displayName": "Dataview Category",
+  "Name": "Battery Unit Type Category",
+  "Priority": 73
+}

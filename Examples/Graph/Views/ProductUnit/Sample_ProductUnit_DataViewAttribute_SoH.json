@@ -1,0 +1,10 @@
+{
+  "$dtid": "9ba8072c-dd61-46aa-bbf7-6cd4a19f2863",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:ui:attribute:base;1"
+  },
+  "displayName": "Dataview Attribute",
+  "Name": "Product Type SoH",
+  "FieldDTMI": null
+}

@@ -1,0 +1,10 @@
+{
+  "$dtid": "bccd0cb0-1131-4623-8779-24fceb44a3e9",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:validation:rule:text;1"
+  },
+  "displayName": "Text Validation Rule",
+  "Regex": "^\\S{5,}$",
+  "Name": "NonEmptyString"
+}

@@ -14,20 +14,19 @@
         },
         {
             "@type": "Property",
-            "name": "IsActive",
-            "schema": "boolean",
-            "writable": true,
-            "displayName": "Is Enabled",
-            "description": "Defines if the validation is enabled or disabled."
+            "name": "FieldDTMI",
+            "schema": "string",
+            "writable": false,
+            "displayName": "FieldDTMI",
+            "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
         },
         {
-            "@type": "Relationship",
-            "name": "Models",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 500,
-            "target": "dtmi:avl:passport:product:model:base;1",
-            "displayName": "Passport Models",
-            "description": "Reference to the Passport Models where the validation should be applied to."
+            "@type": "Property",
+            "name": "IsActive",
+            "schema": "boolean",
+            "writable": false,
+            "displayName": "Is Enabled",
+            "description": "Defines if the validation is enabled or disabled."
         },
         {
             "@type": "Relationship",

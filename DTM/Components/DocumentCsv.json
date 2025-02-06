@@ -1,0 +1,31 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:avl:passport:component:document:csv;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:avl:passport:component:document:csv:Url;1",
+            "name": "url",
+            "@type": "Property",
+            "schema": "string"            
+        },
+        {
+            "@id": "dtmi:avl:passport:component:document:csv:Name;1",
+            "name": "name",
+            "@type": "Property",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:avl:passport:component:document:csv:Description;1",
+            "name": "description",
+            "@type": "Property",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:avl:passport:component:document:csv:displayName;1",
+            "name": "displayName",
+            "@type": "Property",
+            "schema": "string"
+        }
+    ]
+}

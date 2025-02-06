@@ -1,0 +1,10 @@
+{
+  "$dtid": "22ee3d00-576a-4fa4-a774-c6d86e89d77b",
+  "$etag": "128",
+  "$metadata": {
+    "$model": "dtmi:avl:passport:ui:group;1"
+  },
+  "displayName": "Dataview Group",
+  "Name": "Battery Product Unit Group",
+  "Priority": 75
+}

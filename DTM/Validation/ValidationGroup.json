@@ -8,7 +8,7 @@
           "@type": "Property",
           "name": "Name",
           "schema": "string",
-          "writable": true,
+          "writable": false,
           "displayName": "Name",
           "description": "Represents the name of the Validation Group."
       },
@@ -16,7 +16,7 @@
           "@type": "Property",
           "name": "DTMIReference",
           "schema": "string",
-          "writable": true,
+          "writable": false,
           "displayName": "Digital Twin Model Identifier Reference",
           "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
       }, 

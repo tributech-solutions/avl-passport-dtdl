@@ -1,136 +1,119 @@
 {
     "@context": [
-       "dtmi:dtdl:context;3",
-       "dtmi:dtdl:extension:quantitativeTypes;1"
-     ],
-     "@id": "dtmi:avl:passport:product:unit:battery;1",
-     "extends": "dtmi:avl:passport:product:unit:base;1",
-     "@type": "Interface",
-     "displayName": "Battery Passport",
-     "contents": [
-       {
-         "@id": "dtmi:avl:passport:product:unit:battery:InternalResistance;1",
-         "@type": ["Property", "Resistance"],
-         "name": "InternalResistance",
-         "schema": "double",
-         "writable": false,
-         "displayName": "Internal Resistance", 
-         "unit": "milliohm"
-       },
-       {
-         "@id": "dtmi:avl:passport:product:unit:battery:BatchNumber;1",
-         "@type": "Property",
-         "name": "BatchNumber",
-         "schema": "long",
-         "writable": false,
-         "displayName": "Batch Number"
-       }, 
-      { 
-         "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints;1",
-         "@type": "Property",
-         "name" : "Co2Footprints",
-         "displayName": "Co2 Footprints",
-         "schema": {
-             "@type": "Array",
-             "elementSchema": {
-                 "@type": "Object",
-                 "fields": [
-                     {
-                         "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Category;1",
-                         "@type": "Field",
-                         "name": "Category",
-                         "schema": {
-                             "@type": "Enum",
-                             "valueSchema": "integer",
-                             "enumValues": [
-                                 {
-                                     "name": "None",
-                                     "enumValue": 0,
-                                     "displayName": "None",
-                                     "description": "Category does not exist."
-                                 },
-                                 {
-                                     "name": "RawMaterialAcquisitionAndPreProcessing",
-                                     "enumValue": 1,
-                                     "displayName": "Raw Material Acquisition And PreProcessing"
-                                 },
-                                 {
-                                     "name": "MainProductProduction",
-                                     "enumValue": 2,
-                                     "displayName": "Main Product Production"
-                                 },
-                                 {
-                                     "name": "DistributionPointOfSale",
-                                     "enumValue": 3,
-                                     "displayName": "Distribution Point Of Sale"
-                                 },
-                                 {
-                                     "name": "EndOfLifeAndRecycling",
-                                     "enumValue": 4,
-                                     "displayName": "End Of Life And Recycling"
-                                 },
-                                 {
-                                     "name": "ProductUsage",
-                                     "enumValue": 5,
-                                     "displayName": "Product Usage",
-                                     "comment": "User should not be able to create CO2 Footprint with this category. CO2 Footprint for this category is calculated on backend."
-                                 }
-                             ]
-                         }                       
-                     },
-                     {
-                         "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Description;1",
-                         "@type": "Field",
-                         "name": "Description",
-                         "schema": "string",
-                         "displayName": "Description"
-                     },
-                     {
-                         "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:DataCategory;1",
-                         "@type": "Field",
-                         "name": "DataCategory",
-                         "schema": {
-                             "@type": "Enum",
-                             "valueSchema": "integer",
-                             "enumValues": [
-                                 {
-                                     "name": "None",
-                                     "enumValue": 0,
-                                     "displayName": "None",
-                                     "description": "Category does not exist."
-                                 },
-                                 {
-                                     "name": "Primary",
-                                     "enumValue": 1,
-                                     "displayName": "Primary"
-                                 },
-                                 {
-                                     "name": "Secondary",
-                                     "enumValue": 2,
-                                     "displayName": "Secondary"
-                                 }
-                             ]
-                         }  
-                     },
-                     {
-                         "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:DQRRating;1",
-                         "@type": "Field",
-                         "name": "DQRRating",
-                         "schema": "double",
-                         "displayName": "DQR Rating"
-                     },
-                     {
-                         "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Co2Footprint;1",
-                         "@type": "Field",
-                         "name": "Co2Footprint",
-                         "schema": "double",
-                         "displayName": "Co2 Footprint"
-                     }
-                 ]
-             }
-         }
-      }
- 
-     ]
-   }
- 
+        "dtmi:dtdl:context;4",
+        "dtmi:dtdl:extension:quantitativeTypes;1"
+    ],
+    "@id": "dtmi:avl:passport:product:unit:battery;1",
+    "extends": "dtmi:avl:passport:product:unit:base;1",
+    "@type": "Interface",
+    "displayName": "Battery Passport",
+    "contents": [
+        {
+            "@id": "dtmi:avl:passport:product:unit:battery:InternalResistance;1",
+            "@type": [
+                "Property",
+                "Resistance"
+            ],
+            "name": "InternalResistance",
+            "schema": "double",
+            "writable": false,
+            "displayName": "Internal Resistance",
+            "unit": "milliohm"
+        },
+        {
+            "@id": "dtmi:avl:passport:product:unit:battery:BatchNumber;1",
+            "@type": "Property",
+            "name": "BatchNumber",
+            "schema": "long",
+            "writable": false,
+            "displayName": "Batch Number"
+        },
+        {
+            "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints;1",
+            "@type": "Property",
+            "name": "Co2Footprints",
+            "displayName": "Co2 Footprints",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": {
+                    "@type": "Component",
+                    "schema": "dtmi:avl:passport:component:co2Footprint;1"
+                }
+            }
+        },
+        {
+            "@id": "dtmi:avl:passport:product:unit:battery:State;1",
+            "@type": "Property",
+            "name": "State",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "Registered",
+                        "enumValue": 1,
+                        "displayName": "Registered"
+                    },
+                    {
+                        "name": "PlacedOnMarket",
+                        "enumValue": 2,
+                        "displayName": "Placed On Market"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "dtmi:avl:passport:product:unit:battery:DataValidationState;1",
+            "@type": "Property",
+            "name": "DataValidationState",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "Open",
+                        "enumValue": 1,
+                        "displayName": "Open",
+                        "description": "Open"
+                    },
+                    {
+                        "name": "ValidationFailed",
+                        "enumValue": 2,
+                        "displayName": "ValidationFailed"
+                    },
+                    {
+                        "name": "Validated",
+                        "enumValue": 3,
+                        "displayName": "Validated"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "dtmi:avl:passport:product:unit:battery:DataProofState;1",
+            "@type": "Property",
+            "name": "DataProofState",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "NotAvailable",
+                        "enumValue": 1,
+                        "displayName": "NotAvailable"
+                    },
+                    {
+                        "name": "Verified",
+                        "enumValue": 2,
+                        "displayName": "Verified"
+                    },
+                    {
+                        "name": "Failed",
+                        "enumValue": 3,
+                        "displayName": "Failed"
+                    }
+                ]
+            }
+        }
+    ]
+}

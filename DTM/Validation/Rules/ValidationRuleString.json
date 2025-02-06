@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "Regex",
             "schema": "string",
-            "writable": true,
+            "writable": false,
             "displayName": "Regex Pattern",
             "description": "Regex pattern which should be applied to the text."
         }

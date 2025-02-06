@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "Threshold",
             "schema": "double",
-            "writable": true,
+            "writable": false,
             "displayName": "Threshold",
             "description": "Limit for a specific Value."
         }, 
@@ -46,7 +46,7 @@
                     }
                 ]
             },
-            "writable": true,
+            "writable": false,
             "displayName": "Threshold Type",
             "description": "Defines at when the Threshold should be applied to."
         }

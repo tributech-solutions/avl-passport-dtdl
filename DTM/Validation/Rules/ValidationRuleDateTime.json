@@ -1,0 +1,17 @@
+{
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:avl:passport:validation:rule:datetime;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:passport:validation:rule:base;1",
+    "displayName": "DateTime Validation Rule",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "min_datetime",
+            "schema": "dateTime",
+            "writable": false,
+            "displayName": "Minimum DateTime Value",
+            "description": "Property date is not allowed to be less than this value. (Min Value Included)"
+        }
+    ]
+}

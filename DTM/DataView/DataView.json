@@ -8,18 +8,41 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": true,
+            "writable": false,
             "displayName": "Name",
             "description": "Represents the name of the Data View."
         },
         {
             "@type": "Property",
-            "name": "DTMIReference",
-            "schema": "string",
-            "writable": true,
-            "displayName": "Digital Twin Model Identifier Reference",
-            "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
-        }, 
+            "name": "Visibility",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "None",
+                        "enumValue": 0,
+                        "displayName": "None",
+                        "description": "Attribute should not be displayed."
+                    },
+                    {
+                        "name": "Private",
+                        "enumValue": 1,
+                        "displayName": "Private",
+                        "description": "Attribute should only be visible for authenticated users."
+                    },
+                    {
+                        "name": "Public",
+                        "enumValue": 2,
+                        "displayName": "Public",
+                        "description": "Attribute should be visible for all users."
+                    }
+                ]
+            },
+            "writable": false,
+            "displayName": "Visibility",
+            "description": "Defines if and where the Attribute should be displayed."
+        },
         {
             "@type": "Relationship",
             "name": "DataViewCategories",
