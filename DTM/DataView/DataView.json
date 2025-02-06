@@ -26,14 +26,20 @@
                         "description": "Attribute should not be displayed."
                     },
                     {
-                        "name": "Private",
+                        "name": "Configuration",
                         "enumValue": 1,
+                        "displayName": "Configuration",
+                        "description": "Configuration should be visible during the creation."
+                    },
+                    {
+                        "name": "Private",
+                        "enumValue": 2,
                         "displayName": "Private",
                         "description": "Attribute should only be visible for authenticated users."
                     },
                     {
                         "name": "Public",
-                        "enumValue": 2,
+                        "enumValue": 3,
                         "displayName": "Public",
                         "description": "Attribute should be visible for all users."
                     }

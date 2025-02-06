@@ -23,38 +23,6 @@
             "description": "Represents the serial number of the Product Unit."
         },
         {
-            "@id": "dtmi:avl:passport:product:unit:base:ProofState;1",
-            "@type": "Property",
-            "name": "ProofState",
-            "schema":  {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "NotAvailable",
-                        "enumValue": 0,
-                        "displayName": "Not Available",
-                        "description": "Proof does not exist (yet)."
-                    },
-                    {
-                        "name": "Verified",
-                        "enumValue": 1,
-                        "displayName": "Verified",
-                        "description": "Proof was successfully build and verified."
-                    },
-                    {
-                        "name": "Failed",
-                        "enumValue": 2,
-                        "displayName": "Failed",
-                        "description": "Proof was successfully build but the verification failed."
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Proof State",
-            "description": "Represents the tempering protection State of the Product Type."
-        },
-        {
             "@id": "dtmi:avl:passport:product:unit:base:ValidationState;1",
             "@type": "Property",
             "name": "ValidationState",

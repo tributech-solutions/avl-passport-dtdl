@@ -7,7 +7,7 @@
     "contents": [
         {
             "@type": "Property",
-            "name": "allowed_values",
+            "name": "AllowedValues",
             "schema": {
                 "@type": "Array",
                 "elementSchema": "integer"

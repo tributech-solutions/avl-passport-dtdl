@@ -62,50 +62,6 @@
             "writable": false,
             "displayName": "Proof State",
             "description": "Represents the tempering protection State of the Product Type."
-        },
-        {
-            "@id": "dtmi:avl:passport:product:type:base:DataValidationState;1",
-            "@type": "Property",
-            "name": "DataValidationState",
-            "schema":  {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "NotAvailable",
-                        "enumValue": 0,
-                        "displayName": "Not Available",
-                        "description": "No verification was applied to the type."
-                    },
-                    {
-                        "name": "Open",
-                        "enumValue": 1,
-                        "displayName": "Open",
-                        "description": "Verification of the product type is still pending."
-                    },
-                    {
-                        "name": "ReadyForReview",
-                        "enumValue": 2,
-                        "displayName": "Ready for Review",
-                        "description": "Product type was verified but the QA check is still pending."
-                    }, 
-                    {
-                        "name": "Validated",
-                        "enumValue": 3,
-                        "displayName": "Validated",
-                        "description": "Product type was successfully validated."
-                    },
-                    {
-                        "name": "Failed",
-                        "enumValue": 4,
-                        "displayName": "Failed",
-                        "description": "Product type verification failed."
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Product Validation State",
-            "description": "Represents the data validation of the Product Type."
         }, 
         {
             "@type": "Relationship",

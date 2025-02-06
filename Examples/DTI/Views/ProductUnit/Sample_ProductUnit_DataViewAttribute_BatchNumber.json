@@ -6,5 +6,5 @@
   },
   "displayName": "Dataview Attribute",
   "Name": "Product Unit Batch Number",
-  "FieldDTMI": null
+  "FieldDTMI": "dtmi:avl:passport:product:unit:battery:BatchNumber;1"
 }

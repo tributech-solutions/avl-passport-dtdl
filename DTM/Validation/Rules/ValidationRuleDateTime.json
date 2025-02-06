@@ -7,7 +7,7 @@
     "contents": [
         {
             "@type": "Property",
-            "name": "min_datetime",
+            "name": "MinDateTime",
             "schema": "dateTime",
             "writable": false,
             "displayName": "Minimum DateTime Value",

@@ -1,5 +1,5 @@
 {
-    "@context": "dtmi:dtdl:context;2",
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:avl:passport:component:webLink;1",
     "@type": "Interface",
     "contents": [
@@ -8,24 +8,6 @@
             "name": "url",
             "@type": "Property",
             "schema": "string"            
-        },
-        {
-            "@id": "dtmi:avl:passport:component:webLink:Name;1",
-            "name": "name",
-            "@type": "Property",
-            "schema": "string"
-        },
-        {
-            "@id": "dtmi:avl:passport:component:webLink:Description;1",
-            "name": "description",
-            "@type": "Property",
-            "schema": "string"
-        },
-        {
-            "@id": "dtmi:avl:passport:component:webLink:DisplayName;1",
-            "name": "displayName",
-            "@type": "Property",
-            "schema": "string"
         }
     ]
 }

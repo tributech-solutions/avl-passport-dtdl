@@ -1,5 +1,5 @@
 {
-    "@context": "dtmi:dtdl:context;2",
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:avl:passport:component:email;1",
     "@type": "Interface",
     "contents": [
@@ -8,18 +8,6 @@
             "name": "MailAddress",
             "@type": "Property",
             "schema": "string"            
-        },
-        {
-            "@id": "dtmi:avl:passport:component:email:Description;1",
-            "name": "description",
-            "@type": "Property",
-            "schema": "string"
-        },
-        {
-            "@id": "dtmi:avl:passport:component:email:DisplayName;1",
-            "name": "displayName",
-            "@type": "Property",
-            "schema": "string"
         }
     ]
 }

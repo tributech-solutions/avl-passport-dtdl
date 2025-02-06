@@ -14,11 +14,11 @@
         },
         {
             "@type": "Property",
-            "name": "Priority",
+            "name": "GroupSorting",
             "schema": "integer",
             "writable": false,
-            "displayName": "Priority of current Group",
-            "description": "Represents the priority of the group for sorting within the UI."
+            "displayName": "Sorting Position of current Group",
+            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
         }, 
         {
             "@type": "Relationship",

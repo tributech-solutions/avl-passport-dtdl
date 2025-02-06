@@ -44,7 +44,8 @@
         ]
       },
       "writable": false,
-      "displayName": "MainProductProduction Calculation Type"
+      "displayName": "MainProductProduction Calculation Type",
+      "description": "MainProductProduction Calculation Type"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:MainProductProductionEnergyCarbonIntensity;1",
@@ -52,7 +53,8 @@
       "name": "MainProductProductionEnergyCarbonIntensity",
       "schema": "double",
       "writable": false,
-      "displayName": "Main Product Production Energy Carbon Intensity"
+      "displayName": "Main Product Production Energy Carbon Intensity",
+      "description": "Main Product Production Energy Carbon Intensity"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:ProductUsageEnergyCarbonIntensity;1",
@@ -60,7 +62,8 @@
       "name": "ProductUsageEnergyCarbonIntensity",
       "schema": "double",
       "writable": false,
-      "displayName": "Product Usage Energy Carbon Intensity"
+      "displayName": "Product Usage Energy Carbon Intensity",
+      "description": "Product Usage Energy Carbon Intensity"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:MinimumCo2ThresholdPerUnit;1",
@@ -68,7 +71,8 @@
       "name": "MinimumCo2ThresholdPerUnit",
       "schema": "double",
       "writable": false,
-      "displayName": "Minimum kgCo2 Threshold Per Unit"
+      "displayName": "Minimum kgCo2 Threshold Per Unit",
+      "description": "Minimum kgCo2 Threshold Per Unit"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:MaximumCo2ThresholdPerUnit;1",
@@ -76,7 +80,8 @@
       "name": "MaximumCo2ThresholdPerUnit",
       "schema": "double",
       "writable": false,
-      "displayName": "Maximum kgCo2 Threshold Per Unit"
+      "displayName": "Maximum kgCo2 Threshold Per Unit",
+      "description": "Maximum kgCo2 Threshold Per Unit"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:PrimaryDataDQRMinimum;1",
@@ -84,7 +89,8 @@
       "name": "PrimaryDataDQRMinimum",
       "schema": "double",
       "writable": false,
-      "displayName": "DQR minimum primary data"
+      "displayName": "DQR minimum primary data",
+      "description": "DQR minimum primary data"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:SecondaryDataDQRMinimum;1",
@@ -92,7 +98,8 @@
       "name": "SecondaryDataDQRMinimum",
       "schema": "double",
       "writable": false,
-      "displayName": "DQR minimum secondary data"
+      "displayName": "DQR minimum secondary data",
+      "description": "DQR minimum secondary data"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:AggregatedDataDQRMinimum;1",
@@ -100,7 +107,8 @@
       "name": "AggregatedDataDQRMinimum",
       "schema": "double",
       "writable": false,
-      "displayName": "DQR minimum aggregated data"
+      "displayName": "DQR minimum aggregated data",
+      "description": "DQR minimum aggregated data"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:PrimaryDataShareTarget;1",
@@ -112,6 +120,7 @@
       "schema": "double",
       "writable": false,
       "displayName": "Primary data share target",
+      "description": "Primary data share target",
       "unit": "percent"
     },
     {
@@ -120,7 +129,8 @@
       "name": "IsPublicViewEnabled",
       "schema": "boolean",
       "writable": false,
-      "displayName": "Enable public access for digital product passport"
+      "displayName": "Enable public access for digital product passport",
+      "description": "Enable public access for digital product passport"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:IsPublicViewCustomLinkEnabled;1",
@@ -128,13 +138,16 @@
       "name": "IsPublicViewCustomLinkEnabled",
       "schema": "boolean",
       "writable": false,
-      "displayName": "Add custom product link"
+      "displayName": "Add custom product link",
+      "description": "Add custom product link to the public view"
     },
     {
       "@id": "dtmi:avl:passport:product:configuration:battery:PublicViewCustomLink;1",
       "@type": "Component",
       "name": "PublicViewCustomLink",
-      "schema": "dtmi:avl:passport:component:webLink;1"
+      "schema": "dtmi:avl:passport:component:webLink;1",
+      "description": "Custom link to be added to the public view",
+      "displayName": "Custom link"
     }
   ]
 }

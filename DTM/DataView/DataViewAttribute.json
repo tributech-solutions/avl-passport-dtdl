@@ -11,14 +11,6 @@
             "writable": false,
             "displayName": "Name",
             "description": "Represents a user friendly name of the UI attribute assignment."
-        },
-        {
-            "@type": "Property",
-            "name": "FieldDTMI",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Name",
-            "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
         }
     ]
 }
