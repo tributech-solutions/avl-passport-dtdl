@@ -1,7 +1,7 @@
 {
     "@context": [
-        "dtmi:dtdl:context;3",
-        "dtmi:dtdl:extension:quantitativeTypes;1"
+        "dtmi:dtdl:context;4",
+        "dtmi:dtdl:extension:quantitativeTypes;2"
     ],
     "@id": "dtmi:avl:passport:product:unit:battery;1",
     "extends": "dtmi:avl:passport:product:unit:base;1",

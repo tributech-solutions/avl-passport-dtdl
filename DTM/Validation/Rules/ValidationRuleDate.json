@@ -1,5 +1,5 @@
 {
-    "@context": "dtmi:dtdl:context;3",
+    "@context": "dtmi:dtdl:context;4",
     "@id": "dtmi:avl:passport:validation:rule:date;1",
     "@type": "Interface",
     "extends": "dtmi:avl:passport:validation:rule:base;1",

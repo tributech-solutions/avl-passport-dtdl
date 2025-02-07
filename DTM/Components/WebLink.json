@@ -1,5 +1,5 @@
 {
-    "@context": "dtmi:dtdl:context;3",
+    "@context": "dtmi:dtdl:context;4",
     "@id": "dtmi:avl:passport:component:webLink;1",
     "@type": "Interface",
     "contents": [
