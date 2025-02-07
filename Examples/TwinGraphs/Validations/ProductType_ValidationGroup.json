@@ -14,7 +14,7 @@
       "$dtid": "944b50d9-402a-4167-9314-5420adfd4592",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:validation:attribute:base;1"
+        "$model": "dtmi:avl:passport:validation:attribute;1"
       },
       "displayName": "Validation Attribute",
       "Name": "Product Type Validation Attribute NonEmptyName",
@@ -25,7 +25,7 @@
       "$dtid": "bbe739f6-ab88-4978-b339-49eca5774bd5",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:validation:attribute:base;1"
+        "$model": "dtmi:avl:passport:validation:attribute;1"
       },
       "displayName": "Validation Attribute",
       "Name": "Product Type Validation SoH Range",
@@ -46,7 +46,7 @@
       "$dtid": "c2f5129d-f7f3-46fe-bfaf-c59cad29e540",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:validation:rule:minmax:integer;1"
+        "$model": "dtmi:avl:passport:validation:rule:minMax:integer;1"
       },
       "displayName": "Integer Number Min/Max Validation Rule",
       "Min": 0,

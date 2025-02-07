@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;3",
-    "@id": "dtmi:avl:passport:validation:rule:minmax:integer;1",
+    "@id": "dtmi:avl:passport:validation:rule:minMax:integer;1",
     "@type": "Interface",
     "extends": "dtmi:avl:passport:validation:rule:base;1",
     "displayName": "Integer Number Min/Max Validation Rule",

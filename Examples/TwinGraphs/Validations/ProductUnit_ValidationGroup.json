@@ -14,7 +14,7 @@
       "$dtid": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:validation:attribute:base;1"
+        "$model": "dtmi:avl:passport:validation:attribute;1"
       },
       "displayName": "Validation Attribute",
       "Name": "Product Unit Validation Attribute Enum",

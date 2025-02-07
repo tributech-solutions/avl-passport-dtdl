@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;3",
-    "@id": "dtmi:avl:passport:validation:attribute:base;1",
+    "@id": "dtmi:avl:passport:validation:attribute;1",
     "@type": "Interface",
     "displayName": "Validation Attribute",
     "contents": [

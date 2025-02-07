@@ -2,7 +2,7 @@
   "$dtid": "c2f5129d-f7f3-46fe-bfaf-c59cad29e540",
   "$etag": "128",
   "$metadata": {
-    "$model": "dtmi:avl:passport:validation:rule:minmax:integer;1"
+    "$model": "dtmi:avl:passport:validation:rule:minMax:integer;1"
   },
   "displayName": "Integer Number Min/Max Validation Rule",
   "Min": 0,
