@@ -29,14 +29,66 @@
             "description": "Defines if the validation is enabled or disabled."
         },
         {
+            "@type": "Property",
+            "name": "IsOptional",
+            "schema": "boolean",
+            "writable": false,
+            "displayName": "Is Optional",
+            "description": "Defines if a value is optional, i.e. validation is skipped if set with default value."
+        },
+        {
             "@type": "Relationship",
-            "name": "ValidationRules",
+            "name": "ValidationRulesDate",
             "minMultiplicity": 0,
             "maxMultiplicity": 500,
-            "target": "dtmi:avl:passport:validation:rule:base;1",
-            "displayName": "Validation Rule",
-            "description": "Reference to the validation rules which should be applied to the Attribute / Property."
-        }          
-     
+            "target": "dtmi:avl:passport:validation:rule:date;1",
+            "displayName": "Validation Rule Date",
+            "description": "Relationship linking all date validation rules."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationRulesDatetime",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:passport:validation:rule:datetime;1",
+            "displayName": "Validation Rule Date",
+            "description": "Relationship linking all Datetime validation rules."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationRulesEnum",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:passport:validation:rule:enum;1",
+            "displayName": "Validation Rule Enum",
+            "description": "Relationship linking all enum validation rules."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationMinMaxDouble",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:passport:validation:rule:minMax:double;1",
+            "displayName": "Validation Rule Min/Max Double",
+            "description": "Relationship linking all min / max double validation rules."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationMinMaxInteger",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:passport:validation:rule:minMax:integer;1",
+            "displayName": "Validation Rule Min/Max Integer",
+            "description": "Relationship linking all min / max integer validation rules."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationRulesText",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:passport:validation:rule:text;1",
+            "displayName": "Validation Rule String",
+            "description": "Relationship linking all string validation rules."
+        }
     ]
 }
