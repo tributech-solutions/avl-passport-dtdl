@@ -73,7 +73,9 @@
       "Placement": 1,
       "QRCodeState": 1,
       "LifeCycleState": 0,
-      "Name": "My Battery Unit Sample"
+      "Name": "My Battery Unit Sample",
+      "IsPublicViewCustomLinkEnabled": true,
+      "PublicViewCustomLink": "https://www.google.com"
     }
   ],
   "relationships": [

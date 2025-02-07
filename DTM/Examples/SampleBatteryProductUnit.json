@@ -159,6 +159,20 @@
                     }
                 ]
             }
+        },
+        {
+            "@id": "dtmi:avl:passport:product:configuration:battery:IsPublicViewCustomLinkEnabled;1",
+            "@type": "Property",
+            "name": "IsPublicViewCustomLinkEnabled",
+            "schema": "boolean",
+            "writable": false,
+            "displayName": "Add custom product link"
+        },
+        {
+            "@id": "dtmi:avl:passport:product:configuration:battery:PublicViewCustomLink;1",
+            "@type": "Component",
+            "name": "PublicViewCustomLink",
+            "schema": "dtmi:avl:passport:component:webLink;1"
         }
     ]
 }
