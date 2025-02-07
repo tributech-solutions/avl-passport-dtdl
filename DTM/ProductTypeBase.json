@@ -71,15 +71,6 @@
             "target": "dtmi:avl:passport:product:unit:base;1",
             "displayName": "Product Units",
             "description": "Reference to the specific product unit of a given type."
-        },
-        {
-            "@type": "Relationship",
-            "name": "Configuration",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 1,
-            "target": "dtmi:avl:passport:product:configuration:base;1",
-            "displayName": "Product Type Configuration",
-            "description": "Reference to the configuration for a given type."
         }
     ]
 }

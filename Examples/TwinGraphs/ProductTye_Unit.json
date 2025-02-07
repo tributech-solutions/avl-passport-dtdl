@@ -74,41 +74,9 @@
       "QRCodeState": 1,
       "LifeCycleState": 0,
       "Name": "My Battery Unit Sample"
-    },
-    {
-      "$dtid": "41f86799-a0ce-4988-a260-e25e7558a583",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:product:configuration:battery;1"
-      },
-      "displayName": "Battery Passport Configuration",
-      "MainProductProductionCalculationType": 1,
-      "MainProductProductionEnergyCarbonIntensity": 62.22262147734584,
-      "ProductUsageEnergyCarbonIntensity": 28.30401239203566,
-      "MinimumCo2ThresholdPerUnit": 25.891364317582934,
-      "MaximumCo2ThresholdPerUnit": 70.98697845340324,
-      "PrimaryDataDQRMinimum": 91.01021265016824,
-      "SecondaryDataDQRMinimum": 25.902025515931005,
-      "AggregatedDataDQRMinimum": 1.7961355456457717,
-      "IsPublicViewEnabled": true,
-      "IsPublicViewCustomLinkEnabled": true,
-      "PublicViewCustomLink": {
-        "url": "7795553b-e8c6-44cc-8a55-ef6a26191a6b",
-        "name": "62b25a4b-0a7f-434a-8874-2e5d15df77db",
-        "description": "08681d4f-8c18-4ff4-9a8f-905b72925018",
-        "displayName": "132a3a55-a19b-4081-94da-123dfa83a8fb"
-      },
-      "Name": "My Battery Configuration Sample"
     }
   ],
   "relationships": [
-    {
-      "$relationshipId": "eeba6ec2-ebc2-4fe1-b097-4cd47bd11400",
-      "$etag": "128",
-      "$relationshipName": "Configuration",
-      "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
-      "$targetId": "41f86799-a0ce-4988-a260-e25e7558a583"
-    },
     {
       "$relationshipId": "7abfd11c-ed9b-4cd3-aef1-e7938b6e15a0",
       "$etag": "128",
