@@ -4,6 +4,5 @@
     "@type": "Interface",
     "extends": "dtmi:avl:passport:validation:rule:base;1",
     "displayName": "Optional Marker Validation Rule",
-    "description": "This rule is used to mark the Validation on this Attribute as optional, i.e. its only applied if a value is present."
-    
+    "description": "This rule is used to mark the Validation on this Attribute as optional, i.e. its only applied if a value is present."    
 }

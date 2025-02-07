@@ -216,62 +216,7 @@
       "displayName": "City",
       "description": "City of the manufacturer"
     },
-    {
-      "@id": "dtmi:avl:passport:product:type:battery:SpecificationOfElectrodes;1",
-      "@type": "Component",
-      "name": "SpecificationOfElectrodes",
-      "schema": "dtmi:avl:passport:component:document;1",
-      "displayName": "Specification of electrodes"
-    },
-    {
-      "@id": "dtmi:avl:passport:product:type:battery:PrimaryRawMaterials;1",
-      "@type": "Component",
-      "name": "PrimaryRawMaterials",
-      "schema": "dtmi:avl:passport:component:document;1",
-      "displayName": "Primary raw materials"
-    },
-    {
-      "@id": "dtmi:avl:passport:product:type:battery:FullMaterialDisclosure;1",
-      "@type": "Component",
-      "name": "FullMaterialDisclosure",
-      "schema": "dtmi:avl:passport:component:document;1",
-      "displayName": "Full material disclosure"
-    },
-    {
-      "@id": "dtmi:avl:passport:product:type:battery:PartNumbersOfComponents;1",
-      "@type": "Component",
-      "name": "PartNumbersOfComponents",
-      "schema": "dtmi:avl:passport:component:document;1",
-      "displayName": "Part numbers of components"
-    },
-    {
-      "@id": "dtmi:avl:passport:product:type:battery:BatteryManufacturerInformation;1",
-      "@type": "Component",
-      "name": "BatteryManufacturerInformation",
-      "schema": "dtmi:avl:passport:component:document;1",
-      "displayName": "Battery manufacturer information"
-    },
-    {
-      "@id": "dtmi:avl:passport:product:type:battery:CriticalRawMaterials;1",
-      "@type": "Component",
-      "name": "CriticalRawMaterials",
-      "schema": "dtmi:avl:passport:component:document;1",
-      "displayName": "Critical raw materials"
-    },
-    {
-      "@id": "dtmi:avl:passport:product:type:battery:SecondaryRawMaterials;1",
-      "@type": "Component",
-      "name": "SecondaryRawMaterials",
-      "schema": "dtmi:avl:passport:component:document;1",
-      "displayName": "Secondary raw materials"
-    },
-    {
-      "@id": "dtmi:avl:passport:product:type:battery:DismantlingInstructions;1",
-      "@type": "Component",
-      "name": "DismantlingInstructions",
-      "schema": "dtmi:avl:passport:component:document;1",
-      "displayName": "Dismantling instructions"
-    },     { 
+    { 
       "@id": "dtmi:avl:passport:product:type:battery:Co2Footprints;1",
       "@type": "Property",
       "name" : "Co2Footprints",

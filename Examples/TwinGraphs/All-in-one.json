@@ -1,410 +1,437 @@
 {
-  "digitalTwins": [
-    {
-      "$dtid": "3e672575-4561-4939-8fe4-b9627a84bb23",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:product:type:battery;1"
-      },
-      "displayName": "Battery Passport",
-      "BatteryApplicationType": "51442b9a-3975-4530-ae5d-1e3f9bf99251",
-      "BatteryChemistryType": "fe381e1f-c363-426a-9ca0-90322ede55e0",
-      "NumberOfCells": 94,
-      "ExpectedLiftime": 39.56266202648378,
-      "ManufactureEntityName": "3a11c399-6385-444d-a12d-96166a44729b",
-      "ManufactureEntityAddress": "7f6f3d1a-41e4-4380-a8db-b7484f8d4b31",
-      "ManufactureEntityZipCode": "d5143e9b-bcc2-40bc-89d3-6d2ee51717b1",
-      "ManufactureEntityCountry": "e7628775-0fc0-43b2-8dfc-8257a0e31d8b",
-      "ManufactureEntityCity": "245745e5-ce77-4567-b7e7-1bd40868d0f7",
-      "SpecificationOfElectrodes": {
-        "url": "42f601fc-83a1-48c1-9fac-059c0be1c5c1",
-        "name": "8537e499-c60c-4ad7-8fc4-b2fa2a31187e",
-        "description": "2135d2d1-fbdd-4818-989a-5336c5d48250",
-        "displayName": "4c4ac73c-f8b0-4f53-a9a9-68332151fe0e"
-      },
-      "PrimaryRawMaterials": {
-        "url": "ef9d8fd0-575b-452b-a66f-09c64edf5209",
-        "name": "81dd3d4c-08d6-4f62-b558-ea1e1e768c19",
-        "description": "88ef0c29-7394-4f1b-ab85-8b3fbeb47c3a",
-        "displayName": "451d113b-724f-42f0-89e6-4669f0c75133"
-      },
-      "FullMaterialDisclosure": {
-        "url": "4157a683-a8cc-4c0b-9a33-c8bfb887aa9b",
-        "name": "e8ac3b29-5d31-4bba-bb4c-6565617a480f",
-        "description": "6101e1dd-b04e-4c04-b25c-eb793ca89266",
-        "displayName": "9d1ffa3c-dc1d-431d-b633-20100990c785"
-      },
-      "PartNumbersOfComponents": {
-        "url": "47257b7c-766c-4e65-8ab8-170688f84d32",
-        "name": "966bb43f-2a80-49bf-b635-37eea9a38b10",
-        "description": "d3295cf7-1b6c-4042-80d2-e952a36e77ec",
-        "displayName": "0a6cd01b-a962-40d1-92ea-4e2258c027fc"
-      },
-      "BatteryManufacturerInformation": {
-        "url": "bcb24484-c6ba-4ebb-8dda-b8e8450ea746",
-        "name": "786fd7e9-c035-4d31-ad15-5e511408cd5f",
-        "description": "d69cf107-d12d-4065-84e7-1f241877fe19",
-        "displayName": "376611cf-c618-4d19-8e55-292f30f68069"
-      },
-      "CriticalRawMaterials": {
-        "url": "96ccabc1-cbb2-401c-a4c9-859e518f3286",
-        "name": "afa5c016-becf-440d-92ee-92b39d926e39",
-        "description": "bc2db529-3739-44b6-92cf-de28b61bbb20",
-        "displayName": "ee987686-26aa-41bf-b38c-5736105fca32"
-      },
-      "SecondaryRawMaterials": {
-        "url": "80d969eb-9944-41ea-b38e-70e77dfd185c",
-        "name": "207b7395-1217-4d2f-8751-b62529ab5eed",
-        "description": "06fd7bca-0bbb-45ed-b01d-59d02b2d77d3",
-        "displayName": "a4a81f5a-e168-4337-a54a-086bf7e89957"
-      },
-      "DismantlingInstructions": {
-        "url": "be41951f-1fb1-4533-aa11-776c49f205ed",
-        "name": "fb53e248-9ad8-40c6-934b-2ef115a4731a",
-        "description": "9b1207b6-e78c-40f7-a5d7-d35c15badcc3",
-        "displayName": "25d9d4cc-7681-4805-b7cc-f000d6a220f1"
-      },
-      "Co2Footprints": [
+    "digitalTwins": [
         {
-          "Category": 2,
-          "Description": "424c9953-f190-49fb-ba9b-7c260077e054",
-          "DataCategory": 1,
-          "DQRRating": 14.755518605010698,
-          "Co2Footprint": 16.379034650905965
+            "$dtid": "3e672575-4561-4939-8fe4-b9627a84bb23",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:product:type:battery;1"
+            },
+            "displayName": "Battery Passport",
+            "BatteryApplicationType": "51442b9a-3975-4530-ae5d-1e3f9bf99251",
+            "BatteryChemistryType": "fe381e1f-c363-426a-9ca0-90322ede55e0",
+            "NumberOfCells": 94,
+            "ExpectedLiftime": 39.56266202648378,
+            "ManufactureEntityName": "3a11c399-6385-444d-a12d-96166a44729b",
+            "ManufactureEntityAddress": "7f6f3d1a-41e4-4380-a8db-b7484f8d4b31",
+            "ManufactureEntityZipCode": "d5143e9b-bcc2-40bc-89d3-6d2ee51717b1",
+            "ManufactureEntityCountry": "e7628775-0fc0-43b2-8dfc-8257a0e31d8b",
+            "ManufactureEntityCity": "245745e5-ce77-4567-b7e7-1bd40868d0f7",
+            "Co2Footprints": [
+                {
+                    "Category": 2,
+                    "Description": "424c9953-f190-49fb-ba9b-7c260077e054",
+                    "DataCategory": 1,
+                    "DQRRating": 14.755518605010698,
+                    "Co2Footprint": 16.379034650905965
+                },
+                {
+                    "Category": 2,
+                    "Description": "b4aa0619-fcf7-48c0-b32f-0bfb9ca5233e",
+                    "DataCategory": 1,
+                    "DQRRating": 78.07097989724538,
+                    "Co2Footprint": 77.0788433110018
+                }
+            ],
+            "CreationDate": "2025-02-06T11:38:33.6045502Z",
+            "LastModifiedDate": "2025-02-06T11:38:33.6052500Z",
+            "ItemNumber": "4a26c9ae-f8f7-4dae-b67f-ff8ed08744be",
+            "ProofState": 1,
+            "DataValidationState": 3,
+            "Name": "My Batter Type Sample"
         },
         {
-          "Category": 2,
-          "Description": "b4aa0619-fcf7-48c0-b32f-0bfb9ca5233e",
-          "DataCategory": 1,
-          "DQRRating": 78.07097989724538,
-          "Co2Footprint": 77.0788433110018
-        }
-      ],
-      "CreationDate": "2025-02-06T11:38:33.6045502Z",
-      "LastModifiedDate": "2025-02-06T11:38:33.6052500Z",
-      "ItemNumber": "4a26c9ae-f8f7-4dae-b67f-ff8ed08744be",
-      "ProofState": 1,
-      "DataValidationState": 3,
-      "Name": "My Batter Type Sample"
-    },
-    {
-      "$dtid": "44357848-c1e6-4916-8cfc-d3939f3e0a59",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:product:unit:battery;1"
-      },
-      "displayName": "Battery Passport",
-      "BatchNumber": 26,
-      "Co2Footprints": [
-        {
-          "Category": 1,
-          "Description": "c79b8629-d670-4327-b3ac-99b1f2ed3310",
-          "DataCategory": 1,
-          "DQRRating": 9.5371566612524,
-          "Co2Footprint": 96.72019253708108
+            "$dtid": "44357848-c1e6-4916-8cfc-d3939f3e0a59",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:product:unit:battery;1"
+            },
+            "displayName": "Battery Passport",
+            "BatchNumber": 26,
+            "Co2Footprints": [
+                {
+                    "Category": 1,
+                    "Description": "c79b8629-d670-4327-b3ac-99b1f2ed3310",
+                    "DataCategory": 1,
+                    "DQRRating": 9.5371566612524,
+                    "Co2Footprint": 96.72019253708108
+                },
+                {
+                    "Category": 3,
+                    "Description": "2ec16eb0-7643-446b-90e4-206e37b9444a",
+                    "DataCategory": 2,
+                    "DQRRating": 47.37875063075374,
+                    "Co2Footprint": 95.46571515292939
+                }
+            ],
+            "State": 1,
+            "DataValidationState": 1,
+            "DataProofState": 3,
+            "ProductionDate": "2025-02-06T11:39:02.9723800Z",
+            "SerialNumber": "8571816a-9768-4c93-a9d3-9cd44ae9d890",
+            "ProofState": 1,
+            "ValidationState": 1,
+            "Placement": 1,
+            "QRCodeState": 1,
+            "LifeCycleState": 0,
+            "Name": "My Battery Unit Sample"
         },
         {
-          "Category": 3,
-          "Description": "2ec16eb0-7643-446b-90e4-206e37b9444a",
-          "DataCategory": 2,
-          "DQRRating": 47.37875063075374,
-          "Co2Footprint": 95.46571515292939
+            "$dtid": "d3659798-7169-417a-add6-952693d4c8eb",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:productView;1"
+            },
+            "displayName": "ProductView",
+            "Name": "Battery Product Type Product View",
+            "DTMIReference": "dtmi:avl:passport:product:type:battery;1"
+        },
+        {
+            "$dtid": "ae30c164-9f2e-4203-b06b-8e9a6931099f",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:category;1"
+            },
+            "displayName": "Dataview Category",
+            "Name": "Battery Product Type Category",
+            "Priority": 64
+        },
+        {
+            "$dtid": "9296240c-179e-462b-8e50-1fd64148c920",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:group;1"
+            },
+            "displayName": "Dataview Group",
+            "Name": "Battery Product Type Group",
+            "Priority": 100
+        },
+        {
+            "$dtid": "b4684176-97ec-42cb-af38-0fa86f459aa3",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:attribute:base;1"
+            },
+            "displayName": "Product Type Attribute Name",
+            "Name": "Battery Product Type Attribute Name",
+            "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1"
+        },
+        {
+            "$dtid": "bc74cd29-2717-482f-90b7-d5528bb58c91",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:attribute:base;1"
+            },
+            "displayName": "Product Type Attribute ItemNumber",
+            "Name": "Battery Product Type Attribute ItemNumber",
+            "FieldDTMI": "dtmi:avl:passport:product:type:base:ItemNumber;1"
+        },
+        {
+            "$dtid": "6383f4d5-7498-4b47-8496-ccdac7edd61b",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:dataview;1"
+            },
+            "displayName": "Dataview",
+            "Name": "590315e1-7d49-4f8f-abd8-5dbfbbf1e23a",
+            "Visibility": 2
+        },
+        {
+            "$dtid": "1814d9cf-e3d5-4322-9345-492c9210c02b",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:productView;1"
+            },
+            "displayName": "ProductView",
+            "Name": "Battery Product Unit Product View",
+            "DTMIReference": "dtmi:avl:passport:product:unit:battery;1"
+        },
+        {
+            "$dtid": "129494f9-62be-408d-85d6-16f3e81d041b",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:category;1"
+            },
+            "displayName": "Dataview Category",
+            "Name": "Battery Unit Type Category",
+            "Priority": 73
+        },
+        {
+            "$dtid": "22ee3d00-576a-4fa4-a774-c6d86e89d77b",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:group;1"
+            },
+            "displayName": "Dataview Group",
+            "Name": "Battery Product Unit Group",
+            "Priority": 75
+        },
+        {
+            "$dtid": "e914dcf0-7a4a-493e-b1b4-7d1813d4fa96",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:attribute:base;1"
+            },
+            "displayName": "Dataview Attribute",
+            "Name": "Product Unit Batch Number",
+            "FieldDTMI": "dtmi:avl:passport:product:unit:battery:BatchNumber;1"
+        },
+        {
+            "$dtid": "9ba8072c-dd61-46aa-bbf7-6cd4a19f2863",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:attribute:base;1"
+            },
+            "displayName": "Dataview Attribute",
+            "Name": "Product Type SoH",
+            "FieldDTMI": "dtmi:avl:passport:product:type:battery:SoH;1"
+        },
+        {
+            "$dtid": "0a961523-b402-4f36-8221-eb596fa55117",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:ui:dataview;1"
+            },
+            "displayName": "Dataview",
+            "Name": "f597ed3c-3b82-4b06-bc95-a683b5de1bff",
+            "Visibility": 2
+        },
+        {
+            "$dtid": "9c589621-05d7-4932-a3cd-4218cba51378",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:validation:group;1"
+            },
+            "displayName": "Validation Group",
+            "Name": "Product Unit Validation Group",
+            "DTMIReference": "dtmi:avl:passport:product:unit:battery;1"
+        },
+        {
+            "$dtid": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:validation:attribute:base;1"
+            },
+            "displayName": "Validation Attribute",
+            "Name": "Product Unit Validation Attribute Enum",
+            "FieldDTMI": "dtmi:avl:passport:product:unit:battery:DataValidationState;1",
+            "IsActive": true
+        },
+        {
+            "$dtid": "36b29f7b-123d-4ae4-a248-7758c83fe742",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:validation:rule:enum;1"
+            },
+            "displayName": "Enum Validation Rule",
+            "allowed_values": [
+                1,
+                2,
+                3
+            ],
+            "Name": "DataValidationState Rule"
+        },
+        {
+            "$dtid": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:validation:group;1"
+            },
+            "displayName": "Validation Group",
+            "Name": "Product Type Validation Group",
+            "DTMIReference": "dtmi:avl:passport:product:type:battery;1"
+        },
+        {
+            "$dtid": "944b50d9-402a-4167-9314-5420adfd4592",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:validation:attribute:base;1"
+            },
+            "displayName": "Validation Attribute",
+            "Name": "Product Type Validation Attribute NonEmptyName",
+            "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1",
+            "IsActive": true
+        },
+        {
+            "$dtid": "bbe739f6-ab88-4978-b339-49eca5774bd5",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:validation:attribute:base;1"
+            },
+            "displayName": "Validation Attribute",
+            "Name": "Product Type Validation SoH Range",
+            "FieldDTMI": "dtmi:avl:passport:product:type:battery:SoH;1",
+            "IsActive": true
+        },
+        {
+            "$dtid": "bccd0cb0-1131-4623-8779-24fceb44a3e9",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:validation:rule:text;1"
+            },
+            "displayName": "Text Validation Rule",
+            "Regex": "^\\S{5,}$",
+            "Name": "NonEmptyString"
+        },
+        {
+            "$dtid": "c2f5129d-f7f3-46fe-bfaf-c59cad29e540",
+            "$etag": "128",
+            "$metadata": {
+                "$model": "dtmi:avl:passport:validation:rule:minmax:integer;1"
+            },
+            "displayName": "Integer Number Min/Max Validation Rule",
+            "Min": 0,
+            "Max": 100,
+            "Name": "PercentRange"
         }
-      ],
-      "State": 1,
-      "DataValidationState": 1,
-      "DataProofState": 3,
-      "ProductionDate": "2025-02-06T11:39:02.9723800Z",
-      "SerialNumber": "8571816a-9768-4c93-a9d3-9cd44ae9d890",
-      "ProofState": 1,
-      "ValidationState": 1,
-      "Placement": 1,
-      "QRCodeState": 1,
-      "LifeCycleState": 0,
-      "Name": "My Battery Unit Sample"
-    },
-    {
-      "$dtid": "41f86799-a0ce-4988-a260-e25e7558a583",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:product:configuration:battery;1"
-      },
-      "displayName": "Battery Passport Configuration",
-      "MainProductProductionCalculationType": 1,
-      "MainProductProductionEnergyCarbonIntensity": 62.22262147734584,
-      "ProductUsageEnergyCarbonIntensity": 28.30401239203566,
-      "MinimumCo2ThresholdPerUnit": 25.891364317582934,
-      "MaximumCo2ThresholdPerUnit": 70.98697845340324,
-      "PrimaryDataDQRMinimum": 91.01021265016824,
-      "SecondaryDataDQRMinimum": 25.902025515931005,
-      "AggregatedDataDQRMinimum": 1.7961355456457717,
-      "IsPublicViewEnabled": true,
-      "IsPublicViewCustomLinkEnabled": true,
-      "PublicViewCustomLink": {
-        "url": "7795553b-e8c6-44cc-8a55-ef6a26191a6b",
-        "name": "62b25a4b-0a7f-434a-8874-2e5d15df77db",
-        "description": "08681d4f-8c18-4ff4-9a8f-905b72925018",
-        "displayName": "132a3a55-a19b-4081-94da-123dfa83a8fb"
-      },
-      "Name": "My Battery Configuration Sample"
-    },
-    {
-      "$dtid": "d3659798-7169-417a-add6-952693d4c8eb",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:ui:productView;1"
-      },
-      "displayName": "ProductView",
-      "Name": "Battery Product Type Product View",
-      "DTMIReference": "dtmi:avl:passport:product:type:battery;1"
-    },
-    {
-      "$dtid": "ae30c164-9f2e-4203-b06b-8e9a6931099f",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:ui:category;1"
-      },
-      "displayName": "Dataview Category",
-      "Name": "Battery Product Type Category",
-      "Priority": 64
-    },
-    {
-      "$dtid": "9296240c-179e-462b-8e50-1fd64148c920",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:ui:group;1"
-      },
-      "displayName": "Dataview Group",
-      "Name": "Battery Product Type Group",
-      "Priority": 100
-    },
-    {
-      "$dtid": "b4684176-97ec-42cb-af38-0fa86f459aa3",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute:base;1"
-      },
-      "displayName": "Product Type Attribute Name",
-      "Name": "Battery Product Type Attribute Name",
-      "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1"
-    },
-    {
-      "$dtid": "bc74cd29-2717-482f-90b7-d5528bb58c91",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute:base;1"
-      },
-      "displayName": "Product Type Attribute ItemNumber",
-      "Name": "Battery Product Type Attribute ItemNumber",
-      "FieldDTMI": "dtmi:avl:passport:product:type:base:ItemNumber;1"
-    },
-    {
-      "$dtid": "6383f4d5-7498-4b47-8496-ccdac7edd61b",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:ui:dataview;1"
-      },
-      "displayName": "Dataview",
-      "Name": "590315e1-7d49-4f8f-abd8-5dbfbbf1e23a",
-      "Visibility": 2
-    },
-    {
-      "$dtid": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:validation:group;1"
-      },
-      "displayName": "Validation Group",
-      "Name": "Product Type Validation Group",
-      "DTMIReference": "dtmi:avl:passport:product:type:battery;1"
-    },
-    {
-      "$dtid": "944b50d9-402a-4167-9314-5420adfd4592",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:validation:attribute:base;1"
-      },
-      "displayName": "Validation Attribute",
-      "Name": "Product Type Validation Attribute NonEmptyName",
-      "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1",
-      "IsActive": true
-    },
-    {
-      "$dtid": "bbe739f6-ab88-4978-b339-49eca5774bd5",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:validation:attribute:base;1"
-      },
-      "displayName": "Validation Attribute",
-      "Name": "Product Type Validation SoH Range",
-      "FieldDTMI": "dtmi:avl:passport:product:type:battery:SoH;1",
-      "IsActive": true
-    },
-    {
-      "$dtid": "bccd0cb0-1131-4623-8779-24fceb44a3e9",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:validation:rule:text;1"
-      },
-      "displayName": "Text Validation Rule",
-      "Regex": "^\\S{5,}$",
-      "Name": "NonEmptyString"
-    },
-    {
-      "$dtid": "c2f5129d-f7f3-46fe-bfaf-c59cad29e540",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:validation:rule:minmax:integer;1"
-      },
-      "displayName": "Integer Number Min/Max Validation Rule",
-      "Min": 0,
-      "Max": 100,
-      "Name": "PercentRange"
-    },
-    {
-      "$dtid": "9c589621-05d7-4932-a3cd-4218cba51378",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:validation:group;1"
-      },
-      "displayName": "Validation Group",
-      "Name": "Product Unit Validation Group",
-      "DTMIReference": "dtmi:avl:passport:product:unit:battery;1"
-    },
-    {
-      "$dtid": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:validation:attribute:base;1"
-      },
-      "displayName": "Validation Attribute",
-      "Name": "Product Unit Validation Attribute Enum",
-      "FieldDTMI": "dtmi:avl:passport:product:unit:battery:DataValidationState;1",
-      "IsActive": true
-    },
-    {
-      "$dtid": "36b29f7b-123d-4ae4-a248-7758c83fe742",
-      "$etag": "128",
-      "$metadata": {
-        "$model": "dtmi:avl:passport:validation:rule:enum;1"
-      },
-      "displayName": "Enum Validation Rule",
-      "allowed_values": [1, 2, 3],
-      "Name": "DataValidationState Rule"
-    }
-  ],
-  "relationships": [
-    {
-      "$relationshipId": "eeba6ec2-ebc2-4fe1-b097-4cd47bd11400",
-      "$etag": "128",
-      "$relationshipName": "Configuration",
-      "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
-      "$targetId": "41f86799-a0ce-4988-a260-e25e7558a583"
-    },
-    {
-      "$relationshipId": "7abfd11c-ed9b-4cd3-aef1-e7938b6e15a0",
-      "$etag": "128",
-      "$relationshipName": "ProductUnits",
-      "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
-      "$targetId": "44357848-c1e6-4916-8cfc-d3939f3e0a59"
-    },
-    {
-      "$relationshipId": "bd48a03a-fc1b-4ee5-af83-078e2d96feee",
-      "$etag": "128",
-      "$relationshipName": "DataViews",
-      "$sourceId": "44357848-c1e6-4916-8cfc-d3939f3e0a59",
-      "$targetId": "1814d9cf-e3d5-4322-9345-492c9210c02b"
-    },
-    {
-      "$relationshipId": "8a7eab40-a2f1-491f-ac91-da44b0c02457",
-      "$etag": "128",
-      "$relationshipName": "ValidationRules",
-      "$sourceId": "44357848-c1e6-4916-8cfc-d3939f3e0a59",
-      "$targetId": "9c589621-05d7-4932-a3cd-4218cba51378"
-    },
-    {
-      "$relationshipId": "1a341e5d-5455-47b6-83e1-eedb99d05843",
-      "$etag": "128",
-      "$relationshipName": "DataViews",
-      "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
-      "$targetId": "d3659798-7169-417a-add6-952693d4c8eb"
-    },
-    {
-      "$relationshipId": "1b8ed4dc-bd5f-431d-bbd8-bb0809e9352d",
-      "$etag": "128",
-      "$relationshipName": "ValidationRules",
-      "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
-      "$targetId": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c"
-    },
-    {
-      "$relationshipId": "f68ba050-7702-4617-982e-d87017f54716",
-      "$etag": "128",
-      "$relationshipName": "ValidationAttributes",
-      "$sourceId": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
-      "$targetId": "944b50d9-402a-4167-9314-5420adfd4592"
-    },
-    {
-      "$relationshipId": "c41ff6f8-7497-4b3e-8fdf-f4e2fc720ed2",
-      "$etag": "128",
-      "$relationshipName": "ValidationAttributes",
-      "$sourceId": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
-      "$targetId": "bbe739f6-ab88-4978-b339-49eca5774bd5"
-    },
-    {
-      "$relationshipId": "695285b1-ae0d-4f58-b869-6cd50e07fd9a",
-      "$etag": "128",
-      "$relationshipName": "ValidationRules",
-      "$sourceId": "944b50d9-402a-4167-9314-5420adfd4592",
-      "$targetId": "bccd0cb0-1131-4623-8779-24fceb44a3e9"
-    },
-    {
-      "$relationshipId": "9a8dd954-9607-425b-a181-8d6361896e39",
-      "$etag": "128",
-      "$relationshipName": "ValidationRules",
-      "$sourceId": "bbe739f6-ab88-4978-b339-49eca5774bd5",
-      "$targetId": "c2f5129d-f7f3-46fe-bfaf-c59cad29e540"
-    },
-    {
-      "$relationshipId": "547deb22-8296-4205-92ab-f234978aabc8",
-      "$etag": "128",
-      "$relationshipName": "DataViews",
-      "$sourceId": "d3659798-7169-417a-add6-952693d4c8eb",
-      "$targetId": "6383f4d5-7498-4b47-8496-ccdac7edd61b"
-    },
-    {
-      "$relationshipId": "30904893-11af-4631-9bc2-1e5a8c068e12",
-      "$etag": "128",
-      "$relationshipName": "DataViewGroups",
-      "$sourceId": "ae30c164-9f2e-4203-b06b-8e9a6931099f",
-      "$targetId": "9296240c-179e-462b-8e50-1fd64148c920"
-    },
-    {
-      "$relationshipId": "d7da2a8c-fe70-4240-8cc9-cae4254451ab",
-      "$etag": "128",
-      "$relationshipName": "DataViewGroupAttributes",
-      "$sourceId": "9296240c-179e-462b-8e50-1fd64148c920",
-      "$targetId": "b4684176-97ec-42cb-af38-0fa86f459aa3"
-    },
-    {
-      "$relationshipId": "a2766bf2-adb2-4708-b4b3-fb5991782825",
-      "$etag": "128",
-      "$relationshipName": "DataViewGroupAttributes",
-      "$sourceId": "9296240c-179e-462b-8e50-1fd64148c920",
-      "$targetId": "bc74cd29-2717-482f-90b7-d5528bb58c91"
-    },
-    {
-      "$relationshipId": "08dc54b5-10a4-42cf-aae9-cdd576bbdcd8",
-      "$etag": "128",
-      "$relationshipName": "ValidationAttributes",
-      "$sourceId": "9c589621-05d7-4932-a3cd-4218cba51378",
-      "$targetId": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c"
-    },
-    {
-      "$relationshipId": "39e5994c-96de-4790-bd33-a061d60f5d46",
-      "$etag": "128",
-      "$relationshipName": "ValidationRules",
-      "$sourceId": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c",
-      "$targetId": "36b29f7b-123d-4ae4-a248-7758c83fe742"
-    }
-  ]
+    ],
+    "relationships": [
+    
+        {
+            "$relationshipId": "7ec0d9ee-2c54-44a2-aa32-adaaa33d10c6",
+            "$etag": "128",
+            "$relationshipName": "ProductUnits",
+            "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
+            "$targetId": "44357848-c1e6-4916-8cfc-d3939f3e0a59"
+        },
+        {
+            "$relationshipId": "c7f80d95-6ba1-40c0-8b0e-a9b1dd246a6f",
+            "$etag": "128",
+            "$relationshipName": "ValidationGroups",
+            "$sourceId": "44357848-c1e6-4916-8cfc-d3939f3e0a59",
+            "$targetId": "9c589621-05d7-4932-a3cd-4218cba51378"
+        },
+        {
+            "$relationshipId": "37852328-d17f-466c-80b6-c547517422da",
+            "$etag": "128",
+            "$relationshipName": "ValidationGroups",
+            "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
+            "$targetId": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c"
+        },
+        {
+            "$relationshipId": "2c0b7802-7006-4a88-bdc5-1397644944a3",
+            "$etag": "128",
+            "$relationshipName": "DataProductViews",
+            "$sourceId": "3e672575-4561-4939-8fe4-b9627a84bb23",
+            "$targetId": "d3659798-7169-417a-add6-952693d4c8eb"
+        },
+        {
+            "$relationshipId": "bd48a03a-fc1b-4ee5-af83-078e2d96feee",
+            "$etag": "128",
+            "$relationshipName": "DataProductViews",
+            "$sourceId": "44357848-c1e6-4916-8cfc-d3939f3e0a59",
+            "$targetId": "1814d9cf-e3d5-4322-9345-492c9210c02b"
+        },
+        {
+            "$relationshipId": "547deb22-8296-4205-92ab-f234978aabc8",
+            "$etag": "128",
+            "$relationshipName": "DataViews",
+            "$sourceId": "d3659798-7169-417a-add6-952693d4c8eb",
+            "$targetId": "6383f4d5-7498-4b47-8496-ccdac7edd61b"
+        },
+        {
+            "$relationshipId": "30904893-11af-4631-9bc2-1e5a8c068e12",
+            "$etag": "128",
+            "$relationshipName": "DataViewCategories",
+            "$sourceId": "6383f4d5-7498-4b47-8496-ccdac7edd61b",
+            "$targetId": "ae30c164-9f2e-4203-b06b-8e9a6931099f"
+        },
+        {
+            "$relationshipId": "d7da2a8c-fe70-4240-8cc9-cae4254451ab",
+            "$etag": "128",
+            "$relationshipName": "DataViewGroups",
+            "$sourceId": "ae30c164-9f2e-4203-b06b-8e9a6931099f",
+            "$targetId": "9296240c-179e-462b-8e50-1fd64148c920"
+        },
+        {
+            "$relationshipId": "a2766bf2-adb2-4708-b4b3-fb5991782825",
+            "$etag": "128",
+            "$relationshipName": "DataViewGroupAttributes",
+            "$sourceId": "9296240c-179e-462b-8e50-1fd64148c920",
+            "$targetId": "b4684176-97ec-42cb-af38-0fa86f459aa3"
+        },
+        {
+            "$relationshipId": "4c973a82-ecfc-45d2-af0c-ad963089ebca",
+            "$etag": "128",
+            "$relationshipName": "DataViewGroupAttributes",
+            "$sourceId": "9296240c-179e-462b-8e50-1fd64148c920",
+            "$targetId": "bc74cd29-2717-482f-90b7-d5528bb58c91"
+        },
+        {
+            "$relationshipId": "afbc9356-f1d8-4386-91b2-81e9d2ff8b5c",
+            "$etag": "128",
+            "$relationshipName": "DataViews",
+            "$sourceId": "1814d9cf-e3d5-4322-9345-492c9210c02b",
+            "$targetId": "0a961523-b402-4f36-8221-eb596fa55117"
+        },
+        {
+            "$relationshipId": "3a0d3c23-902b-44f4-8a1a-6ba272dd0f49",
+            "$etag": "128",
+            "$relationshipName": "DataViewCategories",
+            "$sourceId": "0a961523-b402-4f36-8221-eb596fa55117",
+            "$targetId": "129494f9-62be-408d-85d6-16f3e81d041b"
+        },
+        {
+            "$relationshipId": "7766f5bb-bcdd-4353-9479-d799ccc11982",
+            "$etag": "128",
+            "$relationshipName": "DataViewGroups",
+            "$sourceId": "129494f9-62be-408d-85d6-16f3e81d041b",
+            "$targetId": "22ee3d00-576a-4fa4-a774-c6d86e89d77b"
+        },
+        {
+            "$relationshipId": "b50169f2-e575-4ead-bbdd-986d5d6a1080",
+            "$etag": "128",
+            "$relationshipName": "DataViewGroupAttributes",
+            "$sourceId": "22ee3d00-576a-4fa4-a774-c6d86e89d77b",
+            "$targetId": "e914dcf0-7a4a-493e-b1b4-7d1813d4fa96"
+        },
+        {
+            "$relationshipId": "604de558-1e94-48c5-ac1e-fa15c6a7f196",
+            "$etag": "128",
+            "$relationshipName": "DataViewGroupAttributes",
+            "$sourceId": "22ee3d00-576a-4fa4-a774-c6d86e89d77b",
+            "$targetId": "9ba8072c-dd61-46aa-bbf7-6cd4a19f2863"
+        },
+        {
+            "$relationshipId": "f68ba050-7702-4617-982e-d87017f54716",
+            "$etag": "128",
+            "$relationshipName": "ValidationAttributes",
+            "$sourceId": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
+            "$targetId": "944b50d9-402a-4167-9314-5420adfd4592"
+        },
+        {
+            "$relationshipId": "c41ff6f8-7497-4b3e-8fdf-f4e2fc720ed2",
+            "$etag": "128",
+            "$relationshipName": "ValidationAttributes",
+            "$sourceId": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
+            "$targetId": "bbe739f6-ab88-4978-b339-49eca5774bd5"
+        },
+        {
+            "$relationshipId": "695285b1-ae0d-4f58-b869-6cd50e07fd9a",
+            "$etag": "128",
+            "$relationshipName": "ValidationRules",
+            "$sourceId": "944b50d9-402a-4167-9314-5420adfd4592",
+            "$targetId": "bccd0cb0-1131-4623-8779-24fceb44a3e9"
+        },
+        {
+            "$relationshipId": "9a8dd954-9607-425b-a181-8d6361896e39",
+            "$etag": "128",
+            "$relationshipName": "ValidationRules",
+            "$sourceId": "bbe739f6-ab88-4978-b339-49eca5774bd5",
+            "$targetId": "c2f5129d-f7f3-46fe-bfaf-c59cad29e540"
+        },
+        {
+            "$relationshipId": "08dc54b5-10a4-42cf-aae9-cdd576bbdcd8",
+            "$etag": "128",
+            "$relationshipName": "ValidationAttributes",
+            "$sourceId": "9c589621-05d7-4932-a3cd-4218cba51378",
+            "$targetId": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c"
+        },
+        {
+            "$relationshipId": "39e5994c-96de-4790-bd33-a061d60f5d46",
+            "$etag": "128",
+            "$relationshipName": "ValidationRules",
+            "$sourceId": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c",
+            "$targetId": "36b29f7b-123d-4ae4-a248-7758c83fe742"
+        }
+    ]
 }

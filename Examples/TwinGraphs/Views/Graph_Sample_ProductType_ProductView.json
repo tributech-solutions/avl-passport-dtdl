@@ -72,19 +72,26 @@
     {
       "$relationshipId": "30904893-11af-4631-9bc2-1e5a8c068e12",
       "$etag": "128",
+      "$relationshipName": "DataViewCategories",
+      "$sourceId": "6383f4d5-7498-4b47-8496-ccdac7edd61b",
+      "$targetId": "ae30c164-9f2e-4203-b06b-8e9a6931099f"
+    },
+    {
+      "$relationshipId": "d7da2a8c-fe70-4240-8cc9-cae4254451ab",
+      "$etag": "128",
       "$relationshipName": "DataViewGroups",
       "$sourceId": "ae30c164-9f2e-4203-b06b-8e9a6931099f",
       "$targetId": "9296240c-179e-462b-8e50-1fd64148c920"
     },
     {
-      "$relationshipId": "d7da2a8c-fe70-4240-8cc9-cae4254451ab",
+      "$relationshipId": "a2766bf2-adb2-4708-b4b3-fb5991782825",
       "$etag": "128",
       "$relationshipName": "DataViewGroupAttributes",
       "$sourceId": "9296240c-179e-462b-8e50-1fd64148c920",
       "$targetId": "b4684176-97ec-42cb-af38-0fa86f459aa3"
     },
     {
-      "$relationshipId": "a2766bf2-adb2-4708-b4b3-fb5991782825",
+      "$relationshipId": "4c973a82-ecfc-45d2-af0c-ad963089ebca",
       "$etag": "128",
       "$relationshipName": "DataViewGroupAttributes",
       "$sourceId": "9296240c-179e-462b-8e50-1fd64148c920",

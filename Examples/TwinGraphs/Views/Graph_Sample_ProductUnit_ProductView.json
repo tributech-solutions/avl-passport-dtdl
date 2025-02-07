@@ -70,6 +70,13 @@
       "$targetId": "0a961523-b402-4f36-8221-eb596fa55117"
     },
     {
+      "$relationshipId": "3a0d3c23-902b-44f4-8a1a-6ba272dd0f49",
+      "$etag": "128",
+      "$relationshipName": "DataViewCategories",
+      "$sourceId": "0a961523-b402-4f36-8221-eb596fa55117",
+      "$targetId": "129494f9-62be-408d-85d6-16f3e81d041b"
+    },
+    {
       "$relationshipId": "7766f5bb-bcdd-4353-9479-d799ccc11982",
       "$etag": "128",
       "$relationshipName": "DataViewGroups",

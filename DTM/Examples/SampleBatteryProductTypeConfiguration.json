@@ -140,14 +140,6 @@
       "writable": false,
       "displayName": "Add custom product link",
       "description": "Add custom product link to the public view"
-    },
-    {
-      "@id": "dtmi:avl:passport:product:configuration:battery:PublicViewCustomLink;1",
-      "@type": "Component",
-      "name": "PublicViewCustomLink",
-      "schema": "dtmi:avl:passport:component:webLink;1",
-      "description": "Custom link to be added to the public view",
-      "displayName": "Custom link"
     }
   ]
 }
