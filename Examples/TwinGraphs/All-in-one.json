@@ -75,7 +75,9 @@
             "LifeCycleState": 0,
             "Name": "My Battery Unit Sample",
             "IsPublicViewCustomLinkEnabled": true,
-            "PublicViewCustomLink": "https://www.google.com"
+            "PublicViewCustomLink": {
+                "Url": "https://www.microsoft.com"
+              }
         },
         {
             "$dtid": "d3659798-7169-417a-add6-952693d4c8eb",

@@ -565,6 +565,14 @@
             "writable": false,
             "displayName": "Name",
             "description": "Represents a user friendly name of the UI attribute assignment."
+        },
+        {
+            "@type": "Property",
+            "name": "FieldDTMI",
+            "schema": "string",
+            "writable": false,
+            "displayName": "FieldDTMI",
+            "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
         }
     ]
 }  , {
@@ -1117,6 +1125,20 @@
                     }
                 ]
             }
+        },
+        {
+            "@id": "dtmi:avl:passport:product:configuration:battery:IsPublicViewCustomLinkEnabled;1",
+            "@type": "Property",
+            "name": "IsPublicViewCustomLinkEnabled",
+            "schema": "boolean",
+            "writable": false,
+            "displayName": "Add custom product link"
+        },
+        {
+            "@id": "dtmi:avl:passport:product:configuration:battery:PublicViewCustomLink;1",
+            "@type": "Component",
+            "name": "PublicViewCustomLink",
+            "schema": "dtmi:avl:passport:component:webLink;1"
         }
     ]
 }  , {
