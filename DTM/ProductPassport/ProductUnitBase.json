@@ -167,15 +167,6 @@
             "writable": false,
             "displayName": "Product Unit Lifecycle State",
             "description": "Represents the current Lifecycle of the given Unit."
-        }, 
-        {
-            "@type": "Relationship",
-            "name": "ProductUnitEvents",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 500,
-            "target": "dtmi:avl:passport:product:event:base;1",
-            "displayName": "Product Unit Events",
-            "description": "Reference to the specific event of a given product unit."
         }
     ]
 }
