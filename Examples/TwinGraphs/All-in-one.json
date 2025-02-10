@@ -73,11 +73,7 @@
             "Placement": 1,
             "QRCodeState": 1,
             "LifeCycleState": 0,
-            "Name": "My Battery Unit Sample",
-            "IsPublicViewCustomLinkEnabled": true,
-            "PublicViewCustomLink": {
-                "Url": "https://www.microsoft.com"
-              }
+            "Name": "My Battery Unit Sample"
         },
         {
             "$dtid": "d3659798-7169-417a-add6-952693d4c8eb",

@@ -5,19 +5,19 @@
     "contents": [
         {
             "@id": "dtmi:avl:passport:component:document:Url;1",
-            "name": "url",
+            "name": "Url",
             "@type": "Property",
             "schema": "string"
         },
         {
             "@id": "dtmi:avl:passport:component:document:Name;1",
-            "name": "name",
+            "name": "Name",
             "@type": "Property",
             "schema": "string"
         },
         {
             "@id": "dtmi:avl:passport:component:document:type;1",
-            "name": "type",
+            "name": "Type",
             "@type": "Property",
             "schema": {
                 "@type": "Enum",
@@ -30,13 +30,13 @@
                         "description": "Unknown or not available."
                     },
                     {
-                        "name": "csv",
+                        "name": "Csv",
                         "enumValue": 1,
                         "displayName": "CSV",
                         "description": "CSV file format."
                     },
                     {
-                        "name": "pdf",
+                        "name": "Pdf",
                         "enumValue": 2,
                         "displayName": "PDF",
                         "description": "PDF file format."

@@ -5,7 +5,7 @@
     "contents": [
         {
             "@id": "dtmi:avl:passport:component:webLink:Url;1",
-            "name": "url",
+            "name": "Url",
             "@type": "Property",
             "schema": "string"            
         }
