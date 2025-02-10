@@ -35,8 +35,6 @@
             "CreationDate": "2025-02-06T11:38:33.6045502Z",
             "LastModifiedDate": "2025-02-06T11:38:33.6052500Z",
             "ItemNumber": "4a26c9ae-f8f7-4dae-b67f-ff8ed08744be",
-            "ProofState": 1,
-            "DataValidationState": 3,
             "Name": "My Batter Type Sample"
         },
         {
@@ -63,16 +61,8 @@
                     "Co2Footprint": 95.46571515292939
                 }
             ],
-            "State": 1,
-            "DataValidationState": 1,
-            "DataProofState": 3,
             "ProductionDate": "2025-02-06T11:39:02.9723800Z",
             "SerialNumber": "8571816a-9768-4c93-a9d3-9cd44ae9d890",
-            "ProofState": 1,
-            "ValidationState": 1,
-            "Placement": 1,
-            "QRCodeState": 1,
-            "LifeCycleState": 0,
             "Name": "My Battery Unit Sample"
         },
         {
@@ -217,7 +207,7 @@
             },
             "displayName": "Validation Attribute",
             "Name": "Product Unit Validation Attribute Enum",
-            "FieldDTMI": "dtmi:avl:passport:product:unit:battery:DataValidationState;1",
+            "FieldDTMI": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Category;1",
             "IsActive": true,
             "IsOptional": false
         },
@@ -231,9 +221,11 @@
             "allowed_values": [
                 1,
                 2,
-                3
+                3,
+                4,
+                5
             ],
-            "Name": "DataValidationState Rule"
+            "Name": "DataValidationCo2FootPrintCategoryRule"
         },
         {
             "$dtid": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",

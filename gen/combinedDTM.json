@@ -253,38 +253,6 @@
             "writable": false,
             "displayName": "Item Number",
             "description": "Represents the item number of the Product Type."
-        },
-        {
-            "@id": "dtmi:avl:passport:product:type:base:ProofState;1",
-            "@type": "Property",
-            "name": "ProofState",
-            "schema":  {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "NotAvailable",
-                        "enumValue": 0,
-                        "displayName": "Not Available",
-                        "description": "Proof does not exist (yet)."
-                    },
-                    {
-                        "name": "Verified",
-                        "enumValue": 1,
-                        "displayName": "Verified",
-                        "description": "Proof was successfully build and verified."
-                    },
-                    {
-                        "name": "Failed",
-                        "enumValue": 2,
-                        "displayName": "Failed",
-                        "description": "Proof was successfully build but the verification failed."
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Proof State",
-            "description": "Represents the tempering protection State of the Product Type."
         }
     ]
 }  , {
@@ -310,161 +278,6 @@
             "writable": false,
             "displayName": "Serial Number",
             "description": "Represents the serial number of the Product Unit."
-        },
-        {
-            "@id": "dtmi:avl:passport:product:unit:base:ValidationState;1",
-            "@type": "Property",
-            "name": "ValidationState",
-            "schema":  {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "NotAvailable",
-                        "enumValue": 0,
-                        "displayName": "Not Available",
-                        "description": "No validation was applied to the unit."
-                    },
-                    {
-                        "name": "Open",
-                        "enumValue": 1,
-                        "displayName": "Open",
-                        "description": "Validation of the product unit is still pending."
-                    },
-                    {
-                        "name": "Failed",
-                        "enumValue": 2,
-                        "displayName": "Validation Failed",
-                        "description": "Product unit validation failed."
-                    },
-                    {
-                        "name": "Validated",
-                        "enumValue": 3,
-                        "displayName": "Validated",
-                        "description": "Product unit was successfully validated."
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Validation State",
-            "description": "Represents the data validation of the Product Unit."
-        }, 
-        {
-            "@id": "dtmi:avl:passport:product:unit:base:Placement;1",
-            "@type": "Property",
-            "name": "Placement",
-            "schema":  {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "NotAvailable",
-                        "enumValue": 0,
-                        "displayName": "Not Available",
-                        "description": "Product Unit is not produced yet."
-                    },
-                    {
-                        "name": "Registered",
-                        "enumValue": 1,
-                        "displayName": "Registered",
-                        "description": "Product Unit was produced but is not available for the market."
-                    },
-                    {
-                        "name": "Placed",
-                        "enumValue": 2,
-                        "displayName": "Placed on Market",
-                        "description": "Product unit validation failed."
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Product Placement State",
-            "description": "Represents the placement of the unit."
-        },
-        {
-            "@id": "dtmi:avl:passport:product:unit:base:QRCodeState;1",
-            "@type": "Property",
-            "name": "QRCodeState",
-            "schema":  {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "NotAvailable",
-                        "enumValue": 0,
-                        "displayName": "Not Available",
-                        "description": "Product State is not validated w/ state valid and ShortUrl is not generated."
-                    },
-                    {
-                        "name": "Available",
-                        "enumValue": 1,
-                        "displayName": "Available",
-                        "description": "Product State is validated w/ state valid and ShortUrl is generated."
-                    },
-                    {
-                        "name": "Public",
-                        "enumValue": 2,
-                        "displayName": "Public Available",
-                        "description": "Product State is validated w/ state valid and ShortUrl is generated and ProductUnit is PlacedOnMarket."
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "QR Code State",
-            "description": "Represents the public available QR Code for a given Product Unit."
-        },
-        {
-            "@id": "dtmi:avl:passport:product:unit:base:LifeCycleState;1",
-            "@type": "Property",
-            "name": "LifeCycleState",
-            "schema":  {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "NotAvailable",
-                        "enumValue": 0,
-                        "displayName": "Not Available",
-                        "description": "No life cycle state is available."
-                    },
-                    {
-                        "name": "Repurposed",
-                        "enumValue": 1,
-                        "displayName": "Repurposed",
-                        "description": "Product Unit was repurposed."
-                    },
-                    {
-                        "name": "Reused",
-                        "enumValue": 2,
-                        "displayName": "Reused",
-                        "description": "Product unit is reused."
-                    },
-                    {
-                        "name": "Remanufactured",
-                        "enumValue": 3,
-                        "displayName": "Remanufactured",
-                        "description": "Product unit was successfully remanufactured."
-                    }, 
-                    {
-                        "name": "Waste",
-                        "enumValue": 4,
-                        "displayName": "Waste",
-                        "description": "Product unit is non functional."
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Product Unit Lifecycle State",
-            "description": "Represents the current Lifecycle of the given Unit."
-        }, 
-        {
-            "@type": "Relationship",
-            "name": "ProductUnitEvents",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 500,
-            "target": "dtmi:avl:passport:product:event:base;1",
-            "displayName": "Product Unit Events",
-            "description": "Reference to the specific event of a given product unit."
         }
     ]
 }  , {
@@ -934,33 +747,6 @@
                     ]
                 }
             }
-        },
-        {
-            "@id": "dtmi:avl:passport:product:unit:battery:DataValidationState;1",
-            "@type": "Property",
-            "name": "DataValidationState",
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "Open",
-                        "enumValue": 1,
-                        "displayName": "Open",
-                        "description": "Open"
-                    },
-                    {
-                        "name": "ValidationFailed",
-                        "enumValue": 2,
-                        "displayName": "ValidationFailed"
-                    },
-                    {
-                        "name": "Validated",
-                        "enumValue": 3,
-                        "displayName": "Validated"
-                    }
-                ]
-            }
         }
     ]
 }  , {
@@ -999,7 +785,7 @@
             "schema": "boolean",
             "writable": false,
             "displayName": "Is Optional",
-            "description": "Defines if a value is optional, i.e. validation is skipped if set with default value."
+            "description": "Defines if a value is optional"
         },
         {
             "@type": "Relationship",

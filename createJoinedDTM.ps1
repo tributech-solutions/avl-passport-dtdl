@@ -1,7 +1,7 @@
 # Define the folder to search for JSON files
 $folderPath = ".\DTM"
 
-$outfolderPath = "."
+$outfolderPath = ".\gen"
 
 # Initialize an array to hold the JSON contents
 $jsonArray = @()
