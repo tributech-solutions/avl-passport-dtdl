@@ -716,7 +716,7 @@
       "@id": "dtmi:avl:passport:product:type:battery:NumberOfCells;1",
       "@type": "Property",
       "name": "NumberOfCells",
-      "schema": "long",
+      "schema": "integer",
       "writable": false,
       "displayName": "Total Number of cells"
     },
@@ -747,7 +747,7 @@
         "TimeSpan"
       ],
       "name": "WarrantyPeriod",
-      "schema": "long",
+      "schema": "integer",
       "displayName": "Warranty Period",
       "unit": "day"
     },
@@ -997,7 +997,7 @@
             "@id": "dtmi:avl:passport:product:unit:battery:BatchNumber;1",
             "@type": "Property",
             "name": "BatchNumber",
-            "schema": "long",
+            "schema": "integer",
             "writable": false,
             "displayName": "Batch Number"
         },

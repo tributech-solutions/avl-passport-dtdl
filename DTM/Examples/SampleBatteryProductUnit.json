@@ -24,7 +24,7 @@
             "@id": "dtmi:avl:passport:product:unit:battery:BatchNumber;1",
             "@type": "Property",
             "name": "BatchNumber",
-            "schema": "long",
+            "schema": "integer",
             "writable": false,
             "displayName": "Batch Number"
         },
