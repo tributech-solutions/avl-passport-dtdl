@@ -219,7 +219,7 @@
             "Name": "Product Unit Validation Attribute Enum",
             "FieldDTMI": "dtmi:avl:passport:product:unit:battery:DataValidationState;1",
             "IsActive": true,
-            "IsMandatory": true
+            "IsOptional": false
         },
         {
             "$dtid": "36b29f7b-123d-4ae4-a248-7758c83fe742",
@@ -255,7 +255,7 @@
             "Name": "Product Type Validation Attribute NonEmptyName",
             "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1",
             "IsActive": true,
-            "IsMandatory": true
+            "IsOptional": false
         },
         {
             "$dtid": "bbe739f6-ab88-4978-b339-49eca5774bd5",
@@ -267,7 +267,7 @@
             "Name": "Product Type Validation SoH Range",
             "FieldDTMI": "dtmi:avl:passport:product:type:battery:SoH;1",
             "IsActive": true,
-            "IsMandatory": true
+            "IsOptional": false
         },
         {
             "$dtid": "bccd0cb0-1131-4623-8779-24fceb44a3e9",

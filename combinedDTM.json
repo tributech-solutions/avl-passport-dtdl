@@ -995,7 +995,7 @@
         },
         {
             "@type": "Property",
-            "name": "IsMandatory",
+            "name": "IsOptional",
             "schema": "boolean",
             "writable": false,
             "displayName": "Is Optional",
