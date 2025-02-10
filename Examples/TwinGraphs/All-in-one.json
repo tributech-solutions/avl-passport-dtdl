@@ -35,7 +35,19 @@
             "CreationDate": "2025-02-06T11:38:33.6045502Z",
             "LastModifiedDate": "2025-02-06T11:38:33.6052500Z",
             "ItemNumber": "4a26c9ae-f8f7-4dae-b67f-ff8ed08744be",
-            "Name": "My Batter Type Sample"
+            "Name": "My Batter Type Sample",
+            "HasCustomProductLink": true,
+            "CustomProductLink": {
+                "Url": "https://letmegooglethat.com/?q=my+product"
+            },
+            "CustomProductOwnerMailAddress": {
+                "MailAddress": "foo@bar.com"
+            },
+            "PrimaryRawMaterialsDocument": {
+                "Url": "https://letmegooglethat.com/?q=my+document",
+                "Name": "Primary Raw Materials",
+                "Type": 2
+            }
         },
         {
             "$dtid": "44357848-c1e6-4916-8cfc-d3939f3e0a59",
