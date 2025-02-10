@@ -34,7 +34,7 @@
       "$dtid": "b4684176-97ec-42cb-af38-0fa86f459aa3",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute:base;1"
+        "$model": "dtmi:avl:passport:ui:attribute;1"
       },
       "displayName": "Product Type Attribute Name",
       "Name": "Battery Product Type Attribute Name",
@@ -45,7 +45,7 @@
       "$dtid": "bc74cd29-2717-482f-90b7-d5528bb58c91",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute:base;1"
+        "$model": "dtmi:avl:passport:ui:attribute;1"
       },
       "displayName": "Product Type Attribute ItemNumber",
       "Name": "Battery Product Type Attribute ItemNumber",

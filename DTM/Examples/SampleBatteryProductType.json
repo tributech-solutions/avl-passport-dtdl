@@ -93,12 +93,12 @@
       "unit": "kilogram"
     },
     {
-      "@id": "dtmi:avl:passport:product:type:battery:ExpectedLiftime;1",
+      "@id": "dtmi:avl:passport:product:type:battery:ExpectedLifetime;1",
       "@type": "Property",
-      "name": "ExpectedLiftime",
+      "name": "ExpectedLifetime",
       "schema": "double",
       "writable": false,
-      "displayName": "Expected Liftime in cycles"
+      "displayName": "Expected Lifetime in cycles"
     },
     {
       "@id": "dtmi:avl:passport:product:type:battery:WarrantyPeriod;1",

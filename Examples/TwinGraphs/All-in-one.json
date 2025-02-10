@@ -10,7 +10,7 @@
             "BatteryApplicationType": "51442b9a-3975-4530-ae5d-1e3f9bf99251",
             "BatteryChemistryType": "fe381e1f-c363-426a-9ca0-90322ede55e0",
             "NumberOfCells": 94,
-            "ExpectedLiftime": 39.56266202648378,
+            "ExpectedLifetime": 39.56266202648378,
             "ManufactureEntityName": "3a11c399-6385-444d-a12d-96166a44729b",
             "ManufactureEntityAddress": "7f6f3d1a-41e4-4380-a8db-b7484f8d4b31",
             "ManufactureEntityZipCode": "d5143e9b-bcc2-40bc-89d3-6d2ee51717b1",
@@ -109,7 +109,7 @@
             "$dtid": "b4684176-97ec-42cb-af38-0fa86f459aa3",
             "$etag": "128",
             "$metadata": {
-                "$model": "dtmi:avl:passport:ui:attribute:base;1"
+                "$model": "dtmi:avl:passport:ui:attribute;1"
             },
             "displayName": "Product Type Attribute Name",
             "Name": "Battery Product Type Attribute Name",
@@ -120,7 +120,7 @@
             "$dtid": "bc74cd29-2717-482f-90b7-d5528bb58c91",
             "$etag": "128",
             "$metadata": {
-                "$model": "dtmi:avl:passport:ui:attribute:base;1"
+                "$model": "dtmi:avl:passport:ui:attribute;1"
             },
             "displayName": "Product Type Attribute ItemNumber",
             "Name": "Battery Product Type Attribute ItemNumber",
@@ -171,7 +171,7 @@
             "$dtid": "e914dcf0-7a4a-493e-b1b4-7d1813d4fa96",
             "$etag": "128",
             "$metadata": {
-                "$model": "dtmi:avl:passport:ui:attribute:base;1"
+                "$model": "dtmi:avl:passport:ui:attribute;1"
             },
             "displayName": "Dataview Attribute",
             "Name": "Product Unit Batch Number",
@@ -182,7 +182,7 @@
             "$dtid": "9ba8072c-dd61-46aa-bbf7-6cd4a19f2863",
             "$etag": "128",
             "$metadata": {
-                "$model": "dtmi:avl:passport:ui:attribute:base;1"
+                "$model": "dtmi:avl:passport:ui:attribute;1"
             },
             "displayName": "Dataview Attribute",
             "Name": "Product Type SoH",

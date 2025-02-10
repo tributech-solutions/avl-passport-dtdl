@@ -279,7 +279,7 @@
     ]
 }  , {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:product:component:co2Footprint;1",
+    "@id": "dtmi:avl:passport:component:co2Footprint;1",
     "@type": "Interface",
     "contents": [
         {
@@ -479,7 +479,7 @@
             "maxMultiplicity": 100,
             "target": "dtmi:avl:passport:ui:dataview;1",
             "displayName": "Data Views",
-            "description": "Contains all dataviews which should be displayed on the ui for a specific Product Model / Product Unit."
+            "description": "Contains all data views which should be displayed on the ui for a specific Product Model / Product Unit."
         } 
     ]
 }  , {
@@ -545,7 +545,7 @@
     ]
   }  , {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:attribute:base;1",
+    "@id": "dtmi:avl:passport:ui:attribute;1",
     "@type": "Interface",
     "displayName": "Dataview Attribute",
     "contents": [
@@ -564,6 +564,14 @@
             "writable": false,
             "displayName": "FieldDTMI",
             "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
+        },
+        {
+            "@type": "Property",
+            "name": "AttributeSorting",
+            "schema": "integer",
+            "writable": false,
+            "displayName": "Sorting Position of current Attribute",
+            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
         }
     ]
 }  , {
@@ -625,7 +633,7 @@
             "name": "DataViewGroupAttributes",
             "minMultiplicity": 0,
             "maxMultiplicity": 100,
-            "target": "dtmi:avl:passport:ui:attribute:base;1",
+            "target": "dtmi:avl:passport:ui:attribute;1",
             "displayName": "Data View Group Attributes",
             "description": "Contains all attributes (properties, fields) within one group which should be displayed on the ui for a specific Product Model / Product Unit."
         }   
@@ -725,12 +733,12 @@
       "unit": "kilogram"
     },
     {
-      "@id": "dtmi:avl:passport:product:type:battery:ExpectedLiftime;1",
+      "@id": "dtmi:avl:passport:product:type:battery:ExpectedLifetime;1",
       "@type": "Property",
-      "name": "ExpectedLiftime",
+      "name": "ExpectedLifetime",
       "schema": "double",
       "writable": false,
-      "displayName": "Expected Liftime in cycles"
+      "displayName": "Expected Lifetime in cycles"
     },
     {
       "@id": "dtmi:avl:passport:product:type:battery:WarrantyPeriod;1",

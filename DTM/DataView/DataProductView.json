@@ -29,7 +29,7 @@
             "maxMultiplicity": 100,
             "target": "dtmi:avl:passport:ui:dataview;1",
             "displayName": "Data Views",
-            "description": "Contains all dataviews which should be displayed on the ui for a specific Product Model / Product Unit."
+            "description": "Contains all data views which should be displayed on the ui for a specific Product Model / Product Unit."
         } 
     ]
 }

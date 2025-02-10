@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:attribute:base;1",
+    "@id": "dtmi:avl:passport:ui:attribute;1",
     "@type": "Interface",
     "displayName": "Dataview Attribute",
     "contents": [

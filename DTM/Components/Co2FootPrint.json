@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:product:component:co2Footprint;1",
+    "@id": "dtmi:avl:passport:component:co2Footprint;1",
     "@type": "Interface",
     "contents": [
         {
