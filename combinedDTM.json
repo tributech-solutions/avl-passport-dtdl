@@ -1,4 +1,194 @@
-[{
+[
+{
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:passport:ui:productView;1",
+    "@type": "Interface",
+    "displayName": "ProductView",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Data View."
+        },
+        {
+            "@type": "Property",
+            "name": "DTMIReference",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Digital Twin Model Identifier Reference",
+            "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
+        }
+        ,
+        {
+            "@type": "Relationship",
+            "name": "DataViews",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 100,
+            "target": "dtmi:avl:passport:ui:dataview;1",
+            "displayName": "Data Views",
+            "description": "Contains all data views which should be displayed on the ui for a specific Product Model / Product Unit."
+        } 
+    ]
+}  , {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:passport:ui:dataview;1",
+    "@type": "Interface",
+    "displayName": "Dataview",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Data View."
+        },
+        {
+            "@type": "Property",
+            "name": "Visibility",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "None",
+                        "enumValue": 0,
+                        "displayName": "None",
+                        "description": "Attribute should not be displayed."
+                    },
+                    {
+                        "name": "Configuration",
+                        "enumValue": 1,
+                        "displayName": "Configuration",
+                        "description": "Configuration should be visible during the creation."
+                    },
+                    {
+                        "name": "Private",
+                        "enumValue": 2,
+                        "displayName": "Private",
+                        "description": "Attribute should only be visible for authenticated users."
+                    },
+                    {
+                        "name": "Public",
+                        "enumValue": 3,
+                        "displayName": "Public",
+                        "description": "Attribute should be visible for all users."
+                    }
+                ]
+            },
+            "writable": false,
+            "displayName": "Visibility",
+            "description": "Defines if and where the Attribute should be displayed."
+        },
+        {
+            "@type": "Relationship",
+            "name": "DataViewCategories",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 100,
+            "target": "dtmi:avl:passport:ui:category;1",
+            "displayName": "Data View Categories",
+            "description": "Contains all categories which should be displayed on the ui for a specific Product Model / Product Unit."
+        }      
+    ]
+  }  , {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:passport:ui:attribute;1",
+    "@type": "Interface",
+    "displayName": "Dataview Attribute",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents a user friendly name of the UI attribute assignment."
+        },
+        {
+            "@type": "Property",
+            "name": "FieldDTMI",
+            "schema": "string",
+            "writable": false,
+            "displayName": "FieldDTMI",
+            "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
+        },
+        {
+            "@type": "Property",
+            "name": "AttributeSorting",
+            "schema": "integer",
+            "writable": false,
+            "displayName": "Sorting Position of current Attribute",
+            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
+        }
+    ]
+}  , {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:passport:ui:category;1",
+    "@type": "Interface",
+    "displayName": "Dataview Category",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Data View."
+        },
+        {
+            "@type": "Property",
+            "name": "CategorySorting",
+            "schema": "integer",
+            "writable": false,
+            "displayName": "Sorting Position of current Category",
+            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
+        }, 
+        {
+            "@type": "Relationship",
+            "name": "DataViewGroups",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 100,
+            "target": "dtmi:avl:passport:ui:group;1",
+            "displayName": "Data View Groups",
+            "description": "Contains all groups within one category which should be displayed on the ui for a specific Product Model / Product Unit."
+        }      
+    ]
+  }  , {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:passport:ui:group;1",
+    "@type": "Interface",
+    "displayName": "Dataview Group",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Data View."
+        },
+        {
+            "@type": "Property",
+            "name": "GroupSorting",
+            "schema": "integer",
+            "writable": false,
+            "displayName": "Sorting Position of current Group",
+            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
+        }, 
+        {
+            "@type": "Relationship",
+            "name": "DataViewGroupAttributes",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 100,
+            "target": "dtmi:avl:passport:ui:attribute;1",
+            "displayName": "Data View Group Attributes",
+            "description": "Contains all attributes (properties, fields) within one group which should be displayed on the ui for a specific Product Model / Product Unit."
+        }   
+    ]
+  }  , {
     "@context": "dtmi:dtdl:context;4",
     "@id": "dtmi:avl:passport:product:model:base;1",
     "@type": "Interface",
@@ -278,367 +468,6 @@
         }
     ]
 }  , {
-    "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:component:co2Footprint;1",
-    "@type": "Interface",
-    "contents": [
-        {
-            "@id": "dtmi:avl:passport:component:co2Footprint:Category;1",
-            "@type": "Property",
-            "name": "Category",
-            "schema": {
-              "@type": "Enum",
-              "valueSchema": "integer",
-              "enumValues": [
-                {
-                  "name": "None",
-                  "enumValue": 0,
-                  "displayName": "None",
-                  "description": "Category does not exist."
-                },
-                {
-                  "name": "RawMaterialAcquisitionAndPreProcessing",
-                  "enumValue": 1,
-                  "displayName": "Raw Material Acquisition And PreProcessing"
-                },
-                {
-                  "name": "MainProductProduction",
-                  "enumValue": 2,
-                  "displayName": "Main Product Production"
-                },
-                {
-                  "name": "DistributionPointOfSale",
-                  "enumValue": 3,
-                  "displayName": "Distribution Point Of Sale"
-                },
-                {
-                  "name": "EndOfLifeAndRecycling",
-                  "enumValue": 4,
-                  "displayName": "End Of Life And Recycling"
-                },
-                {
-                  "name": "ProductUsage",
-                  "enumValue": 5,
-                  "displayName": "Product Usage",
-                  "comment": "User should not be able to create CO2 Footprint with this category. CO2 Footprint for this category is calculated on backend."
-                }
-              ]
-            }
-          },
-          {
-            "@id": "dtmi:avl:passport:component:co2Footprint:Description;1",
-            "@type": "Property",
-            "name": "Description",
-            "schema": "string",
-            "displayName": "Description"
-          },
-          {
-            "@id": "dtmi:avl:passport:component:co2Footprint:DataCategory;1",
-            "@type": "Property",
-            "name": "DataCategory",
-            "schema": {
-              "@type": "Enum",
-              "valueSchema": "integer",
-              "enumValues": [
-                {
-                  "name": "None",
-                  "enumValue": 0,
-                  "displayName": "None",
-                  "description": "Category does not exist."
-                },
-                {
-                  "name": "Primary",
-                  "enumValue": 1,
-                  "displayName": "Primary"
-                },
-                {
-                  "name": "Secondary",
-                  "enumValue": 2,
-                  "displayName": "Secondary"
-                }
-              ]
-            }
-          },
-          {
-            "@id": "dtmi:avl:passport:component:co2Footprint:DQRRating;1",
-            "@type": "Property",
-            "name": "DQRRating",
-            "schema": "double",
-            "displayName": "DQR Rating"
-          },
-          {
-            "@id": "dtmi:avl:passport:component:co2Footprint:Co2Footprint;1",
-            "@type": "Property",
-            "name": "Co2Footprint",
-            "schema": "double",
-            "displayName": "Co2 Footprint"
-          }
-    ]
-}  , {
-    "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:component:document;1",
-    "@type": "Interface",
-    "contents": [
-        {
-            "@id": "dtmi:avl:passport:component:document:Url;1",
-            "name": "Url",
-            "@type": "Property",
-            "schema": "string"
-        },
-        {
-            "@id": "dtmi:avl:passport:component:document:Name;1",
-            "name": "Name",
-            "@type": "Property",
-            "schema": "string"
-        },
-        {
-            "@id": "dtmi:avl:passport:component:document:type;1",
-            "name": "Type",
-            "@type": "Property",
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "NotAvailable",
-                        "enumValue": 0,
-                        "displayName": "Not Available",
-                        "description": "Unknown or not available."
-                    },
-                    {
-                        "name": "Csv",
-                        "enumValue": 1,
-                        "displayName": "CSV",
-                        "description": "CSV file format."
-                    },
-                    {
-                        "name": "Pdf",
-                        "enumValue": 2,
-                        "displayName": "PDF",
-                        "description": "PDF file format."
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Document Type",
-            "description": "Represents the document type."
-        }
-    ]
-}  , {
-    "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:component:email;1",
-    "@type": "Interface",
-    "contents": [
-        {
-            "@id": "dtmi:avl:passport:component:email:MailAddress;1",
-            "name": "MailAddress",
-            "@type": "Property",
-            "schema": "string"            
-        }
-    ]
-}  , {
-    "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:component:webLink;1",
-    "@type": "Interface",
-    "contents": [
-        {
-            "@id": "dtmi:avl:passport:component:webLink:Url;1",
-            "name": "Url",
-            "@type": "Property",
-            "schema": "string"            
-        }
-    ]
-}  , 
-{
-    "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:productView;1",
-    "@type": "Interface",
-    "displayName": "ProductView",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "Name",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Name",
-            "description": "Represents the name of the Data View."
-        },
-        {
-            "@type": "Property",
-            "name": "DTMIReference",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Digital Twin Model Identifier Reference",
-            "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
-        }
-        ,
-        {
-            "@type": "Relationship",
-            "name": "DataViews",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 100,
-            "target": "dtmi:avl:passport:ui:dataview;1",
-            "displayName": "Data Views",
-            "description": "Contains all data views which should be displayed on the ui for a specific Product Model / Product Unit."
-        } 
-    ]
-}  , {
-    "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:dataview;1",
-    "@type": "Interface",
-    "displayName": "Dataview",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "Name",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Name",
-            "description": "Represents the name of the Data View."
-        },
-        {
-            "@type": "Property",
-            "name": "Visibility",
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "None",
-                        "enumValue": 0,
-                        "displayName": "None",
-                        "description": "Attribute should not be displayed."
-                    },
-                    {
-                        "name": "Configuration",
-                        "enumValue": 1,
-                        "displayName": "Configuration",
-                        "description": "Configuration should be visible during the creation."
-                    },
-                    {
-                        "name": "Private",
-                        "enumValue": 2,
-                        "displayName": "Private",
-                        "description": "Attribute should only be visible for authenticated users."
-                    },
-                    {
-                        "name": "Public",
-                        "enumValue": 3,
-                        "displayName": "Public",
-                        "description": "Attribute should be visible for all users."
-                    }
-                ]
-            },
-            "writable": false,
-            "displayName": "Visibility",
-            "description": "Defines if and where the Attribute should be displayed."
-        },
-        {
-            "@type": "Relationship",
-            "name": "DataViewCategories",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 100,
-            "target": "dtmi:avl:passport:ui:category;1",
-            "displayName": "Data View Categories",
-            "description": "Contains all categories which should be displayed on the ui for a specific Product Model / Product Unit."
-        }      
-    ]
-  }  , {
-    "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:attribute;1",
-    "@type": "Interface",
-    "displayName": "Dataview Attribute",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "Name",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Name",
-            "description": "Represents a user friendly name of the UI attribute assignment."
-        },
-        {
-            "@type": "Property",
-            "name": "FieldDTMI",
-            "schema": "string",
-            "writable": false,
-            "displayName": "FieldDTMI",
-            "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
-        },
-        {
-            "@type": "Property",
-            "name": "AttributeSorting",
-            "schema": "integer",
-            "writable": false,
-            "displayName": "Sorting Position of current Attribute",
-            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
-        }
-    ]
-}  , {
-    "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:category;1",
-    "@type": "Interface",
-    "displayName": "Dataview Category",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "Name",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Name",
-            "description": "Represents the name of the Data View."
-        },
-        {
-            "@type": "Property",
-            "name": "CategorySorting",
-            "schema": "integer",
-            "writable": false,
-            "displayName": "Sorting Position of current Category",
-            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
-        }, 
-        {
-            "@type": "Relationship",
-            "name": "DataViewGroups",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 100,
-            "target": "dtmi:avl:passport:ui:group;1",
-            "displayName": "Data View Groups",
-            "description": "Contains all groups within one category which should be displayed on the ui for a specific Product Model / Product Unit."
-        }      
-    ]
-  }  , {
-    "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:group;1",
-    "@type": "Interface",
-    "displayName": "Dataview Group",
-    "contents": [
-        {
-            "@type": "Property",
-            "name": "Name",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Name",
-            "description": "Represents the name of the Data View."
-        },
-        {
-            "@type": "Property",
-            "name": "GroupSorting",
-            "schema": "integer",
-            "writable": false,
-            "displayName": "Sorting Position of current Group",
-            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
-        }, 
-        {
-            "@type": "Relationship",
-            "name": "DataViewGroupAttributes",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 100,
-            "target": "dtmi:avl:passport:ui:attribute;1",
-            "displayName": "Data View Group Attributes",
-            "description": "Contains all attributes (properties, fields) within one group which should be displayed on the ui for a specific Product Model / Product Unit."
-        }   
-    ]
-  }  , {
   "@context": [
     "dtmi:dtdl:context;4",
     "dtmi:dtdl:extension:quantitativeTypes;2"
@@ -1166,7 +995,7 @@
         },
         {
             "@type": "Property",
-            "name": "IsOptional",
+            "name": "IsMandatory",
             "schema": "boolean",
             "writable": false,
             "displayName": "Is Optional",
