@@ -30,7 +30,7 @@
         },
         {
             "@type": "Property",
-            "name": "IsOptional",
+            "name": "IsMandatory",
             "schema": "boolean",
             "writable": false,
             "displayName": "Is Optional",
