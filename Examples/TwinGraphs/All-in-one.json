@@ -93,7 +93,7 @@
             },
             "displayName": "Dataview Category",
             "Name": "Battery Product Type Category",
-            "Priority": 64
+            "CategorySorting": 64
         },
         {
             "$dtid": "9296240c-179e-462b-8e50-1fd64148c920",
@@ -103,7 +103,7 @@
             },
             "displayName": "Dataview Group",
             "Name": "Battery Product Type Group",
-            "Priority": 100
+            "GroupSorting": 100
         },
         {
             "$dtid": "b4684176-97ec-42cb-af38-0fa86f459aa3",
@@ -113,7 +113,8 @@
             },
             "displayName": "Product Type Attribute Name",
             "Name": "Battery Product Type Attribute Name",
-            "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1"
+            "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1",
+            "AttributeSorting": 1
         },
         {
             "$dtid": "bc74cd29-2717-482f-90b7-d5528bb58c91",
@@ -123,7 +124,8 @@
             },
             "displayName": "Product Type Attribute ItemNumber",
             "Name": "Battery Product Type Attribute ItemNumber",
-            "FieldDTMI": "dtmi:avl:passport:product:type:base:ItemNumber;1"
+            "FieldDTMI": "dtmi:avl:passport:product:type:base:ItemNumber;1",
+            "AttributeSorting": 2
         },
         {
             "$dtid": "6383f4d5-7498-4b47-8496-ccdac7edd61b",
@@ -153,7 +155,7 @@
             },
             "displayName": "Dataview Category",
             "Name": "Battery Unit Type Category",
-            "Priority": 73
+            "CategorySorting": 73
         },
         {
             "$dtid": "22ee3d00-576a-4fa4-a774-c6d86e89d77b",
@@ -163,7 +165,7 @@
             },
             "displayName": "Dataview Group",
             "Name": "Battery Product Unit Group",
-            "Priority": 75
+            "GroupSorting": 75
         },
         {
             "$dtid": "e914dcf0-7a4a-493e-b1b4-7d1813d4fa96",
@@ -173,7 +175,8 @@
             },
             "displayName": "Dataview Attribute",
             "Name": "Product Unit Batch Number",
-            "FieldDTMI": "dtmi:avl:passport:product:unit:battery:BatchNumber;1"
+            "FieldDTMI": "dtmi:avl:passport:product:unit:battery:BatchNumber;1",
+            "AttributeSorting": 3
         },
         {
             "$dtid": "9ba8072c-dd61-46aa-bbf7-6cd4a19f2863",
@@ -183,7 +186,8 @@
             },
             "displayName": "Dataview Attribute",
             "Name": "Product Type SoH",
-            "FieldDTMI": "dtmi:avl:passport:product:type:battery:SoH;1"
+            "FieldDTMI": "dtmi:avl:passport:product:type:battery:SoH;1",
+            "AttributeSorting": 4
         },
         {
             "$dtid": "0a961523-b402-4f36-8221-eb596fa55117",

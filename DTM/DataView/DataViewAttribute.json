@@ -19,6 +19,14 @@
             "writable": false,
             "displayName": "FieldDTMI",
             "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
+        },
+        {
+            "@type": "Property",
+            "name": "AttributeSorting",
+            "schema": "integer",
+            "writable": false,
+            "displayName": "Sorting Position of current Attribute",
+            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
         }
     ]
 }
