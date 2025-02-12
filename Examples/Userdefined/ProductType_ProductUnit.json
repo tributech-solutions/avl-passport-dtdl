@@ -1,0 +1,70 @@
+{
+    "digitalTwins": [
+      {
+        "$dtid": "0e1c13d0-7637-4abf-ab87-51ebf8b6a7f2",
+        "$etag": "128",
+        "$metadata": {
+          "$model": "dtmi:avl:passport:product:unit:battery;1"
+        },
+        "displayName": "Battery Passport",
+        "Co2Footprints": [{
+          "Category": 1,
+          "Description": "159e28fe-b242-429b-8321-3ccd0cd9a40c",
+          "DataCategory": 0,
+          "DQRRating": 81.7810440200002,
+          "Co2Footprint": 77.89726529918246
+        }],
+        "ProductionDate": "2025-02-12T08:44:23.5855625Z",
+        "SerialNumber": "a5e90d5b-6dad-4d2a-9148-74936c542690",
+        "BatchNumber": "ee6017bd-b644-4518-aec0-cf52376a033d",
+        "Name": "ee65d957-391c-4d63-aca4-60078ba6d908"
+      },
+      {
+        "$dtid": "dd32aad0-33bd-4952-a0df-d3c612fdc35e",
+        "$etag": "128",
+        "$metadata": {
+          "$model": "dtmi:avl:passport:product:type:battery;1"
+        },
+        "displayName": "Battery Passport",
+        "BatteryApplicationType": "5bcea43b-e26d-467e-8970-255b343e3715",
+        "BatteryChemistryType": "284064c7-9f28-4747-8d3c-b6b55aa72403",
+        "NumberOfCells": 98,
+        "ExpectedLifetime": 11.48728522376662,
+        "ManufactureEntityName": "297160fe-0a69-4f5c-98c7-c0fe0bbce441",
+        "ManufactureEntityAddress": "bc25c80b-0e72-4f9a-a731-40da0c4bfba8",
+        "ManufactureEntityZipCode": "9f70689b-09f7-4d8d-943c-59b4e8a39088",
+        "ManufactureEntityCountry": "003754ff-19ac-4cfe-827a-ea07f27cb728",
+        "ManufactureEntityCity": "4415c8ce-173d-4147-95e2-f74951acf8ce",
+        "Co2Footprints": [{
+          "Category": 4,
+          "Description": "4d2997ee-6dda-4542-a03f-6e01fab22d78",
+          "DataCategory": 2,
+          "DQRRating": 0.042449614669115565,
+          "Co2Footprint": 52.50028017290141
+        }],
+        "Weblink": {
+          "Url": "850bc469-063b-42ae-b24a-9843df9b6db0",
+          "LinkText": "689e7796-1eb5-4ab9-8c92-a065e7ae785c"
+        },
+        "CustomProductOwnerMailAddress": "cc47df9a-4870-454c-9905-3891149e99f5",
+        "PrimaryRawMaterialsDocument": {
+          "Url": "e2494a5a-d0d6-4d3d-881a-fd7d66be7a2e",
+          "Name": "1b8d5970-f5ed-4c9f-a45b-d1d48d4eed92",
+          "Type": 1
+        },
+        "CreationDate": "2025-02-12T08:44:33.4954637Z",
+        "LastModifiedDate": "2025-02-12T08:44:33.4954758Z",
+        "ItemNumber": "91addeb2-77c3-40ec-89e3-ab102da00efe",
+        "Name": "d2e051bc-d5e2-4725-b566-4fe13486b468"
+      }
+    ],
+    "relationships": [
+      {
+        "$relationshipId": "1e264bcf-190b-44b5-bb36-9ac1dafdb091",
+        "$etag": "128",
+        "$relationshipName": "ProductUnits",
+        "$sourceId": "dd32aad0-33bd-4952-a0df-d3c612fdc35e",
+        "$targetId": "0e1c13d0-7637-4abf-ab87-51ebf8b6a7f2"
+      }
+    ]
+  }

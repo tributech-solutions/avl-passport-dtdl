@@ -14,7 +14,7 @@
         },
         {
             "@type": "Property",
-            "name": "Visibility",
+            "name": "Type",
             "schema": {
                 "@type": "Enum",
                 "valueSchema": "integer",
@@ -23,31 +23,25 @@
                         "name": "None",
                         "enumValue": 0,
                         "displayName": "None",
-                        "description": "Attribute should not be displayed."
-                    },
-                    {
-                        "name": "Configuration",
-                        "enumValue": 1,
-                        "displayName": "Configuration",
-                        "description": "Configuration should be visible during the creation."
+                        "description": "No specific type is defined."
                     },
                     {
                         "name": "Private",
-                        "enumValue": 2,
+                        "enumValue": 1,
                         "displayName": "Private",
-                        "description": "Attribute should only be visible for authenticated users."
+                        "description": "Private Data View."
                     },
                     {
                         "name": "Public",
-                        "enumValue": 3,
+                        "enumValue": 2,
                         "displayName": "Public",
-                        "description": "Attribute should be visible for all users."
+                        "description": "Public Data View."
                     }
                 ]
             },
             "writable": false,
-            "displayName": "Visibility",
-            "description": "Defines if and where the Attribute should be displayed."
+            "displayName": "DataView Type",
+            "description": "Represents the type of the Data View."
         },
         {
             "@type": "Relationship",
@@ -57,6 +51,6 @@
             "target": "dtmi:avl:passport:ui:category;1",
             "displayName": "Data View Categories",
             "description": "Contains all categories which should be displayed on the ui for a specific Product Model / Product Unit."
-        }      
+        }
     ]
-  }
+}

@@ -22,14 +22,6 @@
         },
         {
             "@type": "Property",
-            "name": "IsActive",
-            "schema": "boolean",
-            "writable": false,
-            "displayName": "Is Enabled",
-            "description": "Defines if the validation is enabled or disabled."
-        },
-        {
-            "@type": "Property",
             "name": "IsOptional",
             "schema": "boolean",
             "writable": false,

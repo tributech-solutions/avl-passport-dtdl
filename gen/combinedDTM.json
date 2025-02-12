@@ -1,9 +1,8 @@
-[
-{
+[{
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:productView;1",
+    "@id": "dtmi:avl:passport:ui:ConfigurationView;1",
     "@type": "Interface",
-    "displayName": "ProductView",
+    "displayName": "Configuration View",
     "contents": [
         {
             "@type": "Property",
@@ -20,17 +19,92 @@
             "writable": false,
             "displayName": "Digital Twin Model Identifier Reference",
             "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
+        },
+        {
+            "@type": "Property",
+            "name": "State",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "Rejected",
+                        "enumValue": -1,
+                        "displayName": "Rejected",
+                        "description": "View is rejected and should not be used."
+                    },
+                    {
+                        "name": "Unknown",
+                        "enumValue": 0,
+                        "displayName": "Unknown",
+                        "description": "Unknown State"
+                    },
+                    {
+                        "name": "Draft",
+                        "enumValue": 1,
+                        "displayName": "Draft",
+                        "description": "View is in draft state and should not be used."
+                    },
+                    {
+                        "name": "Approved",
+                        "enumValue": 2,
+                        "displayName": "Approved",
+                        "description": "View is approved and can be used."
+                    }                    
+                ]
+            },
+            "displayName": "View State",
+            "description": "Represents the state of the Data View."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ConfigurationDataViewCategories",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 100,
+            "target": "dtmi:avl:passport:ui:category;1",
+            "displayName": "Data Views Categories",
+            "description": "Contains all data views categories which should be displayed on the ui for a specific Product Model / Product Unit."
         }
-        ,
+    ]
+}  , {
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:passport:ui:passportView;1",
+    "@type": "Interface",
+    "displayName": "ProductView",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Data View."
+        },
+        {
+            "@type": "Property",
+            "name": "DTMIReferenceProductModel",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Digital Twin Model Identifier Reference",
+            "description": "Represents the Digital Twin Model Identifier from which the View is derived."
+        },        
+        {
+            "@type": "Property",
+            "name": "DTMIReferencePassport",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Digital Twin Model Identifier Reference",
+            "description": "Represents the Digital Twin Model Identifier from which the View is derived."
+        },
         {
             "@type": "Relationship",
             "name": "DataViews",
             "minMultiplicity": 0,
-            "maxMultiplicity": 100,
+            "maxMultiplicity": 2,
             "target": "dtmi:avl:passport:ui:dataview;1",
             "displayName": "Data Views",
             "description": "Contains all data views which should be displayed on the ui for a specific Product Model / Product Unit."
-        } 
+        }
     ]
 }  , {
     "@context": "dtmi:dtdl:context;4",
@@ -48,7 +122,7 @@
         },
         {
             "@type": "Property",
-            "name": "Visibility",
+            "name": "Type",
             "schema": {
                 "@type": "Enum",
                 "valueSchema": "integer",
@@ -57,31 +131,25 @@
                         "name": "None",
                         "enumValue": 0,
                         "displayName": "None",
-                        "description": "Attribute should not be displayed."
-                    },
-                    {
-                        "name": "Configuration",
-                        "enumValue": 1,
-                        "displayName": "Configuration",
-                        "description": "Configuration should be visible during the creation."
+                        "description": "No specific type is defined."
                     },
                     {
                         "name": "Private",
-                        "enumValue": 2,
+                        "enumValue": 1,
                         "displayName": "Private",
-                        "description": "Attribute should only be visible for authenticated users."
+                        "description": "Private Data View."
                     },
                     {
                         "name": "Public",
-                        "enumValue": 3,
+                        "enumValue": 2,
                         "displayName": "Public",
-                        "description": "Attribute should be visible for all users."
+                        "description": "Public Data View."
                     }
                 ]
             },
             "writable": false,
-            "displayName": "Visibility",
-            "description": "Defines if and where the Attribute should be displayed."
+            "displayName": "DataView Type",
+            "description": "Represents the type of the Data View."
         },
         {
             "@type": "Relationship",
@@ -91,9 +159,9 @@
             "target": "dtmi:avl:passport:ui:category;1",
             "displayName": "Data View Categories",
             "description": "Contains all categories which should be displayed on the ui for a specific Product Model / Product Unit."
-        }      
+        }
     ]
-  }  , {
+}  , {
     "@context": "dtmi:dtdl:context;4",
     "@id": "dtmi:avl:passport:ui:attribute;1",
     "@type": "Interface",
@@ -194,29 +262,29 @@
     "@type": "Interface",
     "contents": [
         {
-            "@id": "dtmi:avl:passport:product:model:base:Name;1",
-            "@type": "Property",
-            "name": "Name",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Name",
-            "description": "Represents the name of the Product."
-        },
-        {
             "@type": "Relationship",
-            "name": "ValidationGroups",
+            "name": "ValidationGroup",
             "minMultiplicity": 0,
-            "maxMultiplicity": 500,
+            "maxMultiplicity": 1,
             "target": "dtmi:avl:passport:validation:group;1",
             "displayName": "Validation Rules",
             "description": "Reference to the specific validation rules of the product passport."
         },
         {
             "@type": "Relationship",
-            "name": "DataProductViews",
+            "name": "DataConfigurationView",
             "minMultiplicity": 0,
-            "maxMultiplicity": 500,
-            "target": "dtmi:avl:passport:ui:productView;1",
+            "maxMultiplicity": 1,
+            "target": "dtmi:avl:passport:ui:ConfigurationView;1",
+            "displayName": "Data Configuration View",
+            "description": "Reference to the specific Data Configuration View"
+        },
+        {
+            "@type": "Relationship",
+            "name": "PassportView",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:avl:passport:ui:passportView;1",
             "displayName": "Data Views",
             "description": "Reference to the specific Product View"
         }
@@ -227,6 +295,24 @@
     "@type": "Interface",
     "extends": "dtmi:avl:passport:product:model:base;1",
     "contents": [
+        {
+            "@id": "dtmi:avl:passport:product:type:base:Name;1",
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Product."
+        },
+        {
+            "@id": "dtmi:avl:passport:product:type:base:ItemNumber;1",
+            "@type": "Property",
+            "name": "ItemNumber",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Item Number",
+            "description": "Represents the item number of the Product Type."
+        },
         {
             "@id": "dtmi:avl:passport:product:type:base:CreationDate;1",
             "@type": "Property",
@@ -244,15 +330,6 @@
             "writable": false,
             "displayName": "Last Modified Timestamp",
             "description": "Represents the last modification time of the Product Type."
-        }, 
-        {
-            "@id": "dtmi:avl:passport:product:type:base:ItemNumber;1",
-            "@type": "Property",
-            "name": "ItemNumber",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Item Number",
-            "description": "Represents the item number of the Product Type."
         }
     ]
 }  , {
@@ -262,14 +339,14 @@
     "extends": "dtmi:avl:passport:product:model:base;1",
     "contents": [
         {
-            "@id": "dtmi:avl:passport:product:unit:base:ProductionDate;1",
+            "@id": "dtmi:avl:passport:product:unit:base:Name;1",
             "@type": "Property",
-            "name": "ProductionDate",
-            "schema": "dateTime",
+            "name": "Name",
+            "schema": "string",
             "writable": false,
-            "displayName": "Production Timestamp",
-            "description": "Represents the production time of the Product Unit."
-        }, 
+            "displayName": "Name",
+            "description": "Represents the name of the Product."
+        },
         {
             "@id": "dtmi:avl:passport:product:unit:base:SerialNumber;1",
             "@type": "Property",
@@ -278,6 +355,23 @@
             "writable": false,
             "displayName": "Serial Number",
             "description": "Represents the serial number of the Product Unit."
+        },
+        {
+            "@id": "dtmi:avl:passport:product:unit:base:BatchNumber;1",
+            "@type": "Property",
+            "name": "BatchNumber",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Batch Number"
+        },        
+        {
+            "@id": "dtmi:avl:passport:product:unit:base:ProductionDate;1",
+            "@type": "Property",
+            "name": "ProductionDate",
+            "schema": "dateTime",
+            "writable": false,
+            "displayName": "Production Timestamp",
+            "description": "Represents the production time of the Product Unit."
         }
     ]
 }  , {
@@ -604,6 +698,86 @@
       }
     },
     {
+      "@type": "Property",
+      "@id": "dtmi:avl:passport:product:type:battery:CustomProductLink;1",
+      "name": "Weblink",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "@id": "dtmi:avl:passport:product:type:battery:CustomProductLink:Url;1",
+            "name": "Url",
+            "schema": "string"
+          },
+          {
+            "@id": "dtmi:avl:passport:product:type:battery:CustomProductLink:LinkText;1",
+            "name": "LinkText",
+            "schema": "string"
+          }
+        ]
+      },
+      "displayName": "Custom Product Link",
+      "description": "Reference to the specific product type. with a custom link"
+    },
+    {
+      "@type": "Property",
+      "@id": "dtmi:avl:passport:product:type:battery:MailAddress;1",
+      "name": "CustomProductOwnerMailAddress",      
+      "schema": "string",
+      "displayName": "Custom Product Owner MailAddress",
+      "description": "The email address of the owner of the product"
+    },
+    {
+      "@type": "Property",
+      "@id": "dtmi:avl:passport:product:type:battery:PrimaryRawMaterialsDocument;1",
+      "name": "PrimaryRawMaterialsDocument",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "@id": "dtmi:avl:passport:product:type:battery:PrimaryRawMaterialsDocument:Url;1",
+            "name": "Url",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:avl:passport:product:type:battery:Name;1",
+            "name": "Name",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:avl:passport:product:type:battery:PrimaryRawMaterialsDocument:Type;1",
+            "name": "Type",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "NotAvailable",
+                        "enumValue": 0,
+                        "displayName": "Not Available",
+                        "description": "Unknown or not available."
+                    },
+                    {
+                        "name": "Csv",
+                        "enumValue": 1,
+                        "displayName": "CSV",
+                        "description": "CSV file format."
+                    },
+                    {
+                        "name": "Pdf",
+                        "enumValue": 2,
+                        "displayName": "PDF",
+                        "description": "PDF file format."
+                    }
+                ]
+            }
+        }
+        ]
+      },
+      "displayName": "Primary Raw material document",
+      "description": "A pdf Document that contains the primary raw materials used in the product"
+    },
+    {
       "@type": "Relationship",
       "name": "ProductUnits",
       "minMultiplicity": 0,
@@ -636,118 +810,110 @@
             "unit": "milliohm"
         },
         {
-            "@id": "dtmi:avl:passport:product:unit:battery:BatchNumber;1",
-            "@type": "Property",
-            "name": "BatchNumber",
-            "schema": "integer",
-            "writable": false,
-            "displayName": "Batch Number"
-        },
-        {
             "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints;1",
             "@type": "Property",
             "name": "Co2Footprints",
             "displayName": "Co2 Footprints",
             "schema": {
-                "@type": "Array",
-                "elementSchema": {
-                    "@type": "Object",
-                    "fields": [
+              "@type": "Array",
+              "elementSchema": {
+                "@type": "Object",
+                "fields": [
+                  {
+                    "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Category;1",
+                    "@type": "Field",
+                    "name": "Category",
+                    "schema": {
+                      "@type": "Enum",
+                      "valueSchema": "integer",
+                      "enumValues": [
                         {
-                            "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Category;1",
-                            "@type": "Field",
-                            "name": "Category",
-                            "schema": {
-                                "@type": "Enum",
-                                "valueSchema": "integer",
-                                "enumValues": [
-                                    {
-                                        "name": "None",
-                                        "enumValue": 0,
-                                        "displayName": "None",
-                                        "description": "Category does not exist."
-                                    },
-                                    {
-                                        "name": "RawMaterialAcquisitionAndPreProcessing",
-                                        "enumValue": 1,
-                                        "displayName": "Raw Material Acquisition And PreProcessing"
-                                    },
-                                    {
-                                        "name": "MainProductProduction",
-                                        "enumValue": 2,
-                                        "displayName": "Main Product Production"
-                                    },
-                                    {
-                                        "name": "DistributionPointOfSale",
-                                        "enumValue": 3,
-                                        "displayName": "Distribution Point Of Sale"
-                                    },
-                                    {
-                                        "name": "EndOfLifeAndRecycling",
-                                        "enumValue": 4,
-                                        "displayName": "End Of Life And Recycling"
-                                    },
-                                    {
-                                        "name": "ProductUsage",
-                                        "enumValue": 5,
-                                        "displayName": "Product Usage",
-                                        "comment": "User should not be able to create CO2 Footprint with this category. CO2 Footprint for this category is calculated on backend."
-                                    }
-                                ]
-                            }
+                          "name": "None",
+                          "enumValue": 0,
+                          "displayName": "None",
+                          "description": "Category does not exist."
                         },
                         {
-                            "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Description;1",
-                            "@type": "Field",
-                            "name": "Description",
-                            "schema": "string",
-                            "displayName": "Description"
+                          "name": "RawMaterialAcquisitionAndPreProcessing",
+                          "enumValue": 1,
+                          "displayName": "Raw Material Acquisition And PreProcessing"
                         },
                         {
-                            "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:DataCategory;1",
-                            "@type": "Field",
-                            "name": "DataCategory",
-                            "schema": {
-                                "@type": "Enum",
-                                "valueSchema": "integer",
-                                "enumValues": [
-                                    {
-                                        "name": "None",
-                                        "enumValue": 0,
-                                        "displayName": "None",
-                                        "description": "Category does not exist."
-                                    },
-                                    {
-                                        "name": "Primary",
-                                        "enumValue": 1,
-                                        "displayName": "Primary"
-                                    },
-                                    {
-                                        "name": "Secondary",
-                                        "enumValue": 2,
-                                        "displayName": "Secondary"
-                                    }
-                                ]
-                            }
+                          "name": "MainProductProduction",
+                          "enumValue": 2,
+                          "displayName": "Main Product Production"
                         },
                         {
-                            "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:DQRRating;1",
-                            "@type": "Field",
-                            "name": "DQRRating",
-                            "schema": "double",
-                            "displayName": "DQR Rating"
+                          "name": "DistributionPointOfSale",
+                          "enumValue": 3,
+                          "displayName": "Distribution Point Of Sale"
                         },
                         {
-                            "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Co2Footprint;1",
-                            "@type": "Field",
-                            "name": "Co2Footprint",
-                            "schema": "double",
-                            "displayName": "Co2 Footprint"
+                          "name": "EndOfLifeAndRecycling",
+                          "enumValue": 4,
+                          "displayName": "End Of Life And Recycling"
+                        },
+                        {
+                          "name": "ProductUsage",
+                          "enumValue": 5,
+                          "displayName": "Product Usage",
+                          "comment": "User should not be able to create CO2 Footprint with this category. CO2 Footprint for this category is calculated on backend."
                         }
-                    ]
-                }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Description;1",
+                    "@type": "Field",
+                    "name": "Description",
+                    "schema": "string",
+                    "displayName": "Description"
+                  },
+                  {
+                    "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:DataCategory;1",
+                    "@type": "Field",
+                    "name": "DataCategory",
+                    "schema": {
+                      "@type": "Enum",
+                      "valueSchema": "integer",
+                      "enumValues": [
+                        {
+                          "name": "None",
+                          "enumValue": 0,
+                          "displayName": "None",
+                          "description": "Category does not exist."
+                        },
+                        {
+                          "name": "Primary",
+                          "enumValue": 1,
+                          "displayName": "Primary"
+                        },
+                        {
+                          "name": "Secondary",
+                          "enumValue": 2,
+                          "displayName": "Secondary"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:DQRRating;1",
+                    "@type": "Field",
+                    "name": "DQRRating",
+                    "schema": "double",
+                    "displayName": "DQR Rating"
+                  },
+                  {
+                    "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Co2Footprint;1",
+                    "@type": "Field",
+                    "name": "Co2Footprint",
+                    "schema": "double",
+                    "displayName": "Co2 Footprint"
+                  }
+                ]
+              }
             }
-        }
+          }
     ]
 }  , {
     "@context": "dtmi:dtdl:context;4",
@@ -770,14 +936,6 @@
             "writable": false,
             "displayName": "FieldDTMI",
             "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
-        },
-        {
-            "@type": "Property",
-            "name": "IsActive",
-            "schema": "boolean",
-            "writable": false,
-            "displayName": "Is Enabled",
-            "description": "Defines if the validation is enabled or disabled."
         },
         {
             "@type": "Property",

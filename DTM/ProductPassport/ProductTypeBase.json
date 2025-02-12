@@ -5,6 +5,24 @@
     "extends": "dtmi:avl:passport:product:model:base;1",
     "contents": [
         {
+            "@id": "dtmi:avl:passport:product:type:base:Name;1",
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Product."
+        },
+        {
+            "@id": "dtmi:avl:passport:product:type:base:ItemNumber;1",
+            "@type": "Property",
+            "name": "ItemNumber",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Item Number",
+            "description": "Represents the item number of the Product Type."
+        },
+        {
             "@id": "dtmi:avl:passport:product:type:base:CreationDate;1",
             "@type": "Property",
             "name": "CreationDate",
@@ -21,15 +39,6 @@
             "writable": false,
             "displayName": "Last Modified Timestamp",
             "description": "Represents the last modification time of the Product Type."
-        }, 
-        {
-            "@id": "dtmi:avl:passport:product:type:base:ItemNumber;1",
-            "@type": "Property",
-            "name": "ItemNumber",
-            "schema": "string",
-            "writable": false,
-            "displayName": "Item Number",
-            "description": "Represents the item number of the Product Type."
         }
     ]
 }

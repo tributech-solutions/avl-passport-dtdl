@@ -5,14 +5,14 @@
     "extends": "dtmi:avl:passport:product:model:base;1",
     "contents": [
         {
-            "@id": "dtmi:avl:passport:product:unit:base:ProductionDate;1",
+            "@id": "dtmi:avl:passport:product:unit:base:Name;1",
             "@type": "Property",
-            "name": "ProductionDate",
-            "schema": "dateTime",
+            "name": "Name",
+            "schema": "string",
             "writable": false,
-            "displayName": "Production Timestamp",
-            "description": "Represents the production time of the Product Unit."
-        }, 
+            "displayName": "Name",
+            "description": "Represents the name of the Product."
+        },
         {
             "@id": "dtmi:avl:passport:product:unit:base:SerialNumber;1",
             "@type": "Property",
@@ -21,6 +21,23 @@
             "writable": false,
             "displayName": "Serial Number",
             "description": "Represents the serial number of the Product Unit."
+        },
+        {
+            "@id": "dtmi:avl:passport:product:unit:base:BatchNumber;1",
+            "@type": "Property",
+            "name": "BatchNumber",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Batch Number"
+        },        
+        {
+            "@id": "dtmi:avl:passport:product:unit:base:ProductionDate;1",
+            "@type": "Property",
+            "name": "ProductionDate",
+            "schema": "dateTime",
+            "writable": false,
+            "displayName": "Production Timestamp",
+            "description": "Represents the production time of the Product Unit."
         }
     ]
 }
