@@ -1,106 +1,105 @@
 {
-    "digitalTwins": [
-      {
-        "$dtid": "628f6a48-c451-4717-a7d0-b709a64c627b",
-        "$etag": "128",
-        "$metadata": {
-          "$model": "dtmi:avl:passport:ui:ConfigurationView;1"
-        },
-        "displayName": "Configuration View",
-        "Name": "Product Model Configuration View",
-        "DTMIReference": "dtmi:avl:passport:product:model:battery;1",
-        "State": 1
+  "digitalTwins": [
+    {
+      "$dtid": "628f6a48-c451-4717-a7d0-b709a64c627b",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:ui:ConfigurationView;1"
       },
-      {
-        "$dtid": "bd537cc8-d5be-4617-b87e-7f6d78d152fb",
-        "$etag": "128",
-        "$metadata": {
-          "$model": "dtmi:avl:passport:ui:category;1"
-        },
-        "displayName": "Dataview Category",
-        "Name": "Data view Category X",
-        "CategorySorting": 1
+      "displayName": "Configuration View",
+      "Name": "Product Model Configuration View",
+      "DTMIReference": "dtmi:avl:passport:product:model:battery;1",
+      "State": 1
+    },
+    {
+      "$dtid": "bd537cc8-d5be-4617-b87e-7f6d78d152fb",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:ui:category;1"
       },
-      {
-        "$dtid": "77ce80d2-3562-4cc0-95b2-12922acc69b7",
-        "$etag": "128",
-        "$metadata": {
-          "$model": "dtmi:avl:passport:ui:group;1"
-        },
-        "displayName": "Dataview Group",
-        "Name": "Data View Group Create Product Model",
-        "GroupSorting": 1
+      "displayName": "Dataview Category",
+      "Name": "Data view Category X",
+      "CategorySorting": 1
+    },
+    {
+      "$dtid": "77ce80d2-3562-4cc0-95b2-12922acc69b7",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:ui:group;1"
       },
-      {
-        "$dtid": "39942871-6da6-410f-909e-c3bef3fd6b0b",
-        "$etag": "128",
-        "$metadata": {
-          "$model": "dtmi:avl:passport:ui:attribute;1"
-        },
-        "displayName": "Dataview Attribute",
-        "Name": "Name",
-        "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1",
-        "AttributeSorting": 1
+      "displayName": "Dataview Group",
+      "Name": "Data View Group Create Product Model",
+      "GroupSorting": 1
+    },
+    {
+      "$dtid": "39942871-6da6-410f-909e-c3bef3fd6b0b",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:ui:attribute;1"
       },
-      {
-        "$dtid": "99a535c4-0389-4efc-aadf-3d8601e02d72",
-        "$etag": "128",
-        "$metadata": {
-          "$model": "dtmi:avl:passport:ui:attribute;1"
-        },
-        "displayName": "Dataview Attribute",
-        "Name": "Item Number",
-        "FieldDTMI": "dtmi:avl:passport:product:model:base:ItemNumber;1",
-        "AttributeSorting": 2
+      "displayName": "Dataview Attribute",
+      "Name": "Name",
+      "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1",
+      "AttributeSorting": 1
+    },
+    {
+      "$dtid": "99a535c4-0389-4efc-aadf-3d8601e02d72",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:ui:attribute;1"
       },
-      {
-        "$dtid": "7ea1c1c8-b0b0-4054-be51-8139adbf96ba",
-        "$etag": "128",
-        "$metadata": {
-          "$model": "dtmi:avl:passport:ui:attribute;1"
-        },
-        "displayName": "Dataview Attribute",
-        "Name": "Battery Application Type",
-        "FieldDTMI": "dtmi:avl:passport:product:model:battery:BatteryApplicationType;1",
-        "AttributeSorting": 3
-      }
-    ],
-    "relationships": [
-      {
-        "$relationshipId": "63e7fb48-45a0-4109-9805-c5367f9ad7b0",
-        "$etag": "128",
-        "$relationshipName": "ConfigurationDataViewCategories",
-        "$sourceId": "628f6a48-c451-4717-a7d0-b709a64c627b",
-        "$targetId": "bd537cc8-d5be-4617-b87e-7f6d78d152fb"
+      "displayName": "Dataview Attribute",
+      "Name": "Item Number",
+      "FieldDTMI": "dtmi:avl:passport:product:model:base:ItemNumber;1",
+      "AttributeSorting": 2
+    },
+    {
+      "$dtid": "7ea1c1c8-b0b0-4054-be51-8139adbf96ba",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:passport:ui:attribute;1"
       },
-      {
-        "$relationshipId": "a3d2e425-f481-40cf-ac43-e6ae0e91a011",
-        "$etag": "128",
-        "$relationshipName": "DataViewGroups",
-        "$sourceId": "bd537cc8-d5be-4617-b87e-7f6d78d152fb",
-        "$targetId": "77ce80d2-3562-4cc0-95b2-12922acc69b7"
-      },
-      {
-        "$relationshipId": "0072e734-2861-4b60-bb68-cc8295bda795",
-        "$etag": "128",
-        "$relationshipName": "DataViewGroupAttributes",
-        "$sourceId": "77ce80d2-3562-4cc0-95b2-12922acc69b7",
-        "$targetId": "39942871-6da6-410f-909e-c3bef3fd6b0b"
-      },
-      {
-        "$relationshipId": "c12fb5b4-4e87-442e-b4c7-ef4b92ab4e83",
-        "$etag": "128",
-        "$relationshipName": "DataViewGroupAttributes",
-        "$sourceId": "77ce80d2-3562-4cc0-95b2-12922acc69b7",
-        "$targetId": "99a535c4-0389-4efc-aadf-3d8601e02d72"
-      },
-      {
-        "$relationshipId": "15f60810-acbf-4475-9a67-99ae614ce784",
-        "$etag": "128",
-        "$relationshipName": "DataViewGroupAttributes",
-        "$sourceId": "77ce80d2-3562-4cc0-95b2-12922acc69b7",
-        "$targetId": "7ea1c1c8-b0b0-4054-be51-8139adbf96ba"
-      }
-  
-    ]
-  }
+      "displayName": "Dataview Attribute",
+      "Name": "Battery Application Type",
+      "FieldDTMI": "dtmi:avl:passport:product:model:battery:BatteryApplicationType;1",
+      "AttributeSorting": 3
+    }
+  ],
+  "relationships": [
+    {
+      "$relationshipId": "63e7fb48-45a0-4109-9805-c5367f9ad7b0",
+      "$etag": "128",
+      "$relationshipName": "ConfigurationDataViewCategories",
+      "$sourceId": "628f6a48-c451-4717-a7d0-b709a64c627b",
+      "$targetId": "bd537cc8-d5be-4617-b87e-7f6d78d152fb"
+    },
+    {
+      "$relationshipId": "a3d2e425-f481-40cf-ac43-e6ae0e91a011",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroups",
+      "$sourceId": "bd537cc8-d5be-4617-b87e-7f6d78d152fb",
+      "$targetId": "77ce80d2-3562-4cc0-95b2-12922acc69b7"
+    },
+    {
+      "$relationshipId": "0072e734-2861-4b60-bb68-cc8295bda795",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroupAttributes",
+      "$sourceId": "77ce80d2-3562-4cc0-95b2-12922acc69b7",
+      "$targetId": "39942871-6da6-410f-909e-c3bef3fd6b0b"
+    },
+    {
+      "$relationshipId": "c12fb5b4-4e87-442e-b4c7-ef4b92ab4e83",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroupAttributes",
+      "$sourceId": "77ce80d2-3562-4cc0-95b2-12922acc69b7",
+      "$targetId": "99a535c4-0389-4efc-aadf-3d8601e02d72"
+    },
+    {
+      "$relationshipId": "15f60810-acbf-4475-9a67-99ae614ce784",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroupAttributes",
+      "$sourceId": "77ce80d2-3562-4cc0-95b2-12922acc69b7",
+      "$targetId": "7ea1c1c8-b0b0-4054-be51-8139adbf96ba"
+    }
+  ]
+}

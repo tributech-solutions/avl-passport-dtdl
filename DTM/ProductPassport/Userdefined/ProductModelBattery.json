@@ -346,7 +346,7 @@
     {
       "@type": "Property",
       "@id": "dtmi:avl:passport:product:model:battery:MailAddress;1",
-      "name": "CustomProductOwnerMailAddress",      
+      "name": "CustomProductOwnerMailAddress",
       "schema": "string",
       "displayName": "Custom Product Owner MailAddress",
       "description": "The email address of the owner of the product"
@@ -362,40 +362,40 @@
             "@id": "dtmi:avl:passport:product:model:battery:PrimaryRawMaterialsDocument:Url;1",
             "name": "Url",
             "schema": "string"
-        },
-        {
+          },
+          {
             "@id": "dtmi:avl:passport:product:model:battery:Name;1",
             "name": "Name",
             "schema": "string"
-        },
-        {
+          },
+          {
             "@id": "dtmi:avl:passport:product:model:battery:PrimaryRawMaterialsDocument:Type;1",
             "name": "Type",
             "schema": {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "NotAvailable",
-                        "enumValue": 0,
-                        "displayName": "Not Available",
-                        "description": "Unknown or not available."
-                    },
-                    {
-                        "name": "Csv",
-                        "enumValue": 1,
-                        "displayName": "CSV",
-                        "description": "CSV file format."
-                    },
-                    {
-                        "name": "Pdf",
-                        "enumValue": 2,
-                        "displayName": "PDF",
-                        "description": "PDF file format."
-                    }
-                ]
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "NotAvailable",
+                  "enumValue": 0,
+                  "displayName": "Not Available",
+                  "description": "Unknown or not available."
+                },
+                {
+                  "name": "Csv",
+                  "enumValue": 1,
+                  "displayName": "CSV",
+                  "description": "CSV file format."
+                },
+                {
+                  "name": "Pdf",
+                  "enumValue": 2,
+                  "displayName": "PDF",
+                  "description": "PDF file format."
+                }
+              ]
             }
-        }
+          }
         ]
       },
       "displayName": "Primary Raw material document",

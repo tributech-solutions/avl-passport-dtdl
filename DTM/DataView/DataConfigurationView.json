@@ -50,7 +50,7 @@
                         "enumValue": 2,
                         "displayName": "Approved",
                         "description": "View is approved and can be used."
-                    }                    
+                    }
                 ]
             },
             "displayName": "View State",

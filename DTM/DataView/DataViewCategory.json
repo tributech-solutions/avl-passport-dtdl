@@ -19,7 +19,7 @@
             "writable": false,
             "displayName": "Sorting Position of current Category",
             "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
-        }, 
+        },
         {
             "@type": "Relationship",
             "name": "DataViewGroups",
@@ -28,6 +28,6 @@
             "target": "dtmi:avl:passport:ui:group;1",
             "displayName": "Data View Groups",
             "description": "Contains all groups within one category which should be displayed on the ui for a specific Product Model / Product Passport."
-        }      
+        }
     ]
-  }
+}

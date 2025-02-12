@@ -7,13 +7,15 @@
                 "$model": "dtmi:avl:passport:product:passport:battery;1"
             },
             "displayName": "Battery Passport",
-            "Co2Footprints": [{
-                "Category": 1,
-                "Description": "159e28fe-b242-429b-8321-3ccd0cd9a40c",
-                "DataCategory": 0,
-                "DQRRating": 81.7810440200002,
-                "Co2Footprint": 77.89726529918246
-            }],
+            "Co2Footprints": [
+                {
+                    "Category": 1,
+                    "Description": "159e28fe-b242-429b-8321-3ccd0cd9a40c",
+                    "DataCategory": 0,
+                    "DQRRating": 81.7810440200002,
+                    "Co2Footprint": 77.89726529918246
+                }
+            ],
             "ProductionDate": "2025-02-12T08:44:23.5855625Z",
             "SerialNumber": "a5e90d5b-6dad-4d2a-9148-74936c542690",
             "BatchNumber": "ee6017bd-b644-4518-aec0-cf52376a033d",
@@ -35,13 +37,15 @@
             "ManufactureEntityZipCode": "9f70689b-09f7-4d8d-943c-59b4e8a39088",
             "ManufactureEntityCountry": "003754ff-19ac-4cfe-827a-ea07f27cb728",
             "ManufactureEntityCity": "4415c8ce-173d-4147-95e2-f74951acf8ce",
-            "Co2Footprints": [{
-                "Category": 4,
-                "Description": "4d2997ee-6dda-4542-a03f-6e01fab22d78",
-                "DataCategory": 2,
-                "DQRRating": 0.042449614669115565,
-                "Co2Footprint": 52.50028017290141
-            }],
+            "Co2Footprints": [
+                {
+                    "Category": 4,
+                    "Description": "4d2997ee-6dda-4542-a03f-6e01fab22d78",
+                    "DataCategory": 2,
+                    "DQRRating": 0.042449614669115565,
+                    "Co2Footprint": 52.50028017290141
+                }
+            ],
             "Weblink": {
                 "Url": "850bc469-063b-42ae-b24a-9843df9b6db0",
                 "LinkText": "689e7796-1eb5-4ab9-8c92-a065e7ae785c"

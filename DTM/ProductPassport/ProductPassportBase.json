@@ -29,7 +29,7 @@
             "schema": "string",
             "writable": false,
             "displayName": "Batch Number"
-        },        
+        },
         {
             "@id": "dtmi:avl:passport:product:passport:base:ProductionDate;1",
             "@type": "Property",

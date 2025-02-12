@@ -19,7 +19,7 @@
             "writable": false,
             "displayName": "Sorting Position of current Group",
             "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
-        }, 
+        },
         {
             "@type": "Relationship",
             "name": "DataViewGroupAttributes",
@@ -28,6 +28,6 @@
             "target": "dtmi:avl:passport:ui:attribute;1",
             "displayName": "Data View Group Attributes",
             "description": "Contains all attributes (properties, fields) within one group which should be displayed on the ui for a specific Product Model / Product Passport."
-        }   
+        }
     ]
-  }
+}

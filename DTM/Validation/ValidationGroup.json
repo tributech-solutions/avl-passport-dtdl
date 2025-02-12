@@ -1,33 +1,33 @@
 {
-  "@context": "dtmi:dtdl:context;4",
-  "@id": "dtmi:avl:passport:validation:group;1",
-  "@type": "Interface",
-  "displayName": "Validation Group",
-  "contents": [
-      {
-          "@type": "Property",
-          "name": "Name",
-          "schema": "string",
-          "writable": false,
-          "displayName": "Name",
-          "description": "Represents the name of the Validation Group."
-      },
-      {
-          "@type": "Property",
-          "name": "DTMIReference",
-          "schema": "string",
-          "writable": false,
-          "displayName": "Digital Twin Model Identifier Reference",
-          "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
-      }, 
-      {
-          "@type": "Relationship",
-          "name": "ValidationAttributes",
-          "minMultiplicity": 0,
-          "maxMultiplicity": 100,
-          "target": "dtmi:avl:passport:validation:attribute;1",
-          "displayName": "Validation Attributes",
-          "description": "Contains all attributes where a validation should be applied to a Product Model / Product Passport."
-      }      
-  ]
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:passport:validation:group;1",
+    "@type": "Interface",
+    "displayName": "Validation Group",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Validation Group."
+        },
+        {
+            "@type": "Property",
+            "name": "DTMIReference",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Digital Twin Model Identifier Reference",
+            "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationAttributes",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 100,
+            "target": "dtmi:avl:passport:validation:attribute;1",
+            "displayName": "Validation Attributes",
+            "description": "Contains all attributes where a validation should be applied to a Product Model / Product Passport."
+        }
+    ]
 }

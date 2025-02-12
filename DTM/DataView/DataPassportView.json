@@ -19,7 +19,7 @@
             "writable": false,
             "displayName": "Digital Twin Model Identifier Reference",
             "description": "Represents the Digital Twin Model Identifier from which the View is derived."
-        },        
+        },
         {
             "@type": "Property",
             "name": "DTMIReferencePassport",

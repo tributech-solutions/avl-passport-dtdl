@@ -28,7 +28,11 @@
         "$model": "dtmi:avl:passport:validation:rule:enum;1"
       },
       "displayName": "Enum Validation Rule",
-      "allowed_values": [1, 2, 3],
+      "allowed_values": [
+        1,
+        2,
+        3
+      ],
       "Name": "DataValidationState Rule"
     }
   ],

@@ -30,7 +30,7 @@
             "writable": false,
             "displayName": "Creation Timestamp",
             "description": "Represents the creation time of the Product Model."
-        }, 
+        },
         {
             "@id": "dtmi:avl:passport:product:model:base:LastModifiedDate;1",
             "@type": "Property",
