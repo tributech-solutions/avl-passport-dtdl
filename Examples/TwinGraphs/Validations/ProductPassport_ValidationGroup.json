@@ -4,28 +4,28 @@
       "$dtid": "9c589621-05d7-4932-a3cd-4218cba51378",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:validation:group;1"
+        "$model": "dtmi:avl:product:validation:group;1"
       },
       "displayName": "Validation Group",
       "Name": "Product Passport Validation Group",
-      "DTMIReference": "dtmi:avl:passport:product:passport:battery;1"
+      "DTMIReference": "dtmi:avl:product:passport:battery;1"
     },
     {
       "$dtid": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:validation:attribute;1"
+        "$model": "dtmi:avl:product:validation:attribute;1"
       },
       "displayName": "Validation Attribute",
       "Name": "Product Passport Validation Attribute Enum",
-      "FieldDTMI": "dtmi:avl:passport:product:passport:battery:DataValidationState;1",
+      "FieldDTMI": "dtmi:avl:product:passport:battery:DataValidationState;1",
       "IsOptional": true
     },
     {
       "$dtid": "36b29f7b-123d-4ae4-a248-7758c83fe742",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:validation:rule:enum;1"
+        "$model": "dtmi:avl:product:validation:rule:enum;1"
       },
       "displayName": "Enum Validation Rule",
       "allowed_values": [

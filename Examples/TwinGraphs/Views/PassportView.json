@@ -4,28 +4,29 @@
       "$dtid": "626d0b4b-b0e6-4d17-b7bf-756d1b8d6cb0",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:passportView;1"
+        "$model": "dtmi:avl:product:dataview:Passport;1"
       },
       "displayName": "ProductView",
       "Name": "Product Passport View",
-      "DTMIReferenceProductModel": "dtmi:avl:passport:product:model:battery;1",
-      "DTMIReferencePassport": "dtmi:avl:passport:product:passport:battery;1"
+      "DTMIReferenceProductModel": "dtmi:avl:product:model:battery;1",
+      "DTMIReferencePassport": "dtmi:avl:product:passport:battery;1"
     },
     {
       "$dtid": "ef461c0b-de97-4f14-b2f1-817c7ffe5489",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:dataview;1"
+        "$model": "dtmi:avl:product:dataview:Passport:Configuration;1"
       },
       "displayName": "Dataview",
       "Name": "11fa47f8-8706-4720-a2e6-3a10e602cff0",
-      "Type": 2
+      "Type": 2,
+      "State": 1
     },
     {
       "$dtid": "b6a94941-8f5f-4141-b29f-f0bfc2f2a511",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:category;1"
+        "$model": "dtmi:avl:product:dataview:category;1"
       },
       "displayName": "Dataview Category",
       "Name": "e2290542-a487-46d2-ada5-4b1a647b9384",
@@ -35,7 +36,7 @@
       "$dtid": "3977f36d-30b8-4e81-8f1e-8ef7d9657d0f",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:group;1"
+        "$model": "dtmi:avl:product:dataview:group;1"
       },
       "displayName": "Dataview Group",
       "Name": "e925c49d-fddc-415d-85f4-3ee6eab378ca",
@@ -45,55 +46,55 @@
       "$dtid": "1dec7a31-0720-4781-8cef-0b72926fc8b9",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute;1"
+        "$model": "dtmi:avl:product:dataview:attribute;1"
       },
       "displayName": "Dataview Attribute",
       "Name": "Product Model Name",
-      "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1",
+      "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
       "AttributeSorting": 1
     },
     {
       "$dtid": "470f2adc-9cc7-40b1-bad5-dfa8a078dca2",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute;1"
+        "$model": "dtmi:avl:product:dataview:attribute;1"
       },
       "displayName": "Dataview Attribute",
       "Name": "Product Passport Name",
-      "FieldDTMI": "dtmi:avl:passport:product:passport:base:Name;1",
+      "FieldDTMI": "dtmi:avl:product:passport:base:Name;1",
       "AttributeSorting": 3
     },
     {
       "$dtid": "ece47057-d9aa-4737-9b32-b6eab90e5c8e",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute;1"
+        "$model": "dtmi:avl:product:dataview:attribute;1"
       },
       "displayName": "Dataview Attribute",
       "Name": "Product Model Item Number",
-      "FieldDTMI": "dtmi:avl:passport:product:model:base:ItemNumber;1",
+      "FieldDTMI": "dtmi:avl:product:model:base:ItemNumber;1",
       "AttributeSorting": 2
     },
     {
       "$dtid": "feb1c04c-f999-4a55-8f75-2055b35876b7",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute;1"
+        "$model": "dtmi:avl:product:dataview:attribute;1"
       },
       "displayName": "Dataview Attribute",
       "Name": "Product Passport Serial Number",
-      "FieldDTMI": "dtmi:avl:passport:product:passport:base:SerialNumber;1",
+      "FieldDTMI": "dtmi:avl:product:passport:base:SerialNumber;1",
       "AttributeSorting": 4
     },
     {
       "$dtid": "ad5c025e-2646-488f-abf9-a564616f24ed",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute;1"
+        "$model": "dtmi:avl:product:dataview:attribute;1"
       },
       "displayName": "Dataview Attribute",
       "Name": "Product Passport Batch Number",
-      "FieldDTMI": "dtmi:avl:passport:product:passport:base:BatchNumber;1",
+      "FieldDTMI": "dtmi:avl:product:passport:base:BatchNumber;1",
       "AttributeSorting": 5
     }
   ],

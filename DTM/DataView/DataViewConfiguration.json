@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:ConfigurationView;1",
+    "@id": "dtmi:avl:product:dataview:Configuration;1",
     "@type": "Interface",
     "displayName": "Configuration View",
     "contents": [
@@ -61,7 +61,7 @@
             "name": "ConfigurationDataViewCategories",
             "minMultiplicity": 0,
             "maxMultiplicity": 100,
-            "target": "dtmi:avl:passport:ui:category;1",
+            "target": "dtmi:avl:product:dataview:category;1",
             "displayName": "Data Views Categories",
             "description": "Contains all data views categories which should be displayed on the ui for a specific Product Model / Product Passport."
         }

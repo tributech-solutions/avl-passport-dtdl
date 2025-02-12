@@ -3,13 +3,13 @@
     "dtmi:dtdl:context;4",
     "dtmi:dtdl:extension:quantitativeTypes;2"
   ],
-  "@id": "dtmi:avl:passport:product:model:battery;1",
-  "extends": "dtmi:avl:passport:product:model:base;1",
+  "@id": "dtmi:avl:product:model:battery;1",
+  "extends": "dtmi:avl:product:model:base;1",
   "@type": "Interface",
   "displayName": "Battery Passport",
   "contents": [
     {
-      "@id": "dtmi:avl:passport:product:model:battery:BatteryApplicationType;1",
+      "@id": "dtmi:avl:product:model:battery:BatteryApplicationType;1",
       "@type": "Property",
       "name": "BatteryApplicationType",
       "schema": "string",
@@ -17,7 +17,7 @@
       "displayName": "Battery application type"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:BatteryChemistryType;1",
+      "@id": "dtmi:avl:product:model:battery:BatteryChemistryType;1",
       "@type": "Property",
       "name": "BatteryChemistryType",
       "schema": "string",
@@ -25,7 +25,7 @@
       "displayName": "Battery chemistry type"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:SoH;1",
+      "@id": "dtmi:avl:product:model:battery:SoH;1",
       "@type": [
         "Property",
         "Concentration"
@@ -37,7 +37,7 @@
       "unit": "percent"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:PowerCapability;1",
+      "@id": "dtmi:avl:product:model:battery:PowerCapability;1",
       "@type": [
         "Property",
         "EnergyRate"
@@ -49,7 +49,7 @@
       "unit": "watt"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:RatedCapacityAh;1",
+      "@id": "dtmi:avl:product:model:battery:RatedCapacityAh;1",
       "@type": [
         "Property",
         "ElectricCharge"
@@ -61,7 +61,7 @@
       "unit": "ampereHour"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:RatedCapacitykWh;1",
+      "@id": "dtmi:avl:product:model:battery:RatedCapacitykWh;1",
       "@type": [
         "Property",
         "Energy"
@@ -73,7 +73,7 @@
       "unit": "kilowattHour"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:NumberOfCells;1",
+      "@id": "dtmi:avl:product:model:battery:NumberOfCells;1",
       "@type": "Property",
       "name": "NumberOfCells",
       "schema": "integer",
@@ -81,7 +81,7 @@
       "displayName": "Total Number of cells"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:Weight;1",
+      "@id": "dtmi:avl:product:model:battery:Weight;1",
       "@type": [
         "Property",
         "Mass"
@@ -93,7 +93,7 @@
       "unit": "kilogram"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:ExpectedLifetime;1",
+      "@id": "dtmi:avl:product:model:battery:ExpectedLifetime;1",
       "@type": "Property",
       "name": "ExpectedLifetime",
       "schema": "double",
@@ -101,7 +101,7 @@
       "displayName": "Expected Lifetime in cycles"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:WarrantyPeriod;1",
+      "@id": "dtmi:avl:product:model:battery:WarrantyPeriod;1",
       "@type": [
         "Property",
         "TimeSpan"
@@ -112,7 +112,7 @@
       "unit": "day"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:OperatingTemperatureMIN;1",
+      "@id": "dtmi:avl:product:model:battery:OperatingTemperatureMIN;1",
       "@type": [
         "Property",
         "Temperature"
@@ -124,7 +124,7 @@
       "unit": "degreeCelsius"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:OperatingTemperatureMAX;1",
+      "@id": "dtmi:avl:product:model:battery:OperatingTemperatureMAX;1",
       "@type": [
         "Property",
         "Temperature"
@@ -136,7 +136,7 @@
       "unit": "degreeCelsius"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:VoltageLimitMIN;1",
+      "@id": "dtmi:avl:product:model:battery:VoltageLimitMIN;1",
       "@type": [
         "Property",
         "Voltage"
@@ -148,7 +148,7 @@
       "unit": "volt"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:VoltageLimitMAX;1",
+      "@id": "dtmi:avl:product:model:battery:VoltageLimitMAX;1",
       "@type": [
         "Property",
         "Voltage"
@@ -160,7 +160,7 @@
       "unit": "volt"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:VoltageLimitNOM;1",
+      "@id": "dtmi:avl:product:model:battery:VoltageLimitNOM;1",
       "@type": [
         "Property",
         "Voltage"
@@ -172,7 +172,7 @@
       "unit": "volt"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:ManufactureEntityName;1",
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityName;1",
       "@type": "Property",
       "name": "ManufactureEntityName",
       "schema": "string",
@@ -181,7 +181,7 @@
       "description": "Name of the manufacturer"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:ManufactureEntityAddress;1",
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityAddress;1",
       "@type": "Property",
       "name": "ManufactureEntityAddress",
       "schema": "string",
@@ -190,7 +190,7 @@
       "description": "Address of the manufacturer"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:ManufactureEntityZipCode;1",
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityZipCode;1",
       "@type": "Property",
       "name": "ManufactureEntityZipCode",
       "schema": "string",
@@ -199,7 +199,7 @@
       "description": "Zip Code of the manufacturer"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:ManufactureEntityCountry;1",
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityCountry;1",
       "@type": "Property",
       "name": "ManufactureEntityCountry",
       "schema": "string",
@@ -208,7 +208,7 @@
       "description": "Country of the manufacturer"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:ManufactureEntityCity;1",
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityCity;1",
       "@type": "Property",
       "name": "ManufactureEntityCity",
       "schema": "string",
@@ -217,7 +217,7 @@
       "description": "City of the manufacturer"
     },
     {
-      "@id": "dtmi:avl:passport:product:model:battery:Co2Footprints;1",
+      "@id": "dtmi:avl:product:model:battery:Co2Footprints;1",
       "@type": "Property",
       "name": "Co2Footprints",
       "displayName": "Co2 Footprints",
@@ -227,7 +227,7 @@
           "@type": "Object",
           "fields": [
             {
-              "@id": "dtmi:avl:passport:product:model:battery:Co2Footprints:Category;1",
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:Category;1",
               "@type": "Field",
               "name": "Category",
               "schema": {
@@ -270,14 +270,14 @@
               }
             },
             {
-              "@id": "dtmi:avl:passport:product:model:battery:Co2Footprints:Description;1",
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:Description;1",
               "@type": "Field",
               "name": "Description",
               "schema": "string",
               "displayName": "Description"
             },
             {
-              "@id": "dtmi:avl:passport:product:model:battery:Co2Footprints:DataCategory;1",
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:DataCategory;1",
               "@type": "Field",
               "name": "DataCategory",
               "schema": {
@@ -304,14 +304,14 @@
               }
             },
             {
-              "@id": "dtmi:avl:passport:product:model:battery:Co2Footprints:DQRRating;1",
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:DQRRating;1",
               "@type": "Field",
               "name": "DQRRating",
               "schema": "double",
               "displayName": "DQR Rating"
             },
             {
-              "@id": "dtmi:avl:passport:product:model:battery:Co2Footprints:Co2Footprint;1",
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:Co2Footprint;1",
               "@type": "Field",
               "name": "Co2Footprint",
               "schema": "double",
@@ -323,18 +323,18 @@
     },
     {
       "@type": "Property",
-      "@id": "dtmi:avl:passport:product:model:battery:CustomProductLink;1",
+      "@id": "dtmi:avl:product:model:battery:CustomProductLink;1",
       "name": "Weblink",
       "schema": {
         "@type": "Object",
         "fields": [
           {
-            "@id": "dtmi:avl:passport:product:model:battery:CustomProductLink:Url;1",
+            "@id": "dtmi:avl:product:model:battery:CustomProductLink:Url;1",
             "name": "Url",
             "schema": "string"
           },
           {
-            "@id": "dtmi:avl:passport:product:model:battery:CustomProductLink:LinkText;1",
+            "@id": "dtmi:avl:product:model:battery:CustomProductLink:LinkText;1",
             "name": "LinkText",
             "schema": "string"
           }
@@ -345,7 +345,7 @@
     },
     {
       "@type": "Property",
-      "@id": "dtmi:avl:passport:product:model:battery:MailAddress;1",
+      "@id": "dtmi:avl:product:model:battery:MailAddress;1",
       "name": "CustomProductOwnerMailAddress",
       "schema": "string",
       "displayName": "Custom Product Owner MailAddress",
@@ -353,23 +353,23 @@
     },
     {
       "@type": "Property",
-      "@id": "dtmi:avl:passport:product:model:battery:PrimaryRawMaterialsDocument;1",
+      "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument;1",
       "name": "PrimaryRawMaterialsDocument",
       "schema": {
         "@type": "Object",
         "fields": [
           {
-            "@id": "dtmi:avl:passport:product:model:battery:PrimaryRawMaterialsDocument:Url;1",
+            "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument:Url;1",
             "name": "Url",
             "schema": "string"
           },
           {
-            "@id": "dtmi:avl:passport:product:model:battery:Name;1",
+            "@id": "dtmi:avl:product:model:battery:Name;1",
             "name": "Name",
             "schema": "string"
           },
           {
-            "@id": "dtmi:avl:passport:product:model:battery:PrimaryRawMaterialsDocument:Type;1",
+            "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument:Type;1",
             "name": "Type",
             "schema": {
               "@type": "Enum",
@@ -406,7 +406,7 @@
       "name": "ProductPassports",
       "minMultiplicity": 0,
       "maxMultiplicity": 500,
-      "target": "dtmi:avl:passport:product:passport:battery;1",
+      "target": "dtmi:avl:product:passport:battery;1",
       "displayName": "Product Passports",
       "description": "Reference to the specific product passports of a given Model."
     }

@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:category;1",
+    "@id": "dtmi:avl:product:dataview:category;1",
     "@type": "Interface",
     "displayName": "Dataview Category",
     "contents": [
@@ -10,7 +10,7 @@
             "schema": "string",
             "writable": false,
             "displayName": "Name",
-            "description": "Represents the name of the Data View."
+            "description": "Represents the name of the Data View Category."
         },
         {
             "@type": "Property",
@@ -25,7 +25,7 @@
             "name": "DataViewGroups",
             "minMultiplicity": 0,
             "maxMultiplicity": 100,
-            "target": "dtmi:avl:passport:ui:group;1",
+            "target": "dtmi:avl:product:dataview:group;1",
             "displayName": "Data View Groups",
             "description": "Contains all groups within one category which should be displayed on the ui for a specific Product Model / Product Passport."
         }

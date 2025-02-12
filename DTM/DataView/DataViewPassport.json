@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:passportView;1",
+    "@id": "dtmi:avl:product:dataview:Passport;1",
     "@type": "Interface",
     "displayName": "ProductView",
     "contents": [
@@ -33,7 +33,7 @@
             "name": "DataViews",
             "minMultiplicity": 0,
             "maxMultiplicity": 2,
-            "target": "dtmi:avl:passport:ui:dataview;1",
+            "target": "dtmi:avl:product:dataview:Passport:Configuration;1",
             "displayName": "Data Views",
             "description": "Contains all data views which should be displayed on the ui for a specific Product Model / Product Passport."
         }

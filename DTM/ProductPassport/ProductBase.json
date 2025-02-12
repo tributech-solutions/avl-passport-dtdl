@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:product:base;1",
+    "@id": "dtmi:avl:product:base;1",
     "@type": "Interface",
     "contents": [
         {
@@ -8,7 +8,7 @@
             "name": "ValidationGroup",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:avl:passport:validation:group;1",
+            "target": "dtmi:avl:product:validation:group;1",
             "displayName": "Validation Rules",
             "description": "Reference to the specific validation rules of the product passport."
         },
@@ -17,7 +17,7 @@
             "name": "DataConfigurationView",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:avl:passport:ui:ConfigurationView;1",
+            "target": "dtmi:avl:product:dataview:Configuration;1",
             "displayName": "Data Configuration View",
             "description": "Reference to the specific Data Configuration View"
         },
@@ -26,7 +26,7 @@
             "name": "PassportView",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:avl:passport:ui:passportView;1",
+            "target": "dtmi:avl:product:dataview:Passport;1",
             "displayName": "Data Views",
             "description": "Reference to the specific Product View"
         }

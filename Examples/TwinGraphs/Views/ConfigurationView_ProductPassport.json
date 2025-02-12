@@ -4,18 +4,18 @@
       "$dtid": "a627e28f-1152-4c81-ba4e-1a917e0d7915",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:ConfigurationView;1"
+        "$model": "dtmi:avl:product:dataview:Configuration;1"
       },
       "displayName": "Configuration View",
       "Name": "Product Passport Configuration View",
-      "DTMIReference": "dtmi:avl:passport:product:passport:base;1",
+      "DTMIReference": "dtmi:avl:product:passport:base;1",
       "State": 1
     },
     {
       "$dtid": "6b498cc7-4548-4a7a-a5d1-22cded840425",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:category;1"
+        "$model": "dtmi:avl:product:dataview:category;1"
       },
       "displayName": "Dataview Category",
       "Name": "Data view Category Y",
@@ -25,7 +25,7 @@
       "$dtid": "292bb4d3-408d-41c8-852f-e2caee3690d5",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:group;1"
+        "$model": "dtmi:avl:product:dataview:group;1"
       },
       "displayName": "Dataview Group",
       "Name": "Data View Group Create Product Passport",
@@ -35,33 +35,33 @@
       "$dtid": "011b9114-441a-4374-969b-abc46c324a45",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute;1"
+        "$model": "dtmi:avl:product:dataview:attribute;1"
       },
       "displayName": "Dataview Attribute",
       "Name": "Name",
-      "FieldDTMI": "dtmi:avl:passport:product:passport:base:Name;1",
+      "FieldDTMI": "dtmi:avl:product:passport:base:Name;1",
       "AttributeSorting": 1
     },
     {
       "$dtid": "4c245a4c-7a42-4d3f-a47f-b95e8ea64beb",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute;1"
+        "$model": "dtmi:avl:product:dataview:attribute;1"
       },
       "displayName": "Dataview Attribute",
       "Name": "Item Number",
-      "FieldDTMI": "dtmi:avl:passport:product:model:base:ItemNumber;1",
+      "FieldDTMI": "dtmi:avl:product:model:base:ItemNumber;1",
       "AttributeSorting": 5
     },
     {
       "$dtid": "7473f129-ba51-49d1-8c15-5a6cce4474b6",
       "$etag": "128",
       "$metadata": {
-        "$model": "dtmi:avl:passport:ui:attribute;1"
+        "$model": "dtmi:avl:product:dataview:attribute;1"
       },
       "displayName": "Dataview Attribute",
       "Name": "Batch Number",
-      "FieldDTMI": "dtmi:avl:passport:product:passport:base:BatchNumber;1",
+      "FieldDTMI": "dtmi:avl:product:passport:base:BatchNumber;1",
       "AttributeSorting": 28
     }
   ],
