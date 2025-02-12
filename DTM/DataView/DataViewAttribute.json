@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:ui:attribute;1",
+    "@id": "dtmi:avl:product:dataview:attribute;1",
     "@type": "Interface",
     "displayName": "Dataview Attribute",
     "contents": [
@@ -18,7 +18,7 @@
             "schema": "string",
             "writable": false,
             "displayName": "FieldDTMI",
-            "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
+            "description": "Property DTMI of dtmi:avl:product:model:base;1"
         },
         {
             "@type": "Property",

@@ -1,0 +1,41 @@
+{
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:dataview:Passport;1",
+    "@type": "Interface",
+    "displayName": "ProductView",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Data View."
+        },
+        {
+            "@type": "Property",
+            "name": "DTMIReferenceProductModel",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Digital Twin Model Identifier Reference",
+            "description": "Represents the Digital Twin Model Identifier from which the View is derived."
+        },
+        {
+            "@type": "Property",
+            "name": "DTMIReferencePassport",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Digital Twin Model Identifier Reference",
+            "description": "Represents the Digital Twin Model Identifier from which the View is derived."
+        },
+        {
+            "@type": "Relationship",
+            "name": "DataViews",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 2,
+            "target": "dtmi:avl:product:dataview:Passport:Configuration;1",
+            "displayName": "Data Views",
+            "description": "Contains all data views which should be displayed on the ui for a specific Product Model / Product Passport."
+        }
+    ]
+}

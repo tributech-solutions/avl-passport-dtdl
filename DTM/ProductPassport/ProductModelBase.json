@@ -1,0 +1,44 @@
+{
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:model:base;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:product:base;1",
+    "contents": [
+        {
+            "@id": "dtmi:avl:product:model:base:Name;1",
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Product."
+        },
+        {
+            "@id": "dtmi:avl:product:model:base:ItemNumber;1",
+            "@type": "Property",
+            "name": "ItemNumber",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Item Number",
+            "description": "Represents the item number of the Product Model."
+        },
+        {
+            "@id": "dtmi:avl:product:model:base:CreationDate;1",
+            "@type": "Property",
+            "name": "CreationDate",
+            "schema": "dateTime",
+            "writable": false,
+            "displayName": "Creation Timestamp",
+            "description": "Represents the creation time of the Product Model."
+        },
+        {
+            "@id": "dtmi:avl:product:model:base:LastModifiedDate;1",
+            "@type": "Property",
+            "name": "LastModifiedDate",
+            "schema": "dateTime",
+            "writable": false,
+            "displayName": "Last Modified Timestamp",
+            "description": "Represents the last modification time of the Product Model."
+        }
+    ]
+}

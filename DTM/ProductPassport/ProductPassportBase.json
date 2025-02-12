@@ -1,0 +1,43 @@
+{
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:passport:base;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:product:base;1",
+    "contents": [
+        {
+            "@id": "dtmi:avl:product:passport:base:Name;1",
+            "@type": "Property",
+            "name": "Name",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Name",
+            "description": "Represents the name of the Product."
+        },
+        {
+            "@id": "dtmi:avl:product:passport:base:SerialNumber;1",
+            "@type": "Property",
+            "name": "SerialNumber",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Serial Number",
+            "description": "Represents the serial number of the Product Passports."
+        },
+        {
+            "@id": "dtmi:avl:product:passport:base:BatchNumber;1",
+            "@type": "Property",
+            "name": "BatchNumber",
+            "schema": "string",
+            "writable": false,
+            "displayName": "Batch Number"
+        },
+        {
+            "@id": "dtmi:avl:product:passport:base:ProductionDate;1",
+            "@type": "Property",
+            "name": "ProductionDate",
+            "schema": "dateTime",
+            "writable": false,
+            "displayName": "Production Timestamp",
+            "description": "Represents the production time of the Product Passports."
+        }
+    ]
+}
