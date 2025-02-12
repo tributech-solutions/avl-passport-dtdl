@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "Min",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Minimum Value",
             "description": "Property number is not allowed to be less than this value. (Min Value Included)"
         },
@@ -17,7 +17,7 @@
             "@type": "Property",
             "name": "Max",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Maximum Value",
             "description": "Property number is not allowed to be greater than this value. (Max Value Included)"
         }

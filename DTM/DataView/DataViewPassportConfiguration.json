@@ -8,7 +8,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Passport Configuration."
         },
@@ -39,7 +39,7 @@
                     }
                 ]
             },
-            "writable": false,
+            "writable": true,
             "displayName": "Passport Configuration Type",
             "description": "Represents the type of the Passport Configuration."
         },

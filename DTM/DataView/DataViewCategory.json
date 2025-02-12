@@ -8,7 +8,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Data View Category."
         },
@@ -16,7 +16,7 @@
             "@type": "Property",
             "name": "CategorySorting",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Sorting Position of current Category",
             "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
         },

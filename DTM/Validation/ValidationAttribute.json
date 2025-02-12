@@ -8,7 +8,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents a user friendly name of the validation assignment."
         },
@@ -16,7 +16,7 @@
             "@type": "Property",
             "name": "FieldDTMI",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "FieldDTMI",
             "description": "Property DTMI of dtmi:avl:product:model:base;1"
         },
@@ -24,7 +24,7 @@
             "@type": "Property",
             "name": "IsOptional",
             "schema": "boolean",
-            "writable": false,
+            "writable": true,
             "displayName": "Is Optional",
             "description": "Defines if a value is optional"
         },

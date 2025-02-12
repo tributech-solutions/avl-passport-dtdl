@@ -8,7 +8,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents a user friendly name of the UI attribute assignment."
         },
@@ -16,7 +16,7 @@
             "@type": "Property",
             "name": "FieldDTMI",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "FieldDTMI",
             "description": "Property DTMI of dtmi:avl:product:model:base;1"
         },
@@ -24,7 +24,7 @@
             "@type": "Property",
             "name": "AttributeSorting",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Sorting Position of current Attribute",
             "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
         }
@@ -39,7 +39,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Data View Category."
         },
@@ -47,7 +47,7 @@
             "@type": "Property",
             "name": "CategorySorting",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Sorting Position of current Category",
             "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
         },
@@ -71,7 +71,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Data View."
         },
@@ -79,7 +79,7 @@
             "@type": "Property",
             "name": "DTMIReference",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Digital Twin Model Identifier Reference",
             "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
         },
@@ -139,7 +139,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Data View."
         },
@@ -147,7 +147,7 @@
             "@type": "Property",
             "name": "GroupSorting",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Sorting Position of current Group",
             "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
         },
@@ -171,7 +171,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Data View."
         },
@@ -179,7 +179,7 @@
             "@type": "Property",
             "name": "DTMIReferenceProductModel",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Digital Twin Model Identifier Reference",
             "description": "Represents the Digital Twin Model Identifier from which the View is derived."
         },
@@ -187,7 +187,7 @@
             "@type": "Property",
             "name": "DTMIReferencePassport",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Digital Twin Model Identifier Reference",
             "description": "Represents the Digital Twin Model Identifier from which the View is derived."
         },
@@ -211,7 +211,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Passport Configuration."
         },
@@ -242,7 +242,7 @@
                     }
                 ]
             },
-            "writable": false,
+            "writable": true,
             "displayName": "Passport Configuration Type",
             "description": "Represents the type of the Passport Configuration."
         },
@@ -336,7 +336,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Product."
         },
@@ -345,7 +345,7 @@
             "@type": "Property",
             "name": "ItemNumber",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Item Number",
             "description": "Represents the item number of the Product Model."
         },
@@ -354,7 +354,7 @@
             "@type": "Property",
             "name": "CreationDate",
             "schema": "dateTime",
-            "writable": false,
+            "writable": true,
             "displayName": "Creation Timestamp",
             "description": "Represents the creation time of the Product Model."
         },
@@ -363,7 +363,7 @@
             "@type": "Property",
             "name": "LastModifiedDate",
             "schema": "dateTime",
-            "writable": false,
+            "writable": true,
             "displayName": "Last Modified Timestamp",
             "description": "Represents the last modification time of the Product Model."
         }
@@ -379,7 +379,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Product."
         },
@@ -388,7 +388,7 @@
             "@type": "Property",
             "name": "SerialNumber",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Serial Number",
             "description": "Represents the serial number of the Product Passports."
         },
@@ -397,7 +397,7 @@
             "@type": "Property",
             "name": "BatchNumber",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Batch Number"
         },
         {
@@ -405,7 +405,7 @@
             "@type": "Property",
             "name": "ProductionDate",
             "schema": "dateTime",
-            "writable": false,
+            "writable": true,
             "displayName": "Production Timestamp",
             "description": "Represents the production time of the Product Passports."
         }
@@ -425,7 +425,7 @@
       "@type": "Property",
       "name": "BatteryApplicationType",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "Battery application type"
     },
     {
@@ -433,7 +433,7 @@
       "@type": "Property",
       "name": "BatteryChemistryType",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "Battery chemistry type"
     },
     {
@@ -444,7 +444,7 @@
       ],
       "name": "SoH",
       "schema": "integer",
-      "writable": false,
+      "writable": true,
       "displayName": "State of Health",
       "unit": "percent"
     },
@@ -456,7 +456,7 @@
       ],
       "name": "PowerCapability",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Power Capability",
       "unit": "watt"
     },
@@ -468,7 +468,7 @@
       ],
       "name": "RatedCapacityAh",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Rated capacity in Ah",
       "unit": "ampereHour"
     },
@@ -480,7 +480,7 @@
       ],
       "name": "RatedCapacitykWh",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Rated capacity in Ah",
       "unit": "kilowattHour"
     },
@@ -489,7 +489,7 @@
       "@type": "Property",
       "name": "NumberOfCells",
       "schema": "integer",
-      "writable": false,
+      "writable": true,
       "displayName": "Total Number of cells"
     },
     {
@@ -500,7 +500,7 @@
       ],
       "name": "Weight",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Weight",
       "unit": "kilogram"
     },
@@ -509,7 +509,7 @@
       "@type": "Property",
       "name": "ExpectedLifetime",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Expected Lifetime in cycles"
     },
     {
@@ -531,7 +531,7 @@
       ],
       "name": "OperatingTemperatureMIN",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Operating Minimum Temperature",
       "unit": "degreeCelsius"
     },
@@ -543,7 +543,7 @@
       ],
       "name": "OperatingTemperatureMAX",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Operating Maximum Temperature",
       "unit": "degreeCelsius"
     },
@@ -555,7 +555,7 @@
       ],
       "name": "VoltageLimitMIN",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Voltage Minimum Limit",
       "unit": "volt"
     },
@@ -567,7 +567,7 @@
       ],
       "name": "VoltageLimitMAX",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Voltage Maximum Limit",
       "unit": "volt"
     },
@@ -579,7 +579,7 @@
       ],
       "name": "VoltageLimitNOM",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Voltage Nominal Limit",
       "unit": "volt"
     },
@@ -588,7 +588,7 @@
       "@type": "Property",
       "name": "ManufactureEntityName",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "Name",
       "description": "Name of the manufacturer"
     },
@@ -597,7 +597,7 @@
       "@type": "Property",
       "name": "ManufactureEntityAddress",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "Address",
       "description": "Address of the manufacturer"
     },
@@ -606,7 +606,7 @@
       "@type": "Property",
       "name": "ManufactureEntityZipCode",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "Zip Code",
       "description": "Zip Code of the manufacturer"
     },
@@ -615,7 +615,7 @@
       "@type": "Property",
       "name": "ManufactureEntityCountry",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "Country",
       "description": "Country of the manufacturer"
     },
@@ -624,7 +624,7 @@
       "@type": "Property",
       "name": "ManufactureEntityCity",
       "schema": "string",
-      "writable": false,
+      "writable": true,
       "displayName": "City",
       "description": "City of the manufacturer"
     },
@@ -841,7 +841,7 @@
       ],
       "name": "InternalResistance",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Internal Resistance",
       "unit": "milliohm"
     },
@@ -961,7 +961,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents a user friendly name of the validation assignment."
         },
@@ -969,7 +969,7 @@
             "@type": "Property",
             "name": "FieldDTMI",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "FieldDTMI",
             "description": "Property DTMI of dtmi:avl:product:model:base;1"
         },
@@ -977,7 +977,7 @@
             "@type": "Property",
             "name": "IsOptional",
             "schema": "boolean",
-            "writable": false,
+            "writable": true,
             "displayName": "Is Optional",
             "description": "Defines if a value is optional"
         },
@@ -1046,7 +1046,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Validation Group."
         },
@@ -1054,7 +1054,7 @@
             "@type": "Property",
             "name": "DTMIReference",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Digital Twin Model Identifier Reference",
             "description": "Represents the Digital Twin Model Identifier where the validation rules should be applied to."
         },
@@ -1077,7 +1077,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents a user friendly name of the validation rule."
         }
@@ -1093,7 +1093,7 @@
             "@type": "Property",
             "name": "MinDate",
             "schema": "date",
-            "writable": false,
+            "writable": true,
             "displayName": "Minimum Date Value",
             "description": "Property date is not allowed to be less than this value. (Min Value Included)"
         }
@@ -1109,7 +1109,7 @@
             "@type": "Property",
             "name": "MinDateTime",
             "schema": "dateTime",
-            "writable": false,
+            "writable": true,
             "displayName": "Minimum DateTime Value",
             "description": "Property date is not allowed to be less than this value. (Min Value Included)"
         }
@@ -1128,7 +1128,7 @@
                 "@type": "Array",
                 "elementSchema": "integer"
             },
-            "writable": false,
+            "writable": true,
             "displayName": "Valid Enum Values",
             "description": "Property defines the list of valid enum values."
         }
@@ -1144,7 +1144,7 @@
             "@type": "Property",
             "name": "Min",
             "schema": "double",
-            "writable": false,
+            "writable": true,
             "displayName": "Minimum Value",
             "description": "Property number is not allowed to be less than this value. (Min Value Included)"
         },
@@ -1152,7 +1152,7 @@
             "@type": "Property",
             "name": "Max",
             "schema": "double",
-            "writable": false,
+            "writable": true,
             "displayName": "Maximum Value",
             "description": "Property number is not allowed to be greater than this value. (Max Value Included)"
         }
@@ -1168,7 +1168,7 @@
             "@type": "Property",
             "name": "Min",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Minimum Value",
             "description": "Property number is not allowed to be less than this value. (Min Value Included)"
         },
@@ -1176,7 +1176,7 @@
             "@type": "Property",
             "name": "Max",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Maximum Value",
             "description": "Property number is not allowed to be greater than this value. (Max Value Included)"
         }
@@ -1192,7 +1192,7 @@
             "@type": "Property",
             "name": "Regex",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Regex Pattern",
             "description": "Regex pattern which should be applied to the text."
         }

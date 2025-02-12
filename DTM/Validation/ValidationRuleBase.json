@@ -7,7 +7,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents a user friendly name of the validation rule."
         }

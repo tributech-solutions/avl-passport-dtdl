@@ -12,7 +12,7 @@
                 "@type": "Array",
                 "elementSchema": "integer"
             },
-            "writable": false,
+            "writable": true,
             "displayName": "Valid Enum Values",
             "description": "Property defines the list of valid enum values."
         }

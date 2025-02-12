@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "MinDate",
             "schema": "date",
-            "writable": false,
+            "writable": true,
             "displayName": "Minimum Date Value",
             "description": "Property date is not allowed to be less than this value. (Min Value Included)"
         }

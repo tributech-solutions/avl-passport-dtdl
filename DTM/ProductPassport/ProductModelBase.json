@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Product."
         },
@@ -18,7 +18,7 @@
             "@type": "Property",
             "name": "ItemNumber",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Item Number",
             "description": "Represents the item number of the Product Model."
         },
@@ -27,7 +27,7 @@
             "@type": "Property",
             "name": "CreationDate",
             "schema": "dateTime",
-            "writable": false,
+            "writable": true,
             "displayName": "Creation Timestamp",
             "description": "Represents the creation time of the Product Model."
         },
@@ -36,7 +36,7 @@
             "@type": "Property",
             "name": "LastModifiedDate",
             "schema": "dateTime",
-            "writable": false,
+            "writable": true,
             "displayName": "Last Modified Timestamp",
             "description": "Represents the last modification time of the Product Model."
         }

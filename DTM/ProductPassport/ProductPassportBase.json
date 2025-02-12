@@ -9,7 +9,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents the name of the Product."
         },
@@ -18,7 +18,7 @@
             "@type": "Property",
             "name": "SerialNumber",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Serial Number",
             "description": "Represents the serial number of the Product Passports."
         },
@@ -27,7 +27,7 @@
             "@type": "Property",
             "name": "BatchNumber",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Batch Number"
         },
         {
@@ -35,7 +35,7 @@
             "@type": "Property",
             "name": "ProductionDate",
             "schema": "dateTime",
-            "writable": false,
+            "writable": true,
             "displayName": "Production Timestamp",
             "description": "Represents the production time of the Product Passports."
         }

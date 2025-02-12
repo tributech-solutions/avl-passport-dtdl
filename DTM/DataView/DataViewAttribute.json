@@ -8,7 +8,7 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents a user friendly name of the UI attribute assignment."
         },
@@ -16,7 +16,7 @@
             "@type": "Property",
             "name": "FieldDTMI",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "FieldDTMI",
             "description": "Property DTMI of dtmi:avl:product:model:base;1"
         },
@@ -24,7 +24,7 @@
             "@type": "Property",
             "name": "AttributeSorting",
             "schema": "integer",
-            "writable": false,
+            "writable": true,
             "displayName": "Sorting Position of current Attribute",
             "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
         }

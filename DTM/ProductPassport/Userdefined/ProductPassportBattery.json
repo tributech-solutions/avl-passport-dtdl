@@ -16,7 +16,7 @@
       ],
       "name": "InternalResistance",
       "schema": "double",
-      "writable": false,
+      "writable": true,
       "displayName": "Internal Resistance",
       "unit": "milliohm"
     },
