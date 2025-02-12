@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:product:model:base;1",
+    "@id": "dtmi:avl:passport:product:base;1",
     "@type": "Interface",
     "contents": [
         {

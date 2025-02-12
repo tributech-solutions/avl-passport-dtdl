@@ -7,8 +7,8 @@
         "$model": "dtmi:avl:passport:validation:group;1"
       },
       "displayName": "Validation Group",
-      "Name": "Product Type Validation Group",
-      "DTMIReference": "dtmi:avl:passport:product:type:battery;1"
+      "Name": "Product Model Validation Group",
+      "DTMIReference": "dtmi:avl:passport:product:model:battery;1"
     },
     {
       "$dtid": "944b50d9-402a-4167-9314-5420adfd4592",
@@ -17,9 +17,8 @@
         "$model": "dtmi:avl:passport:validation:attribute;1"
       },
       "displayName": "Validation Attribute",
-      "Name": "Product Type Validation Attribute NonEmptyName",
+      "Name": "Product Model Validation Attribute NonEmptyName",
       "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1",
-      "IsActive": true,
       "IsOptional": true
     },
     {
@@ -29,9 +28,8 @@
         "$model": "dtmi:avl:passport:validation:attribute;1"
       },
       "displayName": "Validation Attribute",
-      "Name": "Product Type Validation SoH Range",
-      "FieldDTMI": "dtmi:avl:passport:product:type:battery:SoH;1",
-      "IsActive": true,
+      "Name": "Product Model Validation SoH Range",
+      "FieldDTMI": "dtmi:avl:passport:product:model:battery:SoH;1",
       "IsOptional": true
     },
     {

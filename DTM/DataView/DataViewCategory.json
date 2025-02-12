@@ -27,7 +27,7 @@
             "maxMultiplicity": 100,
             "target": "dtmi:avl:passport:ui:group;1",
             "displayName": "Data View Groups",
-            "description": "Contains all groups within one category which should be displayed on the ui for a specific Product Model / Product Unit."
+            "description": "Contains all groups within one category which should be displayed on the ui for a specific Product Model / Product Passport."
         }      
     ]
   }

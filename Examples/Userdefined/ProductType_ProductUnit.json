@@ -4,7 +4,7 @@
         "$dtid": "0e1c13d0-7637-4abf-ab87-51ebf8b6a7f2",
         "$etag": "128",
         "$metadata": {
-          "$model": "dtmi:avl:passport:product:unit:battery;1"
+          "$model": "dtmi:avl:passport:product:passport:battery;1"
         },
         "displayName": "Battery Passport",
         "Co2Footprints": [{
@@ -23,7 +23,7 @@
         "$dtid": "dd32aad0-33bd-4952-a0df-d3c612fdc35e",
         "$etag": "128",
         "$metadata": {
-          "$model": "dtmi:avl:passport:product:type:battery;1"
+          "$model": "dtmi:avl:passport:product:model:battery;1"
         },
         "displayName": "Battery Passport",
         "BatteryApplicationType": "5bcea43b-e26d-467e-8970-255b343e3715",
@@ -62,7 +62,7 @@
       {
         "$relationshipId": "1e264bcf-190b-44b5-bb36-9ac1dafdb091",
         "$etag": "128",
-        "$relationshipName": "ProductUnits",
+        "$relationshipName": "ProductPassports",
         "$sourceId": "dd32aad0-33bd-4952-a0df-d3c612fdc35e",
         "$targetId": "0e1c13d0-7637-4abf-ab87-51ebf8b6a7f2"
       }

@@ -7,8 +7,8 @@
         "$model": "dtmi:avl:passport:validation:group;1"
       },
       "displayName": "Validation Group",
-      "Name": "Product Unit Validation Group",
-      "DTMIReference": "dtmi:avl:passport:product:unit:battery;1"
+      "Name": "Product Passport Validation Group",
+      "DTMIReference": "dtmi:avl:passport:product:passport:battery;1"
     },
     {
       "$dtid": "a74997f0-f93a-4f29-b56e-979e3eb0ad9c",
@@ -17,9 +17,8 @@
         "$model": "dtmi:avl:passport:validation:attribute;1"
       },
       "displayName": "Validation Attribute",
-      "Name": "Product Unit Validation Attribute Enum",
-      "FieldDTMI": "dtmi:avl:passport:product:unit:battery:DataValidationState;1",
-      "IsActive": true,
+      "Name": "Product Passport Validation Attribute Enum",
+      "FieldDTMI": "dtmi:avl:passport:product:passport:battery:DataValidationState;1",
       "IsOptional": true
     },
     {

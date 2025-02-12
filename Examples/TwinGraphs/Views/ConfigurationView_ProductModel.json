@@ -7,8 +7,8 @@
           "$model": "dtmi:avl:passport:ui:ConfigurationView;1"
         },
         "displayName": "Configuration View",
-        "Name": "Product Type Configuration View",
-        "DTMIReference": "dtmi:avl:passport:product:type:battery;1",
+        "Name": "Product Model Configuration View",
+        "DTMIReference": "dtmi:avl:passport:product:model:battery;1",
         "State": 1
       },
       {
@@ -28,7 +28,7 @@
           "$model": "dtmi:avl:passport:ui:group;1"
         },
         "displayName": "Dataview Group",
-        "Name": "Data View Group Create Product Type",
+        "Name": "Data View Group Create Product Model",
         "GroupSorting": 1
       },
       {
@@ -39,7 +39,7 @@
         },
         "displayName": "Dataview Attribute",
         "Name": "Name",
-        "FieldDTMI": "dtmi:avl:passport:product:type:base:Name;1",
+        "FieldDTMI": "dtmi:avl:passport:product:model:base:Name;1",
         "AttributeSorting": 1
       },
       {
@@ -50,7 +50,7 @@
         },
         "displayName": "Dataview Attribute",
         "Name": "Item Number",
-        "FieldDTMI": "dtmi:avl:passport:product:type:base:ItemNumber;1",
+        "FieldDTMI": "dtmi:avl:passport:product:model:base:ItemNumber;1",
         "AttributeSorting": 2
       },
       {
@@ -61,7 +61,7 @@
         },
         "displayName": "Dataview Attribute",
         "Name": "Battery Application Type",
-        "FieldDTMI": "dtmi:avl:passport:product:type:battery:BatteryApplicationType;1",
+        "FieldDTMI": "dtmi:avl:passport:product:model:battery:BatteryApplicationType;1",
         "AttributeSorting": 3
       }
     ],

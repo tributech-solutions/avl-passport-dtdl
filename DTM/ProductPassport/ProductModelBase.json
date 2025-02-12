@@ -1,11 +1,11 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:passport:product:type:base;1",
+    "@id": "dtmi:avl:passport:product:model:base;1",
     "@type": "Interface",
-    "extends": "dtmi:avl:passport:product:model:base;1",
+    "extends": "dtmi:avl:passport:product:base;1",
     "contents": [
         {
-            "@id": "dtmi:avl:passport:product:type:base:Name;1",
+            "@id": "dtmi:avl:passport:product:model:base:Name;1",
             "@type": "Property",
             "name": "Name",
             "schema": "string",
@@ -14,31 +14,31 @@
             "description": "Represents the name of the Product."
         },
         {
-            "@id": "dtmi:avl:passport:product:type:base:ItemNumber;1",
+            "@id": "dtmi:avl:passport:product:model:base:ItemNumber;1",
             "@type": "Property",
             "name": "ItemNumber",
             "schema": "string",
             "writable": false,
             "displayName": "Item Number",
-            "description": "Represents the item number of the Product Type."
+            "description": "Represents the item number of the Product Model."
         },
         {
-            "@id": "dtmi:avl:passport:product:type:base:CreationDate;1",
+            "@id": "dtmi:avl:passport:product:model:base:CreationDate;1",
             "@type": "Property",
             "name": "CreationDate",
             "schema": "dateTime",
             "writable": false,
             "displayName": "Creation Timestamp",
-            "description": "Represents the creation time of the Product Type."
+            "description": "Represents the creation time of the Product Model."
         }, 
         {
-            "@id": "dtmi:avl:passport:product:type:base:LastModifiedDate;1",
+            "@id": "dtmi:avl:passport:product:model:base:LastModifiedDate;1",
             "@type": "Property",
             "name": "LastModifiedDate",
             "schema": "dateTime",
             "writable": false,
             "displayName": "Last Modified Timestamp",
-            "description": "Represents the last modification time of the Product Type."
+            "description": "Represents the last modification time of the Product Model."
         }
     ]
 }

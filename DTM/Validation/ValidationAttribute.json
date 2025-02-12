@@ -18,7 +18,7 @@
             "schema": "string",
             "writable": false,
             "displayName": "FieldDTMI",
-            "description": "Property DTMI of dtmi:avl:passport:product:type:base;1"
+            "description": "Property DTMI of dtmi:avl:passport:product:model:base;1"
         },
         {
             "@type": "Property",

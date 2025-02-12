@@ -27,7 +27,7 @@
           "maxMultiplicity": 100,
           "target": "dtmi:avl:passport:validation:attribute;1",
           "displayName": "Validation Attributes",
-          "description": "Contains all attributes where a validation should be applied to a Product Model / Product Unit."
+          "description": "Contains all attributes where a validation should be applied to a Product Model / Product Passport."
       }      
   ]
 }

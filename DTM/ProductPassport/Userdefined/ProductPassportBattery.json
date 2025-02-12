@@ -3,13 +3,13 @@
     "dtmi:dtdl:context;4",
     "dtmi:dtdl:extension:quantitativeTypes;2"
   ],
-  "@id": "dtmi:avl:passport:product:unit:battery;1",
-  "extends": "dtmi:avl:passport:product:unit:base;1",
+  "@id": "dtmi:avl:passport:product:passport:battery;1",
+  "extends": "dtmi:avl:passport:product:passport:base;1",
   "@type": "Interface",
   "displayName": "Battery Passport",
   "contents": [
     {
-      "@id": "dtmi:avl:passport:product:unit:battery:InternalResistance;1",
+      "@id": "dtmi:avl:passport:product:passport:battery:InternalResistance;1",
       "@type": [
         "Property",
         "Resistance"
@@ -21,7 +21,7 @@
       "unit": "milliohm"
     },
     {
-      "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints;1",
+      "@id": "dtmi:avl:passport:product:passport:battery:Co2Footprints;1",
       "@type": "Property",
       "name": "Co2Footprints",
       "displayName": "Co2 Footprints",
@@ -31,7 +31,7 @@
           "@type": "Object",
           "fields": [
             {
-              "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Category;1",
+              "@id": "dtmi:avl:passport:product:passport:battery:Co2Footprints:Category;1",
               "@type": "Field",
               "name": "Category",
               "schema": {
@@ -74,14 +74,14 @@
               }
             },
             {
-              "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Description;1",
+              "@id": "dtmi:avl:passport:product:passport:battery:Co2Footprints:Description;1",
               "@type": "Field",
               "name": "Description",
               "schema": "string",
               "displayName": "Description"
             },
             {
-              "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:DataCategory;1",
+              "@id": "dtmi:avl:passport:product:passport:battery:Co2Footprints:DataCategory;1",
               "@type": "Field",
               "name": "DataCategory",
               "schema": {
@@ -108,14 +108,14 @@
               }
             },
             {
-              "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:DQRRating;1",
+              "@id": "dtmi:avl:passport:product:passport:battery:Co2Footprints:DQRRating;1",
               "@type": "Field",
               "name": "DQRRating",
               "schema": "double",
               "displayName": "DQR Rating"
             },
             {
-              "@id": "dtmi:avl:passport:product:unit:battery:Co2Footprints:Co2Footprint;1",
+              "@id": "dtmi:avl:passport:product:passport:battery:Co2Footprints:Co2Footprint;1",
               "@type": "Field",
               "name": "Co2Footprint",
               "schema": "double",
