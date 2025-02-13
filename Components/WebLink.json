@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:component:webLink;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:avl:product:component:webLink:Url;1",
+            "name": "Url",
+            "@type": "Property",
+            "schema": "string"            
+        }
+    ]
+}

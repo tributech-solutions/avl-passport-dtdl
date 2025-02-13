@@ -1,0 +1,51 @@
+{
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:component:document;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:avl:product:component:document:Url;1",
+            "name": "Url",
+            "@type": "Property",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:avl:product:component:document:Name;1",
+            "name": "Name",
+            "@type": "Property",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:avl:product:component:document:type;1",
+            "name": "Type",
+            "@type": "Property",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "NotAvailable",
+                        "enumValue": 0,
+                        "displayName": "Not Available",
+                        "description": "Unknown or not available."
+                    },
+                    {
+                        "name": "Csv",
+                        "enumValue": 1,
+                        "displayName": "CSV",
+                        "description": "CSV file format."
+                    },
+                    {
+                        "name": "Pdf",
+                        "enumValue": 2,
+                        "displayName": "PDF",
+                        "description": "PDF file format."
+                    }
+                ]
+            },
+            "writable": false,
+            "displayName": "Document Type",
+            "description": "Represents the document type."
+        }
+    ]
+}
