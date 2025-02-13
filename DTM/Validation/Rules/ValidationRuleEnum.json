@@ -1,0 +1,20 @@
+{
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:validation:rule:enum;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:product:validation:rule:base;1",
+    "displayName": "Enum Validation Rule",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "AllowedValues",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "integer"
+            },
+            "writable": true,
+            "displayName": "Valid Enum Values",
+            "description": "Property defines the list of valid enum values."
+        }
+    ]
+}

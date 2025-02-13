@@ -1,0 +1,159 @@
+{
+  "digitalTwins": [
+    {
+      "$dtid": "626d0b4b-b0e6-4d17-b7bf-756d1b8d6cb0",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:dataview:Passport;1"
+      },
+      "displayName": "ProductView",
+      "Name": "Product Passport View",
+      "DTMIReferenceProductModel": "dtmi:avl:product:model:battery;1",
+      "DTMIReferencePassport": "dtmi:avl:product:passport:battery;1"
+    },
+    {
+      "$dtid": "ef461c0b-de97-4f14-b2f1-817c7ffe5489",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:dataview:Passport:Configuration;1"
+      },
+      "displayName": "Dataview",
+      "Name": "11fa47f8-8706-4720-a2e6-3a10e602cff0",
+      "Type": 2,
+      "State": 1
+    },
+    {
+      "$dtid": "b6a94941-8f5f-4141-b29f-f0bfc2f2a511",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:dataview:category;1"
+      },
+      "displayName": "Dataview Category",
+      "Name": "e2290542-a487-46d2-ada5-4b1a647b9384",
+      "CategorySorting": 1
+    },
+    {
+      "$dtid": "3977f36d-30b8-4e81-8f1e-8ef7d9657d0f",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:dataview:group;1"
+      },
+      "displayName": "Dataview Group",
+      "Name": "e925c49d-fddc-415d-85f4-3ee6eab378ca",
+      "GroupSorting": 1
+    },
+    {
+      "$dtid": "1dec7a31-0720-4781-8cef-0b72926fc8b9",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:dataview:attribute;1"
+      },
+      "displayName": "Dataview Attribute",
+      "Name": "Product Model Name",
+      "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
+      "AttributeSorting": 1
+    },
+    {
+      "$dtid": "470f2adc-9cc7-40b1-bad5-dfa8a078dca2",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:dataview:attribute;1"
+      },
+      "displayName": "Dataview Attribute",
+      "Name": "Product Passport Name",
+      "FieldDTMI": "dtmi:avl:product:passport:base:Name;1",
+      "AttributeSorting": 3
+    },
+    {
+      "$dtid": "ece47057-d9aa-4737-9b32-b6eab90e5c8e",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:dataview:attribute;1"
+      },
+      "displayName": "Dataview Attribute",
+      "Name": "Product Model Item Number",
+      "FieldDTMI": "dtmi:avl:product:model:base:ItemNumber;1",
+      "AttributeSorting": 2
+    },
+    {
+      "$dtid": "feb1c04c-f999-4a55-8f75-2055b35876b7",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:dataview:attribute;1"
+      },
+      "displayName": "Dataview Attribute",
+      "Name": "Product Passport Serial Number",
+      "FieldDTMI": "dtmi:avl:product:passport:base:SerialNumber;1",
+      "AttributeSorting": 4
+    },
+    {
+      "$dtid": "ad5c025e-2646-488f-abf9-a564616f24ed",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:dataview:attribute;1"
+      },
+      "displayName": "Dataview Attribute",
+      "Name": "Product Passport Batch Number",
+      "FieldDTMI": "dtmi:avl:product:passport:base:BatchNumber;1",
+      "AttributeSorting": 5
+    }
+  ],
+  "relationships": [
+    {
+      "$relationshipId": "760726f9-1e0b-4b22-be53-fddc87fe0a9b",
+      "$etag": "128",
+      "$relationshipName": "DataViews",
+      "$sourceId": "626d0b4b-b0e6-4d17-b7bf-756d1b8d6cb0",
+      "$targetId": "ef461c0b-de97-4f14-b2f1-817c7ffe5489"
+    },
+    {
+      "$relationshipId": "183b09e4-1c65-4c1f-a00b-0be3ff3d1809",
+      "$etag": "128",
+      "$relationshipName": "DataViewCategories",
+      "$sourceId": "ef461c0b-de97-4f14-b2f1-817c7ffe5489",
+      "$targetId": "b6a94941-8f5f-4141-b29f-f0bfc2f2a511"
+    },
+    {
+      "$relationshipId": "cc29ff03-4802-4fe2-920f-415da868f0ea",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroups",
+      "$sourceId": "b6a94941-8f5f-4141-b29f-f0bfc2f2a511",
+      "$targetId": "3977f36d-30b8-4e81-8f1e-8ef7d9657d0f"
+    },
+    {
+      "$relationshipId": "9f9654f3-8755-4d41-8e1e-0847efcc75bf",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroupAttributes",
+      "$sourceId": "3977f36d-30b8-4e81-8f1e-8ef7d9657d0f",
+      "$targetId": "1dec7a31-0720-4781-8cef-0b72926fc8b9"
+    },
+    {
+      "$relationshipId": "8ffb0a23-7ca2-484d-95b8-bb586ffaf0c5",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroupAttributes",
+      "$sourceId": "3977f36d-30b8-4e81-8f1e-8ef7d9657d0f",
+      "$targetId": "470f2adc-9cc7-40b1-bad5-dfa8a078dca2"
+    },
+    {
+      "$relationshipId": "e948fe17-9b82-4a3b-8670-b108bcc38dae",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroupAttributes",
+      "$sourceId": "3977f36d-30b8-4e81-8f1e-8ef7d9657d0f",
+      "$targetId": "ece47057-d9aa-4737-9b32-b6eab90e5c8e"
+    },
+    {
+      "$relationshipId": "b315d36f-d183-41f7-8ccf-245da5b60ef0",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroupAttributes",
+      "$sourceId": "3977f36d-30b8-4e81-8f1e-8ef7d9657d0f",
+      "$targetId": "feb1c04c-f999-4a55-8f75-2055b35876b7"
+    },
+    {
+      "$relationshipId": "da3a6b62-16b1-495d-9b14-0a231d801863",
+      "$etag": "128",
+      "$relationshipName": "DataViewGroupAttributes",
+      "$sourceId": "3977f36d-30b8-4e81-8f1e-8ef7d9657d0f",
+      "$targetId": "ad5c025e-2646-488f-abf9-a564616f24ed"
+    }
+  ]
+}

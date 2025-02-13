@@ -1,9 +1,0 @@
-{
-  "$dtid": "37ebcbb6-457e-47c9-bec0-50594e7a94bc",
-  "$etag": "128",
-  "$metadata": {
-    "$model": "dtmi:avl:passport:ui:dataview;1"
-  },
-  "Name": "Battery Passport DataView",
-  "DTMIReference": "45af4572-1395-4604-9493-fb53b0e7c592"
-}

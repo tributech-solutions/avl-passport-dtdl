@@ -1,0 +1,87 @@
+{
+  "digitalTwins": [
+    {
+      "$dtid": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:validation:group;1"
+      },
+      "displayName": "Validation Group",
+      "Name": "Product Model Validation Group",
+      "DTMIReference": "dtmi:avl:product:model:battery;1"
+    },
+    {
+      "$dtid": "944b50d9-402a-4167-9314-5420adfd4592",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:validation:attribute;1"
+      },
+      "displayName": "Validation Attribute",
+      "Name": "Product Model Validation Attribute NonEmptyName",
+      "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
+      "IsOptional": true
+    },
+    {
+      "$dtid": "bbe739f6-ab88-4978-b339-49eca5774bd5",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:validation:attribute;1"
+      },
+      "displayName": "Validation Attribute",
+      "Name": "Product Model Validation SoH Range",
+      "FieldDTMI": "dtmi:avl:product:model:battery:SoH;1",
+      "IsOptional": true
+    },
+    {
+      "$dtid": "bccd0cb0-1131-4623-8779-24fceb44a3e9",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:validation:rule:text;1"
+      },
+      "displayName": "Text Validation Rule",
+      "Regex": "^\\S{5,}$",
+      "Name": "NonEmptyString"
+    },
+    {
+      "$dtid": "c2f5129d-f7f3-46fe-bfaf-c59cad29e540",
+      "$etag": "128",
+      "$metadata": {
+        "$model": "dtmi:avl:product:validation:rule:minMax:integer;1"
+      },
+      "displayName": "Integer Number Min/Max Validation Rule",
+      "Min": 0,
+      "Max": 100,
+      "Name": "PercentRange"
+    }
+  ],
+  "relationships": [
+    {
+      "$relationshipId": "f68ba050-7702-4617-982e-d87017f54716",
+      "$etag": "128",
+      "$relationshipName": "ValidationAttributes",
+      "$sourceId": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
+      "$targetId": "944b50d9-402a-4167-9314-5420adfd4592"
+    },
+    {
+      "$relationshipId": "c41ff6f8-7497-4b3e-8fdf-f4e2fc720ed2",
+      "$etag": "128",
+      "$relationshipName": "ValidationAttributes",
+      "$sourceId": "1fa0a699-d57b-41b1-94b6-ea8da6b7cd9c",
+      "$targetId": "bbe739f6-ab88-4978-b339-49eca5774bd5"
+    },
+    {
+      "$relationshipId": "695285b1-ae0d-4f58-b869-6cd50e07fd9a",
+      "$etag": "128",
+      "$relationshipName": "ValidationRules",
+      "$sourceId": "944b50d9-402a-4167-9314-5420adfd4592",
+      "$targetId": "bccd0cb0-1131-4623-8779-24fceb44a3e9"
+    },
+    {
+      "$relationshipId": "9a8dd954-9607-425b-a181-8d6361896e39",
+      "$etag": "128",
+      "$relationshipName": "ValidationRules",
+      "$sourceId": "bbe739f6-ab88-4978-b339-49eca5774bd5",
+      "$targetId": "c2f5129d-f7f3-46fe-bfaf-c59cad29e540"
+    }
+  ]
+}

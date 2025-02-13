@@ -1,6 +1,6 @@
 {
-    "@context": "dtmi:dtdl:context;3",
-    "@id": "dtmi:avl:passport:ui:category;1",
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:dataview:category;1",
     "@type": "Interface",
     "displayName": "Dataview Category",
     "contents": [
@@ -10,24 +10,24 @@
             "schema": "string",
             "writable": true,
             "displayName": "Name",
-            "description": "Represents the name of the Data View."
+            "description": "Represents the name of the Data View Category."
         },
         {
             "@type": "Property",
-            "name": "Priority",
+            "name": "CategorySorting",
             "schema": "integer",
             "writable": true,
-            "displayName": "Priority of current Category",
-            "description": "Represents the priority of the category for sorting within the UI."
-        }, 
+            "displayName": "Sorting Position of current Category",
+            "description": "Defines the sorting order based on drag-and-drop actions in the web interface. The UI application handles the correct ordering and submission of sorting numbers."
+        },
         {
             "@type": "Relationship",
             "name": "DataViewGroups",
             "minMultiplicity": 0,
             "maxMultiplicity": 100,
-            "target": "dtmi:avl:passport:ui:groups;1",
+            "target": "dtmi:avl:product:dataview:group;1",
             "displayName": "Data View Groups",
-            "description": "Contains all groups within one category which should be displayed on the ui for a specific Product Model / Product Unit."
-        }      
+            "description": "Contains all groups within one category which should be displayed on the ui for a specific Product Model / Product Passport."
+        }
     ]
-  }
+}

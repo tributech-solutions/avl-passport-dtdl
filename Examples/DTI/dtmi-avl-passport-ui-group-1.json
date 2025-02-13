@@ -1,9 +1,0 @@
-{
-  "$dtid": "169b0d75-657c-426c-991a-fd544eed822e",
-  "$etag": "128",
-  "$metadata": {
-    "$model": "dtmi:avl:passport:ui:group;1"
-  },
-  "Name": "Manufacturer Entity",
-  "Priority": 1
-}

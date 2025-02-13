@@ -1,0 +1,25 @@
+{
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:validation:rule:minMax:double;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:product:validation:rule:base;1",
+    "displayName": "Double Number Min/Max Validation Rule",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Min",
+            "schema": "double",
+            "writable": true,
+            "displayName": "Minimum Value",
+            "description": "Property number is not allowed to be less than this value. (Min Value Included)"
+        },
+        {
+            "@type": "Property",
+            "name": "Max",
+            "schema": "double",
+            "writable": true,
+            "displayName": "Maximum Value",
+            "description": "Property number is not allowed to be greater than this value. (Max Value Included)"
+        }
+    ]
+}

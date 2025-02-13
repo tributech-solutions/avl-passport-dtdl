@@ -1,6 +1,6 @@
 {
-    "@context": "dtmi:dtdl:context;3",
-    "@id": "dtmi:avl:passport:validation:rule:base;1",
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:validation:rule:base;1",
     "@type": "Interface",
     "contents": [
         {
@@ -9,7 +9,7 @@
             "schema": "string",
             "writable": true,
             "displayName": "Name",
-            "description": "Represents the name of the Event."
+            "description": "Represents a user friendly name of the validation rule."
         }
     ]
 }

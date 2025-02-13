@@ -1,6 +1,6 @@
 {
-    "@context": "dtmi:dtdl:context;3",
-    "@id": "dtmi:avl:passport:validation:attribute:base;1",
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:validation:attribute;1",
     "@type": "Interface",
     "displayName": "Validation Attribute",
     "contents": [
@@ -8,36 +8,79 @@
             "@type": "Property",
             "name": "Name",
             "schema": "string",
-            "writable": false,
+            "writable": true,
             "displayName": "Name",
             "description": "Represents a user friendly name of the validation assignment."
         },
         {
             "@type": "Property",
-            "name": "IsActive",
+            "name": "FieldDTMI",
+            "schema": "string",
+            "writable": true,
+            "displayName": "FieldDTMI",
+            "description": "Property DTMI of dtmi:avl:product:model:base;1"
+        },
+        {
+            "@type": "Property",
+            "name": "IsOptional",
             "schema": "boolean",
             "writable": true,
-            "displayName": "Is Enabled",
-            "description": "Defines if the validation is enabled or disabled."
+            "displayName": "Is Optional",
+            "description": "Defines if a value is optional"
         },
         {
             "@type": "Relationship",
-            "name": "Models",
+            "name": "ValidationRulesDate",
             "minMultiplicity": 0,
             "maxMultiplicity": 500,
-            "target": "dtmi:avl:passport:product:model:base;1",
-            "displayName": "Passport Models",
-            "description": "Reference to the Passport Models where the validation should be applied to."
+            "target": "dtmi:avl:product:validation:rule:date;1",
+            "displayName": "Validation Rule Date",
+            "description": "Relationship linking all date validation rules."
         },
         {
             "@type": "Relationship",
-            "name": "ValidationRules",
+            "name": "ValidationRulesDatetime",
             "minMultiplicity": 0,
             "maxMultiplicity": 500,
-            "target": "dtmi:avl:passport:validation:rule:base;1",
-            "displayName": "Validation Rule",
-            "description": "Reference to the validation rules which should be applied to the Attribute / Property."
-        }          
-     
+            "target": "dtmi:avl:product:validation:rule:datetime;1",
+            "displayName": "Validation Rule Date",
+            "description": "Relationship linking all Datetime validation rules."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationRulesEnum",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:product:validation:rule:enum;1",
+            "displayName": "Validation Rule Enum",
+            "description": "Relationship linking all enum validation rules."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationMinMaxDouble",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:product:validation:rule:minMax:double;1",
+            "displayName": "Validation Rule Min/Max Double",
+            "description": "Relationship linking all min / max double validation rules."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationMinMaxInteger",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:product:validation:rule:minMax:integer;1",
+            "displayName": "Validation Rule Min/Max Integer",
+            "description": "Relationship linking all min / max integer validation rules."
+        },
+        {
+            "@type": "Relationship",
+            "name": "ValidationRulesText",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 500,
+            "target": "dtmi:avl:product:validation:rule:text;1",
+            "displayName": "Validation Rule String",
+            "description": "Relationship linking all string validation rules."
+        }
     ]
 }

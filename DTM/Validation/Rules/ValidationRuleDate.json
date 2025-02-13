@@ -1,0 +1,17 @@
+{
+    "@context": "dtmi:dtdl:context;4",
+    "@id": "dtmi:avl:product:validation:rule:date;1",
+    "@type": "Interface",
+    "extends": "dtmi:avl:product:validation:rule:base;1",
+    "displayName": "Date Validation Rule",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "MinDate",
+            "schema": "date",
+            "writable": true,
+            "displayName": "Minimum Date Value",
+            "description": "Property date is not allowed to be less than this value. (Min Value Included)"
+        }
+    ]
+}

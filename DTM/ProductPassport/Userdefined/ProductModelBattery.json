@@ -1,0 +1,414 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2"
+  ],
+  "@id": "dtmi:avl:product:model:battery;1",
+  "extends": "dtmi:avl:product:model:base;1",
+  "@type": "Interface",
+  "displayName": "Battery Passport",
+  "contents": [
+    {
+      "@id": "dtmi:avl:product:model:battery:BatteryApplicationType;1",
+      "@type": "Property",
+      "name": "BatteryApplicationType",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Battery application type"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:BatteryChemistryType;1",
+      "@type": "Property",
+      "name": "BatteryChemistryType",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Battery chemistry type"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:SoH;1",
+      "@type": [
+        "Property",
+        "Concentration"
+      ],
+      "name": "SoH",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "State of Health",
+      "unit": "percent"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:PowerCapability;1",
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
+      "name": "PowerCapability",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Power Capability",
+      "unit": "watt"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:RatedCapacityAh;1",
+      "@type": [
+        "Property",
+        "ElectricCharge"
+      ],
+      "name": "RatedCapacityAh",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Rated capacity in Ah",
+      "unit": "ampereHour"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:RatedCapacitykWh;1",
+      "@type": [
+        "Property",
+        "Energy"
+      ],
+      "name": "RatedCapacitykWh",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Rated capacity in Ah",
+      "unit": "kilowattHour"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:NumberOfCells;1",
+      "@type": "Property",
+      "name": "NumberOfCells",
+      "schema": "integer",
+      "writable": true,
+      "displayName": "Total Number of cells"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:Weight;1",
+      "@type": [
+        "Property",
+        "Mass"
+      ],
+      "name": "Weight",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Weight",
+      "unit": "kilogram"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:ExpectedLifetime;1",
+      "@type": "Property",
+      "name": "ExpectedLifetime",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Expected Lifetime in cycles"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:WarrantyPeriod;1",
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "name": "WarrantyPeriod",
+      "schema": "integer",
+      "displayName": "Warranty Period",
+      "unit": "day"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:OperatingTemperatureMIN;1",
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "OperatingTemperatureMIN",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Operating Minimum Temperature",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:OperatingTemperatureMAX;1",
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "OperatingTemperatureMAX",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Operating Maximum Temperature",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:VoltageLimitMIN;1",
+      "@type": [
+        "Property",
+        "Voltage"
+      ],
+      "name": "VoltageLimitMIN",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Voltage Minimum Limit",
+      "unit": "volt"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:VoltageLimitMAX;1",
+      "@type": [
+        "Property",
+        "Voltage"
+      ],
+      "name": "VoltageLimitMAX",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Voltage Maximum Limit",
+      "unit": "volt"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:VoltageLimitNOM;1",
+      "@type": [
+        "Property",
+        "Voltage"
+      ],
+      "name": "VoltageLimitNOM",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Voltage Nominal Limit",
+      "unit": "volt"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityName;1",
+      "@type": "Property",
+      "name": "ManufactureEntityName",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Name",
+      "description": "Name of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityAddress;1",
+      "@type": "Property",
+      "name": "ManufactureEntityAddress",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Address",
+      "description": "Address of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityZipCode;1",
+      "@type": "Property",
+      "name": "ManufactureEntityZipCode",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Zip Code",
+      "description": "Zip Code of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityCountry;1",
+      "@type": "Property",
+      "name": "ManufactureEntityCountry",
+      "schema": "string",
+      "writable": true,
+      "displayName": "Country",
+      "description": "Country of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:ManufactureEntityCity;1",
+      "@type": "Property",
+      "name": "ManufactureEntityCity",
+      "schema": "string",
+      "writable": true,
+      "displayName": "City",
+      "description": "City of the manufacturer"
+    },
+    {
+      "@id": "dtmi:avl:product:model:battery:Co2Footprints;1",
+      "@type": "Property",
+      "name": "Co2Footprints",
+      "displayName": "Co2 Footprints",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:Category;1",
+              "@type": "Field",
+              "name": "Category",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "None",
+                    "enumValue": 0,
+                    "displayName": "None",
+                    "description": "Category does not exist."
+                  },
+                  {
+                    "name": "RawMaterialAcquisitionAndPreProcessing",
+                    "enumValue": 1,
+                    "displayName": "Raw Material Acquisition And PreProcessing"
+                  },
+                  {
+                    "name": "MainProductProduction",
+                    "enumValue": 2,
+                    "displayName": "Main Product Production"
+                  },
+                  {
+                    "name": "DistributionPointOfSale",
+                    "enumValue": 3,
+                    "displayName": "Distribution Point Of Sale"
+                  },
+                  {
+                    "name": "EndOfLifeAndRecycling",
+                    "enumValue": 4,
+                    "displayName": "End Of Life And Recycling"
+                  },
+                  {
+                    "name": "ProductUsage",
+                    "enumValue": 5,
+                    "displayName": "Product Usage",
+                    "comment": "User should not be able to create CO2 Footprint with this category. CO2 Footprint for this category is calculated on backend."
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:Description;1",
+              "@type": "Field",
+              "name": "Description",
+              "schema": "string",
+              "displayName": "Description"
+            },
+            {
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:DataCategory;1",
+              "@type": "Field",
+              "name": "DataCategory",
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                  {
+                    "name": "None",
+                    "enumValue": 0,
+                    "displayName": "None",
+                    "description": "Category does not exist."
+                  },
+                  {
+                    "name": "Primary",
+                    "enumValue": 1,
+                    "displayName": "Primary"
+                  },
+                  {
+                    "name": "Secondary",
+                    "enumValue": 2,
+                    "displayName": "Secondary"
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:DQRRating;1",
+              "@type": "Field",
+              "name": "DQRRating",
+              "schema": "double",
+              "displayName": "DQR Rating"
+            },
+            {
+              "@id": "dtmi:avl:product:model:battery:Co2Footprints:Co2Footprint;1",
+              "@type": "Field",
+              "name": "Co2Footprint",
+              "schema": "double",
+              "displayName": "Co2 Footprint"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Property",
+      "@id": "dtmi:avl:product:model:battery:CustomProductLink;1",
+      "name": "Weblink",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "@id": "dtmi:avl:product:model:battery:CustomProductLink:Url;1",
+            "name": "Url",
+            "schema": "string"
+          },
+          {
+            "@id": "dtmi:avl:product:model:battery:CustomProductLink:LinkText;1",
+            "name": "LinkText",
+            "schema": "string"
+          }
+        ]
+      },
+      "displayName": "Custom Product Link",
+      "description": "Reference to the specific product Model. with a custom link"
+    },
+    {
+      "@type": "Property",
+      "@id": "dtmi:avl:product:model:battery:MailAddress;1",
+      "name": "CustomProductOwnerMailAddress",
+      "schema": "string",
+      "displayName": "Custom Product Owner MailAddress",
+      "description": "The email address of the owner of the product"
+    },
+    {
+      "@type": "Property",
+      "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument;1",
+      "name": "PrimaryRawMaterialsDocument",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument:Url;1",
+            "name": "Url",
+            "schema": "string"
+          },
+          {
+            "@id": "dtmi:avl:product:model:battery:Name;1",
+            "name": "Name",
+            "schema": "string"
+          },
+          {
+            "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument:Type;1",
+            "name": "Type",
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "NotAvailable",
+                  "enumValue": 0,
+                  "displayName": "Not Available",
+                  "description": "Unknown or not available."
+                },
+                {
+                  "name": "Csv",
+                  "enumValue": 1,
+                  "displayName": "CSV",
+                  "description": "CSV file format."
+                },
+                {
+                  "name": "Pdf",
+                  "enumValue": 2,
+                  "displayName": "PDF",
+                  "description": "PDF file format."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "displayName": "Primary Raw material document",
+      "description": "A pdf Document that contains the primary raw materials used in the product"
+    },
+    {
+      "@type": "Relationship",
+      "name": "ProductPassports",
+      "minMultiplicity": 0,
+      "maxMultiplicity": 500,
+      "target": "dtmi:avl:product:passport:battery;1",
+      "displayName": "Product Passports",
+      "description": "Reference to the specific product passports of a given Model."
+    }
+  ]
+}
