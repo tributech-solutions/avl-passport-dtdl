@@ -19,7 +19,8 @@
       "displayName": "Validation Attribute",
       "Name": "Product Passport Validation Attribute Enum",
       "FieldDTMI": "dtmi:avl:product:passport:battery:DataValidationState;1",
-      "IsOptional": true
+      "IsOptional": true,
+      "HelperText": "This is a helper text for the validation attribute."
     },
     {
       "$dtid": "36b29f7b-123d-4ae4-a248-7758c83fe742",
@@ -33,7 +34,8 @@
         2,
         3
       ],
-      "Name": "DataValidationState Rule"
+      "Name": "DataValidationState Rule",
+      "HelperText": "This is a helper text for the validation rule."
     }
   ],
   "relationships": [

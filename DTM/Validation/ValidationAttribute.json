@@ -14,6 +14,14 @@
         },
         {
             "@type": "Property",
+            "name": "HelperText",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Helper Text",
+            "description": "Informational text to help user understand the validation assignment."
+        },
+        {
+            "@type": "Property",
             "name": "FieldDTMI",
             "schema": "string",
             "writable": true,

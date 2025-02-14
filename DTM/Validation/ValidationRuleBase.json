@@ -10,6 +10,14 @@
             "writable": true,
             "displayName": "Name",
             "description": "Represents a user friendly name of the validation rule."
+        },
+        {
+            "@type": "Property",
+            "name": "HelperText",
+            "schema": "string",
+            "writable": true,
+            "displayName": "Helper Text",
+            "description": "Informational text to help user understand the validation assignment."
         }
     ]
 }

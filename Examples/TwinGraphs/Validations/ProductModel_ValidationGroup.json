@@ -19,7 +19,8 @@
       "displayName": "Validation Attribute",
       "Name": "Product Model Validation Attribute NonEmptyName",
       "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
-      "IsOptional": true
+      "IsOptional": true,
+      "HelperText": "This is a helper text for the validation rule."
     },
     {
       "$dtid": "bbe739f6-ab88-4978-b339-49eca5774bd5",
@@ -30,7 +31,8 @@
       "displayName": "Validation Attribute",
       "Name": "Product Model Validation SoH Range",
       "FieldDTMI": "dtmi:avl:product:model:battery:SoH;1",
-      "IsOptional": true
+      "IsOptional": true,
+      "HelperText": "This is a helper text for the validation rule."
     },
     {
       "$dtid": "bccd0cb0-1131-4623-8779-24fceb44a3e9",
@@ -40,7 +42,8 @@
       },
       "displayName": "Text Validation Rule",
       "Regex": "^\\S{5,}$",
-      "Name": "NonEmptyString"
+      "Name": "NonEmptyString",
+      "HelperText": "This is a helper text for the validation rule."
     },
     {
       "$dtid": "c2f5129d-f7f3-46fe-bfaf-c59cad29e540",
@@ -51,7 +54,8 @@
       "displayName": "Integer Number Min/Max Validation Rule",
       "Min": 0,
       "Max": 100,
-      "Name": "PercentRange"
+      "Name": "PercentRange",
+      "HelperText": "This is a helper text for the validation rule."
     }
   ],
   "relationships": [
