@@ -16,7 +16,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:attribute;1"
       },
-      "displayName": "Validation Attribute",
       "Name": "Product Model Validation Attribute NonEmptyName",
       "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
       "IsOptional": true
@@ -27,7 +26,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:attribute;1"
       },
-      "displayName": "Validation Attribute",
       "Name": "Product Model Validation SoH Range",
       "FieldDTMI": "dtmi:avl:product:model:battery:SoH;1",
       "IsOptional": true
@@ -38,7 +36,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:rule:text;1"
       },
-      "displayName": "Text Validation Rule",
       "Regex": "^\\S{5,}$",
       "Name": "NonEmptyString"
     },

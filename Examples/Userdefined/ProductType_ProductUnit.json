@@ -6,7 +6,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:passport:battery;1"
       },
-      "displayName": "Battery Passport",
       "Co2Footprints": [
         {
           "Category": 1,
@@ -27,7 +26,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:model:battery;1"
       },
-      "displayName": "Battery Passport",
       "BatteryApplicationType": "5bcea43b-e26d-467e-8970-255b343e3715",
       "BatteryChemistryType": "284064c7-9f28-4747-8d3c-b6b55aa72403",
       "NumberOfCells": 98,

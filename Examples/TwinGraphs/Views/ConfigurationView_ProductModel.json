@@ -6,7 +6,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:Configuration;1"
       },
-      "displayName": "Configuration View",
       "Name": "Product Model Configuration View",
       "DTMIReference": "dtmi:avl:product:model:battery;1",
       "State": 1
@@ -17,7 +16,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:category;1"
       },
-      "displayName": "Dataview Category",
       "Name": "Data view Category X",
       "CategorySorting": 1
     },
@@ -27,7 +25,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:group;1"
       },
-      "displayName": "Dataview Group",
       "Name": "Data View Group Create Product Model",
       "GroupSorting": 1
     },
@@ -37,7 +34,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Name",
       "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
       "AttributeSorting": 1
@@ -48,7 +44,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Item Number",
       "FieldDTMI": "dtmi:avl:product:model:base:ItemNumber;1",
       "AttributeSorting": 2
@@ -59,7 +54,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Battery Application Type",
       "FieldDTMI": "dtmi:avl:product:model:battery:BatteryApplicationType;1",
       "AttributeSorting": 3

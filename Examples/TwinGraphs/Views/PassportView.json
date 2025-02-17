@@ -6,7 +6,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:Passport;1"
       },
-      "displayName": "ProductView",
       "Name": "Product Passport View",
       "DTMIReferenceProductModel": "dtmi:avl:product:model:battery;1",
       "DTMIReferencePassport": "dtmi:avl:product:passport:battery;1"
@@ -17,7 +16,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:Passport:Configuration;1"
       },
-      "displayName": "Dataview",
       "Name": "11fa47f8-8706-4720-a2e6-3a10e602cff0",
       "Type": 2,
       "State": 1
@@ -28,7 +26,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:category;1"
       },
-      "displayName": "Dataview Category",
       "Name": "e2290542-a487-46d2-ada5-4b1a647b9384",
       "CategorySorting": 1
     },
@@ -38,7 +35,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:group;1"
       },
-      "displayName": "Dataview Group",
       "Name": "e925c49d-fddc-415d-85f4-3ee6eab378ca",
       "GroupSorting": 1
     },
@@ -48,7 +44,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Product Model Name",
       "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
       "AttributeSorting": 1
@@ -59,7 +54,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Product Passport Name",
       "FieldDTMI": "dtmi:avl:product:passport:base:Name;1",
       "AttributeSorting": 3
@@ -70,7 +64,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Product Model Item Number",
       "FieldDTMI": "dtmi:avl:product:model:base:ItemNumber;1",
       "AttributeSorting": 2
@@ -81,7 +74,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Product Passport Serial Number",
       "FieldDTMI": "dtmi:avl:product:passport:base:SerialNumber;1",
       "AttributeSorting": 4
@@ -92,7 +84,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Product Passport Batch Number",
       "FieldDTMI": "dtmi:avl:product:passport:base:BatchNumber;1",
       "AttributeSorting": 5

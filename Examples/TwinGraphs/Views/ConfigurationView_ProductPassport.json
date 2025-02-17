@@ -6,7 +6,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:Configuration;1"
       },
-      "displayName": "Configuration View",
       "Name": "Product Passport Configuration View",
       "DTMIReference": "dtmi:avl:product:passport:base;1",
       "State": 1
@@ -17,7 +16,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:category;1"
       },
-      "displayName": "Dataview Category",
       "Name": "Data view Category Y",
       "CategorySorting": 1
     },
@@ -27,7 +25,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:group;1"
       },
-      "displayName": "Dataview Group",
       "Name": "Data View Group Create Product Passport",
       "GroupSorting": 48
     },
@@ -37,7 +34,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Name",
       "FieldDTMI": "dtmi:avl:product:passport:base:Name;1",
       "AttributeSorting": 1
@@ -48,7 +44,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Item Number",
       "FieldDTMI": "dtmi:avl:product:model:base:ItemNumber;1",
       "AttributeSorting": 5
@@ -59,7 +54,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:dataview:attribute;1"
       },
-      "displayName": "Dataview Attribute",
       "Name": "Batch Number",
       "FieldDTMI": "dtmi:avl:product:passport:base:BatchNumber;1",
       "AttributeSorting": 28
