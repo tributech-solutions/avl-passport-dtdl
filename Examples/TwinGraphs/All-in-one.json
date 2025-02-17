@@ -6,7 +6,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:passport:battery;1"
             },
-            "displayName": "Battery Passport",
             "Co2Footprints": [
                 {
                     "Category": 1,
@@ -27,7 +26,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:model:battery;1"
             },
-            "displayName": "Battery Passport",
             "BatteryApplicationType": "5bcea43b-e26d-467e-8970-255b343e3715",
             "BatteryChemistryType": "284064c7-9f28-4747-8d3c-b6b55aa72403",
             "NumberOfCells": 98,
@@ -67,7 +65,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:validation:group;1"
             },
-            "displayName": "Validation Group",
             "Name": "Product Model Validation Group",
             "DTMIReference": "dtmi:avl:product:model:battery;1"
         },
@@ -77,7 +74,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:validation:attribute;1"
             },
-            "displayName": "Validation Attribute",
             "Name": "Product Model Validation Attribute NonEmptyName",
             "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
             "IsOptional": true
@@ -88,7 +84,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:validation:attribute;1"
             },
-            "displayName": "Validation Attribute",
             "Name": "Product Model Validation SoH Range",
             "FieldDTMI": "dtmi:avl:product:model:battery:SoH;1",
             "IsOptional": true
@@ -99,7 +94,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:validation:rule:text;1"
             },
-            "displayName": "Text Validation Rule",
             "Regex": "^\\S{5,}$",
             "Name": "NonEmptyString"
         },
@@ -109,7 +103,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:validation:rule:minMax:integer;1"
             },
-            "displayName": "Integer Number Min/Max Validation Rule",
             "Min": 0,
             "Max": 100,
             "Name": "PercentRange"
@@ -120,7 +113,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:validation:group;1"
             },
-            "displayName": "Validation Group",
             "Name": "Product Passport Validation Group",
             "DTMIReference": "dtmi:avl:product:passport:battery;1"
         },
@@ -130,7 +122,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:validation:attribute;1"
             },
-            "displayName": "Validation Attribute",
             "Name": "Product Passport Validation Attribute Enum",
             "FieldDTMI": "dtmi:avl:product:passport:battery:DataValidationState;1",
             "IsOptional": true
@@ -141,7 +132,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:validation:rule:enum;1"
             },
-            "displayName": "Enum Validation Rule",
             "allowed_values": [
                 1,
                 2,
@@ -155,7 +145,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:Configuration;1"
             },
-            "displayName": "Configuration View",
             "Name": "Product Model Configuration View",
             "DTMIReference": "dtmi:avl:product:model:battery;1",
             "State": 1
@@ -166,7 +155,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:category;1"
             },
-            "displayName": "Dataview Category",
             "Name": "Data view Category X",
             "CategorySorting": 1
         },
@@ -176,7 +164,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:group;1"
             },
-            "displayName": "Dataview Group",
             "Name": "Data View Group Create Product Model",
             "GroupSorting": 1
         },
@@ -186,7 +173,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Name",
             "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
             "AttributeSorting": 1
@@ -197,7 +183,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Item Number",
             "FieldDTMI": "dtmi:avl:product:model:base:ItemNumber;1",
             "AttributeSorting": 2
@@ -208,7 +193,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Battery Application Type",
             "FieldDTMI": "dtmi:avl:product:model:battery:BatteryApplicationType;1",
             "AttributeSorting": 3
@@ -219,7 +203,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:Configuration;1"
             },
-            "displayName": "Configuration View",
             "Name": "Product Passport Configuration View",
             "DTMIReference": "dtmi:avl:product:passport:base;1",
             "State": 1
@@ -230,7 +213,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:category;1"
             },
-            "displayName": "Dataview Category",
             "Name": "Data view Category Y",
             "CategorySorting": 1
         },
@@ -240,7 +222,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:group;1"
             },
-            "displayName": "Dataview Group",
             "Name": "Data View Group Create Product Passport",
             "GroupSorting": 48
         },
@@ -250,7 +231,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Name",
             "FieldDTMI": "dtmi:avl:product:passport:base:Name;1",
             "AttributeSorting": 1
@@ -261,7 +241,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Item Number",
             "FieldDTMI": "dtmi:avl:product:model:base:ItemNumber;1",
             "AttributeSorting": 5
@@ -272,7 +251,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Batch Number",
             "FieldDTMI": "dtmi:avl:product:passport:base:BatchNumber;1",
             "AttributeSorting": 28
@@ -283,7 +261,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:Passport;1"
             },
-            "displayName": "ProductView",
             "Name": "Product Passport View",
             "DTMIReferenceProductModel": "dtmi:avl:product:model:battery;1",
             "DTMIReferencePassport": "dtmi:avl:product:passport:battery;1"
@@ -294,7 +271,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:Passport:Configuration;1"
             },
-            "displayName": "Dataview",
             "Name": "11fa47f8-8706-4720-a2e6-3a10e602cff0",
             "Type": 2,
             "State": 1
@@ -305,7 +281,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:category;1"
             },
-            "displayName": "Dataview Category",
             "Name": "e2290542-a487-46d2-ada5-4b1a647b9384",
             "CategorySorting": 1
         },
@@ -315,7 +290,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:group;1"
             },
-            "displayName": "Dataview Group",
             "Name": "e925c49d-fddc-415d-85f4-3ee6eab378ca",
             "GroupSorting": 1
         },
@@ -325,7 +299,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Product Model Name",
             "FieldDTMI": "dtmi:avl:product:model:base:Name;1",
             "AttributeSorting": 1
@@ -336,7 +309,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Product Passport Name",
             "FieldDTMI": "dtmi:avl:product:passport:base:Name;1",
             "AttributeSorting": 3
@@ -347,7 +319,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Product Model Item Number",
             "FieldDTMI": "dtmi:avl:product:model:base:ItemNumber;1",
             "AttributeSorting": 2
@@ -358,7 +329,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Product Passport Serial Number",
             "FieldDTMI": "dtmi:avl:product:passport:base:SerialNumber;1",
             "AttributeSorting": 4
@@ -369,7 +339,6 @@
             "$metadata": {
                 "$model": "dtmi:avl:product:dataview:attribute;1"
             },
-            "displayName": "Dataview Attribute",
             "Name": "Product Passport Batch Number",
             "FieldDTMI": "dtmi:avl:product:passport:base:BatchNumber;1",
             "AttributeSorting": 5

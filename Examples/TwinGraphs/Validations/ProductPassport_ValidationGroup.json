@@ -6,8 +6,7 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:group;1"
       },
-      "displayName": "Validation Group",
-      "Name": "Product Passport Validation Group",
+            "Name": "Product Passport Validation Group",
       "DTMIReference": "dtmi:avl:product:passport:battery;1"
     },
     {
@@ -16,8 +15,7 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:attribute;1"
       },
-      "displayName": "Validation Attribute",
-      "Name": "Product Passport Validation Attribute Enum",
+            "Name": "Product Passport Validation Attribute Enum",
       "FieldDTMI": "dtmi:avl:product:passport:battery:DataValidationState;1",
       "IsOptional": true
     },
@@ -27,8 +25,7 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:rule:enum;1"
       },
-      "displayName": "Enum Validation Rule",
-      "allowed_values": [
+            "allowed_values": [
         1,
         2,
         3
