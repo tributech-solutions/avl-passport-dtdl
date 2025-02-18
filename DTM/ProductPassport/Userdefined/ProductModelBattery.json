@@ -217,82 +217,26 @@
       "description": "City of the manufacturer"
     },    
     {
-      "@type": "Property",
+      "@type": "Component",
       "@id": "dtmi:avl:product:model:battery:CustomProductLink;1",
       "name": "Weblink",
-      "schema": {
-        "@type": "Object",
-        "fields": [
-          {
-            "@id": "dtmi:avl:product:model:battery:CustomProductLink:Url;1",
-            "name": "Url",
-            "schema": "string"
-          },
-          {
-            "@id": "dtmi:avl:product:model:battery:CustomProductLink:LinkText;1",
-            "name": "LinkText",
-            "schema": "string"
-          }
-        ]
-      },
+      "schema": "dtmi:avl:product:component:webLink;1",
       "displayName": "Custom Product Link",
       "description": "Reference to the specific product Model. with a custom link"
     },
     {
-      "@type": "Property",
+      "@type": "Component",
       "@id": "dtmi:avl:product:model:battery:MailAddress;1",
       "name": "CustomProductOwnerMailAddress",
-      "schema": "string",
+      "schema": "dtmi:avl:product:component:email;1",
       "displayName": "Custom Product Owner MailAddress",
       "description": "The email address of the owner of the product"
     },
     {
-      "@type": "Property",
+      "@type": "Component",
       "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument;1",
       "name": "PrimaryRawMaterialsDocument",
-      "schema": {
-        "@type": "Object",
-        "fields": [
-          {
-            "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument:Url;1",
-            "name": "Url",
-            "schema": "string"
-          },
-          {
-            "@id": "dtmi:avl:product:model:battery:Name;1",
-            "name": "Name",
-            "schema": "string"
-          },
-          {
-            "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument:Type;1",
-            "name": "Type",
-            "schema": {
-              "@type": "Enum",
-              "valueSchema": "integer",
-              "enumValues": [
-                {
-                  "name": "NotAvailable",
-                  "enumValue": 0,
-                  "displayName": "Not Available",
-                  "description": "Unknown or not available."
-                },
-                {
-                  "name": "Csv",
-                  "enumValue": 1,
-                  "displayName": "CSV",
-                  "description": "CSV file format."
-                },
-                {
-                  "name": "Pdf",
-                  "enumValue": 2,
-                  "displayName": "PDF",
-                  "description": "PDF file format."
-                }
-              ]
-            }
-          }
-        ]
-      },
+      "schema": "dtmi:avl:product:component:document;1",
       "displayName": "Primary Raw material document",
       "description": "A pdf Document that contains the primary raw materials used in the product"
     },
