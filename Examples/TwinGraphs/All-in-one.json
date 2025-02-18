@@ -35,6 +35,7 @@
             "ManufactureEntityZipCode": "9f70689b-09f7-4d8d-943c-59b4e8a39088",
             "ManufactureEntityCountry": "003754ff-19ac-4cfe-827a-ea07f27cb728",
             "ManufactureEntityCity": "4415c8ce-173d-4147-95e2-f74951acf8ce",
+            "Co2FootprintETotal": 77.8972,
             "Co2Footprints": [
                 {
                     "Category": 4,

@@ -39,6 +39,120 @@
             "writable": true,
             "displayName": "Last Modified Timestamp",
             "description": "Represents the last modification time of the Product Model."
+        },
+        {
+            "@id": "dtmi:avl:product:model:base:Co2FootprintETotal;1",
+            "@type": "Property",
+            "name": "Co2FootprintETotal",
+            "schema": "double",
+            "writable": true,
+            "displayName": "Footprint E Total",
+            "description": "Footprint E Total Value used in the calculation of the CO2 Footprints."
+        },        
+        {
+            "@id": "dtmi:avl:product:model:base:Co2Footprints;1",
+            "@type": "Property",
+            "name": "Co2Footprints",
+            "displayName": "Co2 Footprints",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": {
+                    "@type": "Object",
+                    "fields": [
+                        {
+                            "@id": "dtmi:avl:product:model:base:Co2Footprints:Category;1",
+                            "@type": "Field",
+                            "name": "Category",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "integer",
+                                "enumValues": [
+                                    {
+                                        "name": "None",
+                                        "enumValue": 0,
+                                        "displayName": "None",
+                                        "description": "Category does not exist."
+                                    },
+                                    {
+                                        "name": "RawMaterialAcquisitionAndPreProcessing",
+                                        "enumValue": 1,
+                                        "displayName": "Raw Material Acquisition And PreProcessing"
+                                    },
+                                    {
+                                        "name": "MainProductProduction",
+                                        "enumValue": 2,
+                                        "displayName": "Main Product Production"
+                                    },
+                                    {
+                                        "name": "DistributionPointOfSale",
+                                        "enumValue": 3,
+                                        "displayName": "Distribution Point Of Sale"
+                                    },
+                                    {
+                                        "name": "EndOfLifeAndRecycling",
+                                        "enumValue": 4,
+                                        "displayName": "End Of Life And Recycling"
+                                    },
+                                    {
+                                        "name": "ProductUsage",
+                                        "enumValue": 5,
+                                        "displayName": "Product Usage",
+                                        "comment": "User should not be able to create CO2 Footprint with this category. CO2 Footprint for this category is calculated on backend."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "@id": "dtmi:avl:product:model:base:Co2Footprints:Description;1",
+                            "@type": "Field",
+                            "name": "Description",
+                            "schema": "string",
+                            "displayName": "Description"
+                        },
+                        {
+                            "@id": "dtmi:avl:product:model:base:Co2Footprints:DataCategory;1",
+                            "@type": "Field",
+                            "name": "DataCategory",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "integer",
+                                "enumValues": [
+                                    {
+                                        "name": "None",
+                                        "enumValue": 0,
+                                        "displayName": "None",
+                                        "description": "Category does not exist."
+                                    },
+                                    {
+                                        "name": "Primary",
+                                        "enumValue": 1,
+                                        "displayName": "Primary"
+                                    },
+                                    {
+                                        "name": "Secondary",
+                                        "enumValue": 2,
+                                        "displayName": "Secondary"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "@id": "dtmi:avl:product:model:base:Co2Footprints:DQRRating;1",
+                            "@type": "Field",
+                            "name": "DQRRating",
+                            "schema": "double",
+                            "displayName": "DQR Rating"
+                        },
+                        {
+                            "@id": "dtmi:avl:product:model:base:Co2Footprints:Co2Footprint;1",
+                            "@type": "Field",
+                            "name": "Co2Footprint",
+                            "schema": "double",
+                            "displayName": "Co2 Footprint"
+                        }
+                    ]
+                }
+            }
         }
     ]
 }
