@@ -28,3 +28,6 @@ Also the Graph is just a subset of the real Graph displaying a Product Model and
 
 Simplified overview
 ![DTDL Overview Diagram](./Diagram.png)
+
+# REST Spec
+Current REST Spec openapi: 3.0.1 [Spec](./REST/RestSpec.json) (can be viewed in [swagger editor](https://editor.swagger.io/))
