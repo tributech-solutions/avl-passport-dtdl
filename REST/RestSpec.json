@@ -6761,7 +6761,7 @@
             "nullable": true
           }
         },
-        "additionalProperties": { }
+        "additionalProperties": {}
       },
       "DqrProductCarbonFootprintDataCategoryPrivateModel": {
         "type": "object",
@@ -7100,7 +7100,7 @@
             "nullable": true
           }
         },
-        "additionalProperties": { }
+        "additionalProperties": {}
       },
       "ProductCarbonFootprintPrivateModel": {
         "type": "object",
@@ -8395,7 +8395,7 @@
             "nullable": true
           }
         },
-        "additionalProperties": { }
+        "additionalProperties": {}
       },
       "ValidationRuleDateModel": {
         "type": "object",
