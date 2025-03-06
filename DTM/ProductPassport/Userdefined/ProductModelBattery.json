@@ -4,9 +4,9 @@
     "dtmi:dtdl:extension:quantitativeTypes;2"
   ],
   "@id": "dtmi:avl:product:model:battery;1",
-  "extends": "dtmi:avl:product:model:base;1",
+  "extends": ["dtmi:avl:product:model:base;1"], 
   "@type": "Interface",
-  "displayName": "Battery Passport",
+  "displayName": "Battery Passport", 
   "contents": [
     {
       "@id": "dtmi:avl:product:model:battery:BatteryApplicationType;1",
