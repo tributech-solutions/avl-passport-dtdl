@@ -851,17 +851,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ValidationGroupUpdateModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ValidationGroupUpdateModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ValidationGroupUpdateModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             }
           }
@@ -1359,17 +1359,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewConfigurationModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewConfigurationModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewConfigurationModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             }
           }
@@ -1804,17 +1804,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewPassportModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewPassportModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewPassportModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             }
           }
@@ -6621,34 +6621,6 @@
         },
         "additionalProperties": false
       },
-      "DataViewPassportConfigurationModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "type": {
-            "$ref": "#/components/schemas/DataViewPassportConfigurationType"
-          },
-          "dataViewCategories": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataViewCategoryModel"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "DataViewPassportConfigurationType": {
-        "enum": [
-          "None",
-          "Private",
-          "Public"
-        ],
-        "type": "string"
-      },
       "DataViewPassportInstanceViewModel": {
         "type": "object",
         "properties": {
@@ -6668,38 +6640,6 @@
           },
           "productStatus": {
             "$ref": "#/components/schemas/ProductConfigurationDataViewStatusViewModel"
-          }
-        },
-        "additionalProperties": false
-      },
-      "DataViewPassportModel": {
-        "type": "object",
-        "properties": {
-          "dataViewId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "dtmiProductModel": {
-            "type": "string",
-            "nullable": true
-          },
-          "dtmiPassport": {
-            "type": "string",
-            "nullable": true
-          },
-          "reviewStatus": {
-            "$ref": "#/components/schemas/ProductDataViewStatus"
-          },
-          "dataViewPassportConfigurations": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataViewPassportConfigurationModel"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -7976,6 +7916,39 @@
         },
         "additionalProperties": false
       },
+      "RelationshipModel": {
+        "type": "object",
+        "properties": {
+          "relationshipId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "etag": {
+            "type": "string",
+            "nullable": true
+          },
+          "sourceId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "targetId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "relationshipName": {
+            "type": "string",
+            "nullable": true
+          },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "nullable": true
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "StringPaginatedList": {
         "type": "object",
         "properties": {
@@ -8069,6 +8042,26 @@
           },
           "unit": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TwinGraphModel": {
+        "type": "object",
+        "properties": {
+          "digitalTwins": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DigitalTwinModel"
+            },
+            "nullable": true
+          },
+          "relationships": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RelationshipModel"
+            },
             "nullable": true
           }
         },
@@ -8392,30 +8385,6 @@
           "hasNextPage": {
             "type": "boolean",
             "readOnly": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationGroupUpdateModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "dtmiReference": {
-            "type": "string",
-            "nullable": true
-          },
-          "productDiscriminator": {
-            "$ref": "#/components/schemas/ProductDiscriminator"
-          },
-          "validationAttributes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationAttributeModel"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
