@@ -851,17 +851,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ValidationGroupUpdateModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ValidationGroupUpdateModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ValidationGroupUpdateModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             }
           }
@@ -1359,17 +1359,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewConfigurationModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewConfigurationModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewConfigurationModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             }
           }
@@ -1804,17 +1804,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewPassportModel"
+                "$ref": "#/components/schemas/DigitalTwinModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewPassportModel"
+                "$ref": "#/components/schemas/DigitalTwinModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DataViewPassportModel"
+                "$ref": "#/components/schemas/DigitalTwinModel"
               }
             }
           }
@@ -2144,6 +2144,51 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/datamodels/{dataModelId}/data-views/passports/unlock": {
+      "post": {
+        "tags": [
+          "DataModels"
+        ],
+        "summary": "Unlock all approved Passport Data View for a specific Data Model",
+        "parameters": [
+          {
+            "name": "dataModelId",
+            "in": "path",
+            "description": "Data Model Identifier",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
                 }
               }
             }
@@ -6580,34 +6625,6 @@
         },
         "additionalProperties": false
       },
-      "DataViewPassportModel": {
-        "type": "object",
-        "properties": {
-          "dataViewId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "dtmiProductModel": {
-            "type": "string",
-            "nullable": true
-          },
-          "dtmiPassport": {
-            "type": "string",
-            "nullable": true
-          },
-          "reviewStatus": {
-            "$ref": "#/components/schemas/ProductDataViewStatus"
-          },
-          "graphModel": {
-            "$ref": "#/components/schemas/TwinGraphModel"
-          }
-        },
-        "additionalProperties": false
-      },
       "DesignConfigurationDto": {
         "type": "object",
         "properties": {
@@ -8224,69 +8241,6 @@
         },
         "additionalProperties": false
       },
-      "ValidationAttributeModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "fieldDTMI": {
-            "type": "string",
-            "nullable": true
-          },
-          "helperText": {
-            "type": "string",
-            "nullable": true
-          },
-          "isOptional": {
-            "type": "boolean"
-          },
-          "validationRuleDates": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleDateModel"
-            },
-            "nullable": true
-          },
-          "validationRuleDateTimes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleDateTimeModel"
-            },
-            "nullable": true
-          },
-          "validationRulesEnums": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleEnumModel"
-            },
-            "nullable": true
-          },
-          "validationMinMaxDoubles": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleMinMaxDoubleModel"
-            },
-            "nullable": true
-          },
-          "validationMinMaxIntegers": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleMinMaxIntegerModel"
-            },
-            "nullable": true
-          },
-          "validationRulesTexts": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleTextModel"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "ValidationGroupModel": {
         "type": "object",
         "properties": {
@@ -8349,30 +8303,6 @@
         },
         "additionalProperties": false
       },
-      "ValidationGroupUpdateModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "dtmiReference": {
-            "type": "string",
-            "nullable": true
-          },
-          "productDiscriminator": {
-            "$ref": "#/components/schemas/ProductDiscriminator"
-          },
-          "validationAttributes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationAttributeModel"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "ValidationProblemDetails": {
         "type": "object",
         "properties": {
@@ -8409,102 +8339,6 @@
           }
         },
         "additionalProperties": { }
-      },
-      "ValidationRuleDateModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "minDate": {
-            "type": "string",
-            "format": "date"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleDateTimeModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "minDateTime": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleEnumModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "allowedValues": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleMinMaxDoubleModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "min": {
-            "type": "number",
-            "format": "double"
-          },
-          "max": {
-            "type": "number",
-            "format": "double"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleMinMaxIntegerModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "min": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "max": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleTextModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "regex": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
       },
       "ValidationStatus": {
         "enum": [
