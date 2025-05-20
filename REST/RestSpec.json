@@ -407,6 +407,7 @@
           {
             "name": "ProductCategoryId",
             "in": "query",
+            "description": "Filter the list of Data Models by Product Category",
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -415,6 +416,7 @@
           {
             "name": "ReviewStatus",
             "in": "query",
+            "description": "Filter the list of Data Models by ReviewStatus (empty or null disables the filter)",
             "schema": {
               "type": "array",
               "items": {
@@ -516,17 +518,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DigitalTwinModelInterfaceModel"
+                "$ref": "#/components/schemas/InterfaceDescriptionModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DigitalTwinModelInterfaceModel"
+                "$ref": "#/components/schemas/InterfaceDescriptionModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DigitalTwinModelInterfaceModel"
+                "$ref": "#/components/schemas/InterfaceDescriptionModel"
               }
             }
           }
@@ -851,17 +853,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TwinGraphModel"
+                "$ref": "#/components/schemas/ValidationGroupUpdateModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TwinGraphModel"
+                "$ref": "#/components/schemas/ValidationGroupUpdateModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TwinGraphModel"
+                "$ref": "#/components/schemas/ValidationGroupUpdateModel"
               }
             }
           }
@@ -1222,17 +1224,26 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ValidationGroupModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ValidationGroupModel"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ValidationGroupModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ValidationGroupModel"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ValidationGroupModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ValidationGroupModel"
+                  }
                 }
               }
             }
@@ -1688,17 +1699,26 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DataViewConfigurationModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataViewConfigurationModel"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DataViewConfigurationModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataViewConfigurationModel"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DataViewConfigurationModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataViewConfigurationModel"
+                  }
                 }
               }
             }
@@ -1804,17 +1824,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TwinGraphModel"
+                "$ref": "#/components/schemas/UpdateDataViewPassportModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TwinGraphModel"
+                "$ref": "#/components/schemas/UpdateDataViewPassportModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TwinGraphModel"
+                "$ref": "#/components/schemas/UpdateDataViewPassportModel"
               }
             }
           }
@@ -2113,20 +2133,74 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DataViewConfigurationModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataViewConfigurationModel"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DataViewConfigurationModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataViewConfigurationModel"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DataViewConfigurationModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataViewConfigurationModel"
+                  }
                 }
               }
             }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/datamodels/{dataModelId}/data-views/passports/unlock": {
+      "post": {
+        "tags": [
+          "DataModels"
+        ],
+        "summary": "Unlocks all approved Configuration Data Views for a Data Model",
+        "parameters": [
+          {
+            "name": "dataModelId",
+            "in": "path",
+            "description": "Data Model Identifier",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
           },
           "404": {
             "description": "Not Found",
@@ -2175,17 +2249,26 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DataViewCompactModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataViewCompactModel"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DataViewCompactModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataViewCompactModel"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DataViewCompactModelPaginatedList"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataViewCompactModel"
+                  }
                 }
               }
             }
@@ -2309,11 +2392,14 @@
           {
             "name": "Dtmis",
             "in": "query",
+            "description": "Digital Twin Model Identifier",
+            "required": true,
             "schema": {
               "type": "array",
               "items": {
                 "type": "string"
-              }
+              },
+              "description": "Digital Twin Model Identifier"
             }
           }
         ],
@@ -2323,17 +2409,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExpandedInterfaceDescriptionPaginatedList"
+                  "$ref": "#/components/schemas/InterfaceDescriptionV2PaginatedList"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExpandedInterfaceDescriptionPaginatedList"
+                  "$ref": "#/components/schemas/InterfaceDescriptionV2PaginatedList"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExpandedInterfaceDescriptionPaginatedList"
+                  "$ref": "#/components/schemas/InterfaceDescriptionV2PaginatedList"
                 }
               }
             }
@@ -2371,18 +2457,24 @@
           {
             "name": "PartialDtmis",
             "in": "query",
+            "description": "Enable Search for Digital Twin Model Identifier (DTMI) multiple Versions etc",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Enable Search for Digital Twin Model Identifier (DTMI) multiple Versions etc",
+              "nullable": true
             }
           },
           {
             "name": "SystemDtmTypes",
             "in": "query",
+            "description": "Filter for specific DTM Types (null or empty disables the filter)",
             "schema": {
               "type": "array",
               "items": {
                 "$ref": "#/components/schemas/SystemDtmTypes"
-              }
+              },
+              "description": "Filter for specific DTM Types (null or empty disables the filter)",
+              "nullable": true
             }
           },
           {
@@ -2783,14 +2875,24 @@
         }
       }
     },
-    "/medias/upload": {
+    "/media/upload": {
       "post": {
         "tags": [
-          "Medias"
+          "Media"
         ],
-        "summary": "Upload a Media Asset (PDF/CSV Documents, SVG Files)",
+        "summary": "Uploads a media asset such as a pdf, csv document, or svg file.",
+        "parameters": [
+          {
+            "name": "public",
+            "in": "query",
+            "description": ">Flag to mark the media as either public or not. Defaults to false.",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
         "requestBody": {
-          "description": "",
+          "description": "The file to be uploaded. The file must not exceed 10 MB.",
           "content": {
             "multipart/form-data": {
               "schema": {
@@ -2811,8 +2913,8 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK",
+          "201": {
+            "description": "Created",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2851,6 +2953,46 @@
               }
             }
           },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
           "415": {
             "description": "Unsupported Media Type",
             "content": {
@@ -2874,17 +3016,17 @@
         }
       }
     },
-    "/medias/download/{id}": {
+    "/media/download/{id}": {
       "get": {
         "tags": [
-          "Medias"
+          "Media"
         ],
-        "summary": "Download a Document",
+        "summary": "Downloads a private media asset by its id (for authenticated users).",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "",
+            "description": "The unique identifier of the media asset.",
             "required": true,
             "schema": {
               "type": "string",
@@ -2894,7 +3036,128 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/media/download/{id}/public": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "Downloads a public media asset by its id (anonymous access allowed).",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The unique identifier of the media asset.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -2918,7 +3181,7 @@
           }
         ],
         "requestBody": {
-          "description": "Product Category RestSpec.Mediatr.ProductCategories.Update.UpdateProductCategoryModel",
+          "description": "Product Category AVL.PassportApi.Application.ProductCategories.Commands.Update.UpdateProductCategoryModel",
           "content": {
             "application/json": {
               "schema": {
@@ -3037,6 +3300,7 @@
           {
             "name": "PartialName",
             "in": "query",
+            "description": "Product Category Filter based on Name (ignored if null or empty)",
             "schema": {
               "type": "string"
             }
@@ -3609,8 +3873,18 @@
         "summary": "Get a List of Product Models",
         "parameters": [
           {
+            "name": "ProductCategoryId",
+            "in": "query",
+            "description": "Product Category Identifier (optional)",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
             "name": "DataModelId",
             "in": "query",
+            "description": "Data Model Identifier(optional)",
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -3619,16 +3893,18 @@
           {
             "name": "ValidationStatus",
             "in": "query",
+            "description": "Validation Status Filter(optional)",
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/components/schemas/ValidationStatus"
+                "$ref": "#/components/schemas/ProductModelValidationStatus"
               }
             }
           },
           {
             "name": "ProofStatus",
             "in": "query",
+            "description": "Proof Status Filter(optional)",
             "schema": {
               "type": "array",
               "items": {
@@ -3639,21 +3915,15 @@
           {
             "name": "IsPublicAvailable",
             "in": "query",
+            "description": "Only Public available Product Models if true else Private Product Models (null ignore filter)",
             "schema": {
               "type": "boolean"
             }
           },
           {
-            "name": "ProductCategoryId",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          },
-          {
             "name": "ReviewStatus",
             "in": "query",
+            "description": "Review Status Filter (empty or null disables the filter)",
             "schema": {
               "type": "array",
               "items": {
@@ -3708,21 +3978,21 @@
         "summary": "Create or Update a Product Model Digital Model Instance",
         "description": "Only dtmi:avl:product:model:base;1 children are accepted as MetadataModels!",
         "requestBody": {
-          "description": "Product Model Instance",
+          "description": "Product Model Graph Instance",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DigitalTwinModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DigitalTwinModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DigitalTwinModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             }
           }
@@ -4052,7 +4322,7 @@
         }
       }
     },
-    "/productmodels/{productModelId}/notarization/perform": {
+    "/productmodels/{productModelId}/notarization/execute": {
       "post": {
         "tags": [
           "ProductModels"
@@ -4225,7 +4495,7 @@
       }
     },
     "/productmodels/{productModelId}/notarization/verify": {
-      "get": {
+      "post": {
         "tags": [
           "ProductModels"
         ],
@@ -4381,14 +4651,7 @@
           {
             "name": "DataModelId",
             "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          },
-          {
-            "name": "ProductModelId",
-            "in": "query",
+            "description": "Filter for a DataModel or Not (optional)",
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -4397,16 +4660,18 @@
           {
             "name": "ValidationStatus",
             "in": "query",
+            "description": "Validation Status Filter (optional)",
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/components/schemas/ValidationStatus"
+                "$ref": "#/components/schemas/ProductPassportValidationStatus"
               }
             }
           },
           {
             "name": "ProofStatus",
             "in": "query",
+            "description": "Proof Status Filter (optional)",
             "schema": {
               "type": "array",
               "items": {
@@ -4417,6 +4682,7 @@
           {
             "name": "IsPublicAvailable",
             "in": "query",
+            "description": "Only Public available Product Models if true else Private Product Models (optional)",
             "schema": {
               "type": "boolean"
             }
@@ -4424,6 +4690,7 @@
           {
             "name": "IsQrCodeAvailable",
             "in": "query",
+            "description": "A QR Code is available (optional)",
             "schema": {
               "type": "boolean"
             }
@@ -4431,6 +4698,7 @@
           {
             "name": "ProductCategoryId",
             "in": "query",
+            "description": "",
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -4439,10 +4707,11 @@
           {
             "name": "ReviewStatus",
             "in": "query",
+            "description": "Review Status Filter (empty or null disables the filter)",
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/components/schemas/ProductModelReviewStatus"
+                "$ref": "#/components/schemas/ProductPassportReviewStatus"
               }
             }
           },
@@ -4485,29 +4754,105 @@
             }
           }
         }
-      },
+      }
+    },
+    "/productpassports/datamodels/{datamodelId}": {
+      "get": {
+        "tags": [
+          "ProductPassports"
+        ],
+        "summary": "Get a DataView Configuration representation for a Product Passport from a Data Model (Initial Model with default values)",
+        "parameters": [
+          {
+            "name": "datamodelId",
+            "in": "path",
+            "description": "Data Model Identifier",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductConfigurationViewModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductConfigurationViewModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductConfigurationViewModel"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/productpassports/productmodels/{productmodelId}": {
       "put": {
         "tags": [
           "ProductPassports"
         ],
         "summary": "Create or Update a Product Passport Digital Model Instance",
-        "description": "Only dtmi:avl:product:model:base;1 children are accepted as MetadataModels!",
+        "description": "Only dtmi:avl:product:passport:base;1 children are accepted as MetadataModels!",
+        "parameters": [
+          {
+            "name": "productmodelId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
         "requestBody": {
           "description": "Product Passport Instance",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DigitalTwinModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DigitalTwinModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DigitalTwinModel"
+                "$ref": "#/components/schemas/TwinGraphModel"
               }
             }
           }
@@ -4582,74 +4927,12 @@
         }
       }
     },
-    "/productpassports/datamodels/{datamodelId}": {
-      "get": {
-        "tags": [
-          "ProductPassports"
-        ],
-        "summary": "Get a DataView Configuration representation for a Product Passport from a Data Model (Initial Model with default values)",
-        "parameters": [
-          {
-            "name": "datamodelId",
-            "in": "path",
-            "description": "Data Model Identifier",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProductConfigurationViewModel"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProductConfigurationViewModel"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProductConfigurationViewModel"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/productpassports/{productPassportId}": {
       "get": {
         "tags": [
           "ProductPassports"
         ],
-        "summary": "Get the DataView Configuration for a Product Passport",
+        "summary": "Get the DataView Passport Private for a Product Passport",
         "parameters": [
           {
             "name": "productPassportId",
@@ -4744,6 +5027,71 @@
                 }
               }
             }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/productpassports/{productPassportId}/life-cycle": {
+      "put": {
+        "tags": [
+          "ProductPassports"
+        ],
+        "summary": "Update the LifeCycle Status of a Product Passport",
+        "parameters": [
+          {
+            "name": "productPassportId",
+            "in": "path",
+            "description": "Product Passport Instance Identifier",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LifeCycleUpdateRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LifeCycleUpdateRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LifeCycleUpdateRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
           },
           "404": {
             "description": "Not Found",
@@ -4899,7 +5247,7 @@
         }
       }
     },
-    "/productpassports/{productModelId}/notarization/perform": {
+    "/productpassports/{productPassportId}/notarization/execute": {
       "post": {
         "tags": [
           "ProductPassports"
@@ -4907,9 +5255,9 @@
         "summary": "Notarization of a Product Passport",
         "parameters": [
           {
-            "name": "productModelId",
+            "name": "productPassportId",
             "in": "path",
-            "description": "Product Model Instance Id",
+            "description": "Product Passport Instance Id",
             "required": true,
             "schema": {
               "type": "string",
@@ -4944,7 +5292,7 @@
         }
       }
     },
-    "/productpassports/{productModelId}/notarization/re-trigger": {
+    "/productpassports/{productPassportId}/notarization/re-trigger": {
       "post": {
         "tags": [
           "ProductPassports"
@@ -4952,9 +5300,9 @@
         "summary": "Trigger Notarization of a Product Passport",
         "parameters": [
           {
-            "name": "productModelId",
+            "name": "productPassportId",
             "in": "path",
-            "description": "Product Model Instance Id",
+            "description": "Product Passport Instance Id",
             "required": true,
             "schema": {
               "type": "string",
@@ -5052,7 +5400,7 @@
       }
     },
     "/productpassports/{productPassportId}/notarization/verify": {
-      "get": {
+      "post": {
         "tags": [
           "ProductPassports"
         ],
@@ -5157,17 +5505,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductModelQrCodeModel"
+                  "$ref": "#/components/schemas/ProductPassportQrCodeModel"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductModelQrCodeModel"
+                  "$ref": "#/components/schemas/ProductPassportQrCodeModel"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductModelQrCodeModel"
+                  "$ref": "#/components/schemas/ProductPassportQrCodeModel"
                 }
               }
             }
@@ -5847,21 +6195,104 @@
               }
             }
           }
-        },
-        "deprecated": true
+        }
       }
     }
   },
   "components": {
     "schemas": {
-      "BaseSelfDescription": {
+      "ArraySchemaDescriptionV2": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+          }
+        ],
+        "properties": {
+          "elementSchema": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/PrimitiveSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ArraySchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/EnumSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ObjectSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/MapSchemaDescriptionV2"
+              }
+            ],
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BaseInterfaceContentDescriptionModel": {
+        "required": [
+          "@type",
+          "name"
+        ],
         "type": "object",
         "properties": {
-          "id": {
+          "@id": {
+            "type": "string",
+            "description": "The id of the self description\r\nThis can get assigned by demeter if not set",
+            "nullable": true
+          },
+          "@type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The type of self description",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "description": "Potential comments",
+            "nullable": true
+          },
+          "description": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "A description of the self description\r\nKey is the language e.g. en (default)",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Display name of the self description\r\nKey is the language e.g. en (default)",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "description": "Name which needs to unique within the Interface\r\nIs not the user friendly name ! (Does not support whitespaces for example)",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Base class for all interface contents"
+      },
+      "BaseInterfaceContentDescriptionV2": {
+        "type": "object",
+        "properties": {
+          "@id": {
             "type": "string",
             "nullable": true
           },
-          "type": {
+          "@type": {
             "type": "array",
             "items": {
               "type": "string"
@@ -5875,52 +6306,110 @@
           "description": {
             "type": "object",
             "additionalProperties": {
-              "type": "string",
-              "nullable": true
+              "type": "string"
             },
             "nullable": true
           },
           "displayName": {
             "type": "object",
             "additionalProperties": {
-              "type": "string",
-              "nullable": true
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BaseSchemaSelfDescriptionModel": {
+        "type": "object",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "description": "The id of the self description\r\nThis can get assigned by demeter if not set",
+            "nullable": true
+          },
+          "@type": {
+            "type": "string",
+            "description": "The type of self description",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "description": "Potential comments",
+            "nullable": true
+          },
+          "description": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "A description of the self description\r\nKey is the language e.g. en (default)",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Display name of the self description\r\nKey is the language e.g. en (default)",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Base of DTDL descriptions"
+      },
+      "BaseSchemaSelfDescriptionV2": {
+        "type": "object",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "nullable": true
+          },
+          "@type": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "displayName": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "CO2FootprintCategoryEnum": {
-        "enum": [
-          "RawMaterialAcquisitionAndPreProcessing",
-          "MainProductProduction",
-          "DistributionPointOfSale",
-          "EndOfLifeAndRecycling",
-          "ProductUsage"
-        ],
-        "type": "string"
-      },
-      "CO2FootprintDataCategoryEnum": {
-        "enum": [
-          "PrimaryData",
-          "SecondaryData"
-        ],
-        "type": "string"
-      },
       "Co2FootprintCalculationHeaderModel": {
         "type": "object",
         "properties": {
           "productModelId": {
             "type": "string",
+            "description": "",
             "format": "uuid"
           },
           "productPassportId": {
             "type": "string",
+            "description": "",
             "format": "uuid"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Carbon Footprint Declaration"
       },
       "Co2FootprintCategory": {
         "enum": [
@@ -5933,65 +6422,32 @@
         ],
         "type": "string"
       },
-      "CommandDescription": {
+      "CommandDescriptionV2": {
         "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseInterfaceContentDescriptionV2"
+          }
+        ],
         "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
-          },
-          "type": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "comment": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string",
-              "nullable": true
-            },
-            "nullable": true
-          },
-          "displayName": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string",
-              "nullable": true
-            },
-            "nullable": true
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
           "request": {
-            "$ref": "#/components/schemas/CommandPayloadDescription"
+            "$ref": "#/components/schemas/CommandRequestDescriptionV2"
           },
           "response": {
-            "$ref": "#/components/schemas/CommandPayloadDescription"
+            "$ref": "#/components/schemas/CommandResponseDescriptionV2"
           }
         },
         "additionalProperties": false
       },
-      "CommandPayloadDescription": {
+      "CommandRequestDescriptionV2": {
         "type": "object",
         "properties": {
-          "id": {
+          "@id": {
             "type": "string",
             "nullable": true
           },
-          "type": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
+          "@type": {
+            "type": "string",
             "nullable": true
           },
           "comment": {
@@ -6001,41 +6457,64 @@
           "description": {
             "type": "object",
             "additionalProperties": {
-              "type": "string",
-              "nullable": true
+              "type": "string"
             },
             "nullable": true
           },
           "displayName": {
             "type": "object",
             "additionalProperties": {
-              "type": "string",
-              "nullable": true
+              "type": "string"
             },
             "nullable": true
           },
           "name": {
             "type": "string",
+            "nullable": true
+          },
+          "nullable": {
+            "type": "boolean",
             "nullable": true
           },
           "schema": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/PrimitiveSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ArraySchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/EnumSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ObjectSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/MapSchemaDescriptionV2"
+              }
+            ],
+            "nullable": true
+          },
+          "unit": {
+            "type": "string",
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "ComponentDescription": {
+      "CommandResponseDescriptionV2": {
         "type": "object",
         "properties": {
-          "id": {
+          "@id": {
             "type": "string",
             "nullable": true
           },
-          "type": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
+          "@type": {
+            "type": "string",
             "nullable": true
           },
           "comment": {
@@ -6045,16 +6524,14 @@
           "description": {
             "type": "object",
             "additionalProperties": {
-              "type": "string",
-              "nullable": true
+              "type": "string"
             },
             "nullable": true
           },
           "displayName": {
             "type": "object",
             "additionalProperties": {
-              "type": "string",
-              "nullable": true
+              "type": "string"
             },
             "nullable": true
           },
@@ -6062,6 +6539,48 @@
             "type": "string",
             "nullable": true
           },
+          "nullable": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "schema": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/PrimitiveSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ArraySchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/EnumSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ObjectSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/MapSchemaDescriptionV2"
+              }
+            ],
+            "nullable": true
+          },
+          "unit": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ComponentDescriptionV2": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseInterfaceContentDescriptionV2"
+          }
+        ],
+        "properties": {
           "schema": {
             "type": "string",
             "nullable": true
@@ -6072,15 +6591,6 @@
       "ConfigurationDto": {
         "type": "object",
         "properties": {
-          "productType": {
-            "$ref": "#/components/schemas/ProductTypeConfigDto"
-          },
-          "productUnit": {
-            "$ref": "#/components/schemas/ProductUnitConfigDto"
-          },
-          "productEvent": {
-            "$ref": "#/components/schemas/ProductEventConfigDto"
-          },
           "productDesignConfiguration": {
             "$ref": "#/components/schemas/DesignConfigurationDto"
           }
@@ -6171,24 +6681,29 @@
           },
           "productDtmi": {
             "type": "string",
+            "description": "Digital Twin Model Identifier associated to the Product Type",
             "nullable": true
           },
           "name": {
             "type": "string",
+            "description": "Name of the Digital Twin Model (DTM)",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Digital Twin Model Information"
       },
       "DataModelListItemModel": {
         "type": "object",
         "properties": {
           "dataModelId": {
             "type": "string",
+            "description": "Data Model Identifier",
             "format": "uuid"
           },
           "name": {
             "type": "string",
+            "description": "Data Model Name",
             "nullable": true
           },
           "productCategory": {
@@ -6199,10 +6714,12 @@
           },
           "lastUpdated": {
             "type": "string",
+            "description": "Last Update TimeStamp",
             "format": "date-time"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data Model Information"
       },
       "DataModelListItemModelPaginatedList": {
         "type": "object",
@@ -6244,10 +6761,12 @@
         "properties": {
           "dataModelId": {
             "type": "string",
+            "description": "Data Model Identifier",
             "format": "uuid"
           },
           "name": {
             "type": "string",
+            "description": "Data Model Name",
             "nullable": true
           },
           "productCategory": {
@@ -6261,6 +6780,7 @@
             "items": {
               "$ref": "#/components/schemas/DataModelDtmInformation"
             },
+            "description": "Get Information about the associated DataModels",
             "nullable": true
           },
           "validationGroups": {
@@ -6268,6 +6788,7 @@
             "items": {
               "$ref": "#/components/schemas/DataModelValidationGroupInformation"
             },
+            "description": "Get Information about the associated ValidationGroups",
             "nullable": true
           },
           "dataViews": {
@@ -6275,21 +6796,23 @@
             "items": {
               "$ref": "#/components/schemas/ProductModelDataViewsInformation"
             },
+            "description": "Get Information about the associated Data Views",
             "nullable": true
           },
           "lastUpdated": {
             "type": "string",
+            "description": "Timestamp for the last update",
             "format": "date-time"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data Model"
       },
       "DataModelReviewStatus": {
         "enum": [
           "Unknown",
           "Draft",
-          "Approved",
-          "Locked"
+          "Approved"
         ],
         "type": "string"
       },
@@ -6298,6 +6821,7 @@
         "properties": {
           "validationGroupId": {
             "type": "string",
+            "description": "Validation GroupId",
             "format": "uuid"
           },
           "productDiscriminator": {
@@ -6307,65 +6831,47 @@
             "$ref": "#/components/schemas/ProductModelValidationGroupStatus"
           }
         },
-        "additionalProperties": false
-      },
-      "DataProofStateEnum": {
-        "enum": [
-          "NotAvailable",
-          "Verified",
-          "Failed"
-        ],
-        "type": "string"
+        "additionalProperties": false,
+        "description": "Data Model Validation Group Information"
       },
       "DataViewAttributeInstanceModel": {
         "type": "object",
         "properties": {
           "name": {
             "type": "string",
+            "description": "Name of the Attribute",
             "nullable": true
           },
           "attributeSorting": {
             "type": "integer",
+            "description": "UI Sorting Position",
             "format": "int32"
           },
           "propertyDTMI": {
             "type": "string",
+            "description": "Property Id",
             "nullable": true
           },
           "propertyName": {
             "type": "string",
+            "description": "Property Name",
             "nullable": true
           }
         },
-        "additionalProperties": false
-      },
-      "DataViewAttributeModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "fieldDTMI": {
-            "type": "string",
-            "nullable": true
-          },
-          "attributeSorting": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data View Attribute"
       },
       "DataViewCategoryInstanceModel": {
         "type": "object",
         "properties": {
           "name": {
             "type": "string",
+            "description": "Name of the Category",
             "nullable": true
           },
           "categorySorting": {
             "type": "integer",
+            "description": "UI Sorting Position",
             "format": "int32"
           },
           "dataViewGroups": {
@@ -6373,93 +6879,39 @@
             "items": {
               "$ref": "#/components/schemas/DataViewGroupInstanceModel"
             },
+            "description": "Groups associated with a Category",
             "nullable": true
           }
         },
-        "additionalProperties": false
-      },
-      "DataViewCategoryModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "categorySorting": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "dataViewGroups": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataViewGroupModel"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data View Category Name"
       },
       "DataViewCompactModel": {
         "type": "object",
         "properties": {
           "dataViewId": {
             "type": "string",
+            "description": "Digital Twin Instance Id",
             "format": "uuid"
           },
-          "dataViewDtmi": {
-            "type": "string",
-            "nullable": true
-          },
           "productModelReviewStatus": {
-            "$ref": "#/components/schemas/DataModelReviewStatus"
+            "$ref": "#/components/schemas/ProductDataViewStatus"
           }
         },
-        "additionalProperties": false
-      },
-      "DataViewCompactModelPaginatedList": {
-        "type": "object",
-        "properties": {
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataViewCompactModel"
-            },
-            "nullable": true
-          },
-          "pageNumber": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "totalPages": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "totalCount": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "hasPreviousPage": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "hasNextPage": {
-            "type": "boolean",
-            "readOnly": true
-          }
-        },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Compact information of common properties of all views"
       },
       "DataViewConfigurationInstanceModel": {
         "type": "object",
         "properties": {
           "dataViewConfigurationId": {
             "type": "string",
+            "description": "Data View Identifier",
             "format": "uuid"
           },
           "name": {
             "type": "string",
+            "description": "Data View Configuration Name",
             "nullable": true
           },
           "dataViewCategories": {
@@ -6467,10 +6919,12 @@
             "items": {
               "$ref": "#/components/schemas/DataViewCategoryInstanceModel"
             },
+            "description": "Data View Categories associated with this Data View Configuration",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data View Configuration Configuration"
       },
       "DataViewConfigurationInstanceViewModel": {
         "type": "object",
@@ -6483,86 +6937,50 @@
             "items": {
               "$ref": "#/components/schemas/DigitalTwinModel"
             },
+            "description": "Digital Twin Instances for the DataView",
             "nullable": true
           },
-          "productStatus": {
-            "$ref": "#/components/schemas/ProductConfigurationDataViewStatusViewModel"
+          "productModelStatus": {
+            "$ref": "#/components/schemas/ProductModelConfigurationDataViewStatusViewModel"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data View Configuration Instance Representation"
       },
       "DataViewConfigurationModel": {
         "type": "object",
         "properties": {
           "dataViewId": {
             "type": "string",
+            "description": "DataView Id",
             "format": "uuid"
           },
           "name": {
             "type": "string",
-            "nullable": true
-          },
-          "dtmiReference": {
-            "type": "string",
+            "description": "Name of the Data View",
             "nullable": true
           },
           "reviewStatus": {
             "$ref": "#/components/schemas/ProductDataViewStatus"
           },
-          "dataViewCategories": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataViewCategoryModel"
-            },
-            "nullable": true
+          "graphModel": {
+            "$ref": "#/components/schemas/TwinGraphModel"
           }
         },
-        "additionalProperties": false
-      },
-      "DataViewConfigurationModelPaginatedList": {
-        "type": "object",
-        "properties": {
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataViewConfigurationModel"
-            },
-            "nullable": true
-          },
-          "pageNumber": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "totalPages": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "totalCount": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "hasPreviousPage": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "hasNextPage": {
-            "type": "boolean",
-            "readOnly": true
-          }
-        },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data View for Configurations"
       },
       "DataViewGroupInstanceModel": {
         "type": "object",
         "properties": {
           "name": {
             "type": "string",
+            "description": "Name of the Group",
             "nullable": true
           },
           "groupSorting": {
             "type": "integer",
+            "description": "UI Sorting Position",
             "format": "int32"
           },
           "dataViewGroupAttributes": {
@@ -6570,45 +6988,29 @@
             "items": {
               "$ref": "#/components/schemas/DataViewAttributeInstanceModel"
             },
+            "description": "Attributes associated with a Group",
             "nullable": true
           }
         },
-        "additionalProperties": false
-      },
-      "DataViewGroupModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "groupSorting": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "dataViewGroupAttributes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataViewAttributeModel"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data View Group"
       },
       "DataViewPassportConfigurationInstanceModel": {
         "type": "object",
         "properties": {
           "dataViewPassportId": {
             "type": "string",
+            "description": "DataView Passport Identifier",
             "format": "uuid"
           },
           "name": {
             "type": "string",
+            "description": "DataView Passport Name",
             "nullable": true
           },
           "configurationName": {
             "type": "string",
+            "description": "DataView Passport Configuration Name",
             "nullable": true
           },
           "dataViewCategories": {
@@ -6616,18 +7018,24 @@
             "items": {
               "$ref": "#/components/schemas/DataViewCategoryInstanceModel"
             },
+            "description": "Categories associated with the DataView",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data View Passport Instance"
+      },
+      "DataViewPassportConfigurationType": {
+        "enum": [
+          "None",
+          "Private",
+          "Public"
+        ],
+        "type": "string"
       },
       "DataViewPassportInstanceViewModel": {
         "type": "object",
         "properties": {
-          "dataViewPassportDtmi": {
-            "type": "string",
-            "nullable": true
-          },
           "view": {
             "$ref": "#/components/schemas/DataViewPassportConfigurationInstanceModel"
           },
@@ -6636,13 +7044,15 @@
             "items": {
               "$ref": "#/components/schemas/DigitalTwinModel"
             },
+            "description": "Digital Twin Instances",
             "nullable": true
           },
-          "productStatus": {
-            "$ref": "#/components/schemas/ProductConfigurationDataViewStatusViewModel"
+          "productPassportStatus": {
+            "$ref": "#/components/schemas/ProductPassportStatusViewModel"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data View Passport Instance Representation"
       },
       "DesignConfigurationDto": {
         "type": "object",
@@ -6680,7 +7090,7 @@
       "DigitalTwinMetadataModel": {
         "type": "object",
         "properties": {
-          "model": {
+          "$model": {
             "type": "string",
             "nullable": true
           }
@@ -6690,78 +7100,65 @@
       "DigitalTwinModel": {
         "type": "object",
         "properties": {
-          "dtId": {
+          "$dtId": {
             "type": "string",
             "format": "uuid"
           },
-          "etag": {
+          "$etag": {
             "type": "string",
             "nullable": true
           },
-          "metadata": {
+          "$metadata": {
             "$ref": "#/components/schemas/DigitalTwinMetadataModel"
-          },
-          "additionalProperties": {
-            "type": "object",
-            "additionalProperties": {
-              "nullable": true
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "DigitalTwinModelInterfaceModel": {
-        "required": [
-          "@context",
-          "@id",
-          "@type",
-          "extends"
-        ],
-        "type": "object",
-        "properties": {
-          "@context": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "@type": {
-            "type": "string",
-            "nullable": true
-          },
-          "@id": {
-            "type": "string",
-            "nullable": true
-          },
-          "extends": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "comment": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "displayName": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": { }
+      },
+      "DigitalTwinModelDefinitionsQuery": {
+        "type": "object",
+        "properties": {
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "partialDtmis": {
+            "type": "string",
+            "description": "Enable Search for Digital Twin Model Identifier (DTMI) multiple Versions etc",
+            "nullable": true
+          },
+          "systemDtmTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SystemDtmTypes"
+            },
+            "description": "Filter for specific DTM Types (null or empty disables the filter)",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "DTM Query Filter"
+      },
+      "DigitalTwinModelExtendedInterfaceQuery": {
+        "required": [
+          "dtmis"
+        ],
+        "type": "object",
+        "properties": {
+          "dtmis": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Digital Twin Model Identifier"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Filter Digital Twin Model Definitions based on the Id"
       },
       "DqrProductCarbonFootprintDataCategoryPrivateModel": {
         "type": "object",
@@ -6773,7 +7170,8 @@
             "$ref": "#/components/schemas/ValueWithUnit"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data Category Details"
       },
       "DqrProductCarbonFootprintPrivateModel": {
         "type": "object",
@@ -6788,20 +7186,40 @@
             "$ref": "#/components/schemas/DqrProductCarbonFootprintDataCategoryPrivateModel"
           }
         },
+        "additionalProperties": false,
+        "description": "Data Quality Rating Product Carbon Footprint"
+      },
+      "EnumSchemaDescriptionV2": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+          }
+        ],
+        "properties": {
+          "enumValues": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EnumValueDescriptionV2"
+            },
+            "nullable": true
+          },
+          "valueSchema": {
+            "type": "string",
+            "nullable": true
+          }
+        },
         "additionalProperties": false
       },
-      "ExpandedInterfaceDescription": {
+      "EnumValueDescriptionV2": {
         "type": "object",
         "properties": {
-          "id": {
+          "@id": {
             "type": "string",
             "nullable": true
           },
-          "type": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
+          "@type": {
+            "type": "string",
             "nullable": true
           },
           "comment": {
@@ -6811,106 +7229,86 @@
           "description": {
             "type": "object",
             "additionalProperties": {
-              "type": "string",
-              "nullable": true
+              "type": "string"
             },
             "nullable": true
           },
           "displayName": {
             "type": "object",
             "additionalProperties": {
-              "type": "string",
-              "nullable": true
-            },
-            "nullable": true
-          },
-          "context": {
-            "type": "string",
-            "nullable": true
-          },
-          "extends": {
-            "type": "array",
-            "items": {
               "type": "string"
             },
             "nullable": true
           },
-          "schemas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/BaseSelfDescription"
-            },
+          "name": {
+            "type": "string",
             "nullable": true
           },
-          "properties": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/PropertyDescription"
-            },
-            "nullable": true
-          },
-          "relationships": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/RelationshipDescription"
-            },
-            "nullable": true
-          },
-          "telemetries": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TelemetryDescription"
-            },
-            "nullable": true
-          },
-          "components": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ComponentDescription"
-            },
-            "nullable": true
-          },
-          "commands": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CommandDescription"
-            },
+          "enumValue": {
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "ExpandedInterfaceDescriptionPaginatedList": {
+      "FieldDescriptionV2": {
         "type": "object",
         "properties": {
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ExpandedInterfaceDescription"
+          "@id": {
+            "type": "string",
+            "nullable": true
+          },
+          "@type": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
             },
             "nullable": true
           },
-          "pageNumber": {
-            "type": "integer",
-            "format": "int32"
+          "displayName": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
           },
-          "totalPages": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
+          "name": {
+            "type": "string",
+            "nullable": true
           },
-          "totalCount": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
+          "schema": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/PrimitiveSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ArraySchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/EnumSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ObjectSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/MapSchemaDescriptionV2"
+              }
+            ],
+            "nullable": true
           },
-          "hasPreviousPage": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "hasNextPage": {
-            "type": "boolean",
-            "readOnly": true
+          "unit": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -7013,9 +7411,225 @@
         },
         "additionalProperties": false
       },
+      "InterfaceDescriptionModel": {
+        "required": [
+          "@id"
+        ],
+        "type": "object",
+        "properties": {
+          "@context": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The DTDL context",
+            "nullable": true
+          },
+          "@id": {
+            "type": "string",
+            "description": "The id of the self description\r\nThis can get assigned by demeter if not set",
+            "nullable": true
+          },
+          "@type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The type of self description",
+            "nullable": true
+          },
+          "extends": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The interfaces that this interface extends",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "description": "Potential comments",
+            "nullable": true
+          },
+          "description": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "A description of the self description\r\nKey is the language e.g. en (default)",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Display name of the self description\r\nKey is the language e.g. en (default)",
+            "nullable": true
+          },
+          "contents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BaseInterfaceContentDescriptionModel"
+            },
+            "description": "The content of the interface",
+            "nullable": true
+          },
+          "schemas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BaseSchemaSelfDescriptionModel"
+            },
+            "description": "The schemas that are used in the interface",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Description of an interface"
+      },
+      "InterfaceDescriptionV2": {
+        "required": [
+          "@context",
+          "@id",
+          "@type",
+          "extends"
+        ],
+        "type": "object",
+        "properties": {
+          "@context": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "@id": {
+            "type": "string"
+          },
+          "@type": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "extends": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "displayName": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "contents": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/BaseInterfaceContentDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/PropertyDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/RelationshipDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/CommandDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/TelemetryDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/ComponentDescriptionV2"
+                }
+              ]
+            },
+            "nullable": true
+          },
+          "schemas": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/PrimitiveSchemaDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/ArraySchemaDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/EnumSchemaDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/ObjectSchemaDescriptionV2"
+                },
+                {
+                  "$ref": "#/components/schemas/MapSchemaDescriptionV2"
+                }
+              ]
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "InterfaceDescriptionV2PaginatedList": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InterfaceDescriptionV2"
+            },
+            "nullable": true
+          },
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "hasPreviousPage": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "hasNextPage": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LifeCycleStatus": {
         "enum": [
-          "Unknown",
           "Original",
           "Repurposed",
           "Reused",
@@ -7024,35 +7638,157 @@
         ],
         "type": "string"
       },
-      "MainProductProductionCalculationTypeEnum": {
-        "enum": [
-          "OnSiteGeneratedElectricity",
-          "SupplierSpecificElectricityProduct",
-          "SupplierSpecificTotalElectricityMix",
-          "CountrySpecificResidualConsumptionGridMix",
-          "CountryOrGridSpecificAverageConsumptionMix"
-        ],
-        "type": "string"
-      },
-      "NotarizationInformationModel": {
+      "LifeCycleUpdateRequestModel": {
         "type": "object",
         "properties": {
           "status": {
-            "$ref": "#/components/schemas/NotarizationStatus"
-          },
-          "storedAt": {
+            "$ref": "#/components/schemas/LifeCycleStatus"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MapKeyDescriptionV2": {
+        "type": "object",
+        "properties": {
+          "@id": {
             "type": "string",
-            "format": "date-time",
             "nullable": true
           },
-          "rootHash": {
+          "@type": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "displayName": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "schema": {
             "type": "string",
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "NotarizationStatus": {
+      "MapSchemaDescriptionV2": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+          }
+        ],
+        "properties": {
+          "mapKey": {
+            "$ref": "#/components/schemas/MapKeyDescriptionV2"
+          },
+          "mapValue": {
+            "$ref": "#/components/schemas/MapValueDescriptionV2"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MapValueDescriptionV2": {
+        "type": "object",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "nullable": true
+          },
+          "@type": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "displayName": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "schema": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/PrimitiveSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ArraySchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/EnumSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ObjectSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/MapSchemaDescriptionV2"
+              }
+            ],
+            "nullable": true
+          },
+          "unit": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotarizationInformationModel": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/NotarizationState"
+          },
+          "storedAt": {
+            "type": "string",
+            "description": "Datetime the Proof was stored",
+            "format": "date-time",
+            "nullable": true
+          },
+          "rootHash": {
+            "type": "string",
+            "description": "RootHash of the Proof",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Notarization Information about a Digital Twin Instance"
+      },
+      "NotarizationState": {
         "enum": [
           "Unknown",
           "Triggered",
@@ -7069,6 +7805,41 @@
             "$ref": "#/components/schemas/ProofStatus"
           },
           "resultMessage": {
+            "type": "string",
+            "description": "Human readable message for the proof state",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Notarization Verification Result"
+      },
+      "ObjectSchemaDescriptionV2": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+          }
+        ],
+        "properties": {
+          "fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FieldDescriptionV2"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PrimitiveSchemaDescriptionV2": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+          }
+        ],
+        "properties": {
+          "primitiveSchema": {
             "type": "string",
             "nullable": true
           }
@@ -7119,10 +7890,12 @@
             "items": {
               "$ref": "#/components/schemas/PropertyValueWithUnit"
             },
+            "description": "",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Carbon Category Footprint"
       },
       "ProductCarbonFootprintPublicModel": {
         "type": "object",
@@ -7134,7 +7907,8 @@
             "$ref": "#/components/schemas/ValueWithUnit"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Carbon Category Footprint"
       },
       "ProductCarbonPrivateModel": {
         "type": "object",
@@ -7147,10 +7921,12 @@
             "items": {
               "$ref": "#/components/schemas/ProductCarbonFootprintPrivateModel"
             },
+            "description": "Footprint details for each category",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Carbon Footprint"
       },
       "ProductCarbonPublicModel": {
         "type": "object",
@@ -7163,10 +7939,12 @@
             "items": {
               "$ref": "#/components/schemas/ProductCarbonFootprintPublicModel"
             },
+            "description": "Footprint details for each category",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Carbon Footprint"
       },
       "ProductCarbonSummaryFootprintPrivateModel": {
         "type": "object",
@@ -7178,7 +7956,8 @@
             "$ref": "#/components/schemas/ValueWithUnit"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Total Carbon Footprint"
       },
       "ProductCarbonSummaryFootprintPublicModel": {
         "type": "object",
@@ -7187,21 +7966,25 @@
             "$ref": "#/components/schemas/ValueWithUnit"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Total Carbon Footprint"
       },
       "ProductCategoryModel": {
         "type": "object",
         "properties": {
           "productCategoryId": {
             "type": "string",
+            "description": "Identifier",
             "format": "uuid"
           },
           "name": {
             "type": "string",
+            "description": "Name",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Category Identifier"
       },
       "ProductCategoryModelPaginatedList": {
         "type": "object",
@@ -7238,33 +8021,20 @@
         },
         "additionalProperties": false
       },
-      "ProductConfigurationDataViewStatusViewModel": {
-        "type": "object",
-        "properties": {
-          "reviewStatus": {
-            "$ref": "#/components/schemas/ProductModelReviewStatus"
-          },
-          "validationStatus": {
-            "$ref": "#/components/schemas/ValidationStatus"
-          },
-          "proofStatus": {
-            "$ref": "#/components/schemas/ProofStatus"
-          }
-        },
-        "additionalProperties": false
-      },
       "ProductConfigurationViewModel": {
         "type": "object",
         "properties": {
           "dataViewConfigurationDtmi": {
             "type": "string",
+            "description": "Data View Configuration Digital Twin Model Identifier",
             "nullable": true
           },
           "viewModel": {
             "$ref": "#/components/schemas/DataViewConfigurationInstanceModel"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Configuration View Model"
       },
       "ProductDataViewStatus": {
         "enum": [
@@ -7282,45 +8052,41 @@
         ],
         "type": "string"
       },
-      "ProductEventConfigDto": {
+      "ProductModelConfigurationDataViewStatusViewModel": {
         "type": "object",
         "properties": {
-          "webFormSourceId": {
-            "type": "string",
-            "format": "uuid",
-            "readOnly": true
+          "reviewStatus": {
+            "$ref": "#/components/schemas/ProductModelReviewStatus"
           },
-          "dataProofStateValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataProofStateEnum"
-            },
-            "nullable": true,
-            "readOnly": true
+          "validationStatus": {
+            "$ref": "#/components/schemas/ProductModelValidationStatus"
+          },
+          "proofStatus": {
+            "$ref": "#/components/schemas/ProofStatus"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Status Information"
       },
       "ProductModelDataViewsInformation": {
         "type": "object",
         "properties": {
           "dataViewId": {
             "type": "string",
+            "description": "Data View Id",
             "format": "uuid"
-          },
-          "dataViewDtmi": {
-            "type": "string",
-            "nullable": true
           },
           "dataViewName": {
             "type": "string",
+            "description": "Data View Name",
             "nullable": true
           },
           "reviewStatus": {
             "$ref": "#/components/schemas/ProductDataViewStatus"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data Model Data View Information"
       },
       "ProductModelDtmStatus": {
         "enum": [
@@ -7333,44 +8099,42 @@
       "ProductModelListItemModel": {
         "type": "object",
         "properties": {
-          "productCategoryId": {
-            "type": "string",
-            "format": "uuid"
-          },
           "productModelId": {
             "type": "string",
+            "description": "Product Model Identifier",
             "format": "uuid"
-          },
-          "dataModelName": {
-            "type": "string",
-            "nullable": true
           },
           "dtmi": {
             "type": "string",
+            "description": "Product Model Digital Twin Model Identifier",
             "nullable": true
           },
           "productModelReviewStatus": {
             "$ref": "#/components/schemas/ProductModelReviewStatus"
           },
           "validationStatus": {
-            "$ref": "#/components/schemas/ValidationStatus"
+            "$ref": "#/components/schemas/ProductModelValidationStatus"
           },
           "proofStatus": {
             "$ref": "#/components/schemas/ProofStatus"
           },
-          "serialNumber": {
+          "articleNumber": {
             "type": "string",
+            "description": "Product Model Article Number",
             "nullable": true
           },
           "lastUpdated": {
             "type": "string",
+            "description": "Product Model last update",
             "format": "date-time"
           },
-          "isPublicAvailable": {
-            "type": "boolean"
+          "isPubliclyAvailable": {
+            "type": "boolean",
+            "description": "Product Model is available for the public"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Model List Item"
       },
       "ProductModelListItemModelPaginatedList": {
         "type": "object",
@@ -7407,35 +8171,13 @@
         },
         "additionalProperties": false
       },
-      "ProductModelQrCodeModel": {
-        "type": "object",
-        "properties": {
-          "size": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "qrCodeQualityLevel": {
-            "$ref": "#/components/schemas/QrCodeQualityLevel"
-          },
-          "mimeType": {
-            "type": "string",
-            "nullable": true
-          },
-          "data": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "ProductModelReviewStatus": {
         "enum": [
           "Unknown",
           "Draft",
           "ReadyForReview",
           "NotarizationInProgress",
-          "Approved",
-          "Locked"
+          "Approved"
         ],
         "type": "string"
       },
@@ -7444,6 +8186,14 @@
           "Unknown",
           "Draft",
           "Approved"
+        ],
+        "type": "string"
+      },
+      "ProductModelValidationStatus": {
+        "enum": [
+          "Unknown",
+          "Failed",
+          "Success"
         ],
         "type": "string"
       },
@@ -7460,7 +8210,8 @@
             "$ref": "#/components/schemas/DqrProductCarbonFootprintPrivateModel"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Private representation of the CO2 Footprint Calculation Result"
       },
       "ProductPassportCo2FootPrintCalculationPublicModel": {
         "type": "object",
@@ -7472,32 +8223,43 @@
             "$ref": "#/components/schemas/ProductCarbonPublicModel"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Public representation of the CO2 Footprint Calculation Result"
       },
       "ProductPassportListItemModel": {
         "type": "object",
         "properties": {
           "productCategoryId": {
             "type": "string",
+            "description": "Product Category Identifier",
             "format": "uuid"
           },
           "dataModelId": {
             "type": "string",
+            "description": "Data Model Identifier",
             "format": "uuid"
           },
           "productModelId": {
             "type": "string",
+            "description": "Product Model Identifier",
             "format": "uuid"
+          },
+          "productModelName": {
+            "type": "string",
+            "description": "Product Model Name",
+            "nullable": true
           },
           "productPassportId": {
             "type": "string",
+            "description": "Product Passport Identifier",
             "format": "uuid"
           },
           "dtmi": {
             "type": "string",
+            "description": "Digital Twin Model Identifier (DTMI)",
             "nullable": true
           },
-          "reviewStatus": {
+          "productPassportReviewStatus": {
             "$ref": "#/components/schemas/ProductPassportReviewStatus"
           },
           "proofStatus": {
@@ -7507,28 +8269,34 @@
             "$ref": "#/components/schemas/LifeCycleStatus"
           },
           "validationStatus": {
-            "$ref": "#/components/schemas/ValidationStatus"
+            "$ref": "#/components/schemas/ProductPassportValidationStatus"
           },
           "serialNumber": {
             "type": "string",
+            "description": "Product Passport Serial Number",
             "nullable": true
           },
           "lastUpdated": {
             "type": "string",
+            "description": "Product Passport Last Change DateTime",
             "format": "date-time"
           },
           "productionDate": {
             "type": "string",
+            "description": "Product Passport Production Date",
             "format": "date"
           },
           "isQrCodeAvailable": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Product Passport QrCode Available"
           },
           "isPublicAvailable": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Product Model is available for the public"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Passport List Item"
       },
       "ProductPassportListItemModelPaginatedList": {
         "type": "object",
@@ -7565,199 +8333,63 @@
         },
         "additionalProperties": false
       },
+      "ProductPassportQrCodeModel": {
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          },
+          "qrCodeQualityLevel": {
+            "$ref": "#/components/schemas/QrCodeQualityLevel"
+          },
+          "mimeType": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          },
+          "data": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Qr Code"
+      },
       "ProductPassportReviewStatus": {
         "enum": [
           "Unknown",
           "Draft",
+          "ReadyForReview",
           "NotarizationInProgress",
           "Approved",
-          "PlacedInMarket"
+          "PlacedOnMarket"
         ],
         "type": "string"
       },
-      "ProductTypeCO2FootprintsConfigDto": {
+      "ProductPassportStatusViewModel": {
         "type": "object",
         "properties": {
-          "categoryValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CO2FootprintCategoryEnum"
-            },
-            "nullable": true,
-            "readOnly": true
+          "reviewStatus": {
+            "$ref": "#/components/schemas/ProductPassportReviewStatus"
           },
-          "dataCategoryValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CO2FootprintDataCategoryEnum"
-            },
-            "nullable": true,
-            "readOnly": true
+          "validationStatus": {
+            "$ref": "#/components/schemas/ProductPassportValidationStatus"
+          },
+          "proofStatus": {
+            "$ref": "#/components/schemas/ProofStatus"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Status Information"
       },
-      "ProductTypeConfigDto": {
-        "type": "object",
-        "properties": {
-          "dataValidationStateValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ProductTypeDataValidationStateEnum"
-            },
-            "nullable": true,
-            "readOnly": true
-          },
-          "dataProofStateValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataProofStateEnum"
-            },
-            "nullable": true,
-            "readOnly": true
-          },
-          "configuration": {
-            "$ref": "#/components/schemas/ProductTypeConfigurationConfigDto"
-          },
-          "cO2Footprints": {
-            "$ref": "#/components/schemas/ProductTypeCO2FootprintsConfigDto"
-          },
-          "documents": {
-            "$ref": "#/components/schemas/ProductTypeDocumentsConfigDto"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProductTypeConfigurationConfigDto": {
-        "type": "object",
-        "properties": {
-          "mainProductProductionCalculationTypeValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MainProductProductionCalculationTypeEnum"
-            },
-            "nullable": true,
-            "readOnly": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProductTypeDataValidationStateEnum": {
+      "ProductPassportValidationStatus": {
         "enum": [
           "Unknown",
-          "Open",
-          "ReadyForReview",
-          "Validated"
-        ],
-        "type": "string"
-      },
-      "ProductTypeDocumentTypeEnum": {
-        "enum": [
-          "SpecificationOfElectrodes",
-          "FullMaterialDisclosure",
-          "PartNumbersOfComponents",
-          "BatteryManufacturerInformation",
-          "PrimaryRawMaterials",
-          "CriticalRawMaterials",
-          "SecondaryRawMaterials",
-          "DismantlingInstructions"
-        ],
-        "type": "string"
-      },
-      "ProductTypeDocumentsConfigDto": {
-        "type": "object",
-        "properties": {
-          "allowedFileExtensions": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true,
-            "readOnly": true
-          },
-          "maxFileSize": {
-            "type": "integer",
-            "format": "int64",
-            "readOnly": true
-          },
-          "documentTypeValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ProductTypeDocumentTypeEnum"
-            },
-            "nullable": true,
-            "readOnly": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProductUnitCO2FootprintsConfigDto": {
-        "type": "object",
-        "properties": {
-          "categoryValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CO2FootprintCategoryEnum"
-            },
-            "nullable": true,
-            "readOnly": true
-          },
-          "dataCategoryValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CO2FootprintDataCategoryEnum"
-            },
-            "nullable": true,
-            "readOnly": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProductUnitConfigDto": {
-        "type": "object",
-        "properties": {
-          "stateValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ProductUnitStateEnum"
-            },
-            "nullable": true,
-            "readOnly": true
-          },
-          "dataValidationStateValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ProductUnitDataValidationStateEnum"
-            },
-            "nullable": true,
-            "readOnly": true
-          },
-          "dataProofStateValues": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DataProofStateEnum"
-            },
-            "nullable": true,
-            "readOnly": true
-          },
-          "cO2Footprints": {
-            "$ref": "#/components/schemas/ProductUnitCO2FootprintsConfigDto"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProductUnitDataValidationStateEnum": {
-        "enum": [
-          "Open",
-          "ValidationFailed",
-          "Validated"
-        ],
-        "type": "string"
-      },
-      "ProductUnitStateEnum": {
-        "enum": [
-          "Registered",
-          "PlacedOnMarket"
+          "Failed",
+          "Success"
         ],
         "type": "string"
       },
@@ -7769,45 +8401,35 @@
         ],
         "type": "string"
       },
-      "PropertyDescription": {
+      "PropertyDescriptionV2": {
         "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseInterfaceContentDescriptionV2"
+          }
+        ],
         "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
-          },
-          "type": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "comment": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string",
-              "nullable": true
-            },
-            "nullable": true
-          },
-          "displayName": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string",
-              "nullable": true
-            },
-            "nullable": true
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
           "schema": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/PrimitiveSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ArraySchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/EnumSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ObjectSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/MapSchemaDescriptionV2"
+              }
+            ],
             "nullable": true
           },
           "unit": {
@@ -7826,68 +8448,42 @@
         "properties": {
           "name": {
             "type": "string",
+            "description": "",
             "nullable": true
           },
           "value": {
             "type": "number",
+            "description": "",
             "format": "double"
           },
           "unit": {
             "type": "string",
+            "description": "",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Represents a Calculation Point with a Name"
       },
       "QrCodeQualityLevel": {
         "enum": [
-          "L",
-          "M",
-          "Q",
-          "H",
-          "Default"
+          0,
+          1,
+          2,
+          3,
+          -1
         ],
-        "type": "string",
-        "description": "Qr Code Level"
+        "type": "integer",
+        "format": "int32"
       },
-      "RelationshipDescription": {
+      "RelationshipDescriptionV2": {
         "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseInterfaceContentDescriptionV2"
+          }
+        ],
         "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
-          },
-          "type": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "comment": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string",
-              "nullable": true
-            },
-            "nullable": true
-          },
-          "displayName": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string",
-              "nullable": true
-            },
-            "nullable": true
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
           "maxMultiplicity": {
             "type": "integer",
             "format": "int32",
@@ -7901,7 +8497,7 @@
           "properties": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/PropertyDescription"
+              "$ref": "#/components/schemas/PropertyDescriptionV2"
             },
             "nullable": true
           },
@@ -7919,35 +8515,28 @@
       "RelationshipModel": {
         "type": "object",
         "properties": {
-          "relationshipId": {
+          "$relationshipId": {
             "type": "string",
             "format": "uuid"
           },
-          "etag": {
+          "$etag": {
             "type": "string",
             "nullable": true
           },
-          "sourceId": {
+          "$sourceId": {
             "type": "string",
             "format": "uuid"
           },
-          "targetId": {
+          "$targetId": {
             "type": "string",
             "format": "uuid"
           },
-          "relationshipName": {
+          "$relationshipName": {
             "type": "string",
-            "nullable": true
-          },
-          "additionalProperties": {
-            "type": "object",
-            "additionalProperties": {
-              "nullable": true
-            },
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": { }
       },
       "StringPaginatedList": {
         "type": "object",
@@ -7999,45 +8588,35 @@
         ],
         "type": "string"
       },
-      "TelemetryDescription": {
+      "TelemetryDescriptionV2": {
         "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/BaseInterfaceContentDescriptionV2"
+          }
+        ],
         "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
-          },
-          "type": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
-          },
-          "comment": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string",
-              "nullable": true
-            },
-            "nullable": true
-          },
-          "displayName": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string",
-              "nullable": true
-            },
-            "nullable": true
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
           "schema": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/BaseSchemaSelfDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/PrimitiveSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ArraySchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/EnumSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/ObjectSchemaDescriptionV2"
+              },
+              {
+                "$ref": "#/components/schemas/MapSchemaDescriptionV2"
+              }
+            ],
             "nullable": true
           },
           "unit": {
@@ -8072,14 +8651,30 @@
         "properties": {
           "productCategoryId": {
             "type": "string",
+            "description": "Product Category Identifier",
             "format": "uuid"
           },
           "name": {
             "type": "string",
+            "description": "Data Model Name",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Data Model"
+      },
+      "UpdateDataViewPassportModel": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "$ref": "#/components/schemas/DataViewPassportConfigurationType"
+          },
+          "graphModel": {
+            "$ref": "#/components/schemas/TwinGraphModel"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Data View for Passports"
       },
       "UpdateGroupCommand": {
         "required": [
@@ -8111,19 +8706,23 @@
         "properties": {
           "name": {
             "type": "string",
+            "description": "Unique Name for a Product Category",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Product Category"
       },
       "UpdateProductPublicAccessModel": {
         "type": "object",
         "properties": {
           "isPublicAccessGranted": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "True if the Product Passport is public accessible"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Change the Public Access for a Product Passport"
       },
       "UpdateUserCommand": {
         "required": [
@@ -8260,82 +8859,22 @@
         },
         "additionalProperties": false
       },
-      "ValidationAttributeModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "fieldDTMI": {
-            "type": "string",
-            "nullable": true
-          },
-          "helperText": {
-            "type": "string",
-            "nullable": true
-          },
-          "isOptional": {
-            "type": "boolean"
-          },
-          "validationRuleDates": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleDateModel"
-            },
-            "nullable": true
-          },
-          "validationRuleDateTimes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleDateTimeModel"
-            },
-            "nullable": true
-          },
-          "validationRulesEnums": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleEnumModel"
-            },
-            "nullable": true
-          },
-          "validationMinMaxDoubles": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleMinMaxDoubleModel"
-            },
-            "nullable": true
-          },
-          "validationMinMaxIntegers": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleMinMaxIntegerModel"
-            },
-            "nullable": true
-          },
-          "validationRulesTexts": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationRuleTextModel"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "ValidationGroupModel": {
         "type": "object",
         "properties": {
           "validationGroupId": {
             "type": "string",
+            "description": "Validation Group Id",
             "format": "uuid"
           },
           "name": {
             "type": "string",
+            "description": "Name of the Validation Group",
             "nullable": true
           },
           "dtmiReference": {
             "type": "string",
+            "description": "Digital Twin Model Identifier for the Validation Group Reference",
             "nullable": true
           },
           "productDiscriminator": {
@@ -8344,50 +8883,28 @@
           "reviewStatus": {
             "$ref": "#/components/schemas/ProductModelValidationGroupStatus"
           },
-          "validationAttributes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationAttributeModel"
-            },
-            "nullable": true
+          "validationGroupGraph": {
+            "$ref": "#/components/schemas/TwinGraphModel"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Validation Group Model"
       },
-      "ValidationGroupModelPaginatedList": {
+      "ValidationGroupUpdateModel": {
+        "required": [
+          "graphModel"
+        ],
         "type": "object",
         "properties": {
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ValidationGroupModel"
-            },
-            "nullable": true
+          "productDiscriminator": {
+            "$ref": "#/components/schemas/ProductDiscriminator"
           },
-          "pageNumber": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "totalPages": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "totalCount": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "hasPreviousPage": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "hasNextPage": {
-            "type": "boolean",
-            "readOnly": true
+          "graphModel": {
+            "$ref": "#/components/schemas/TwinGraphModel"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Validation Group Model"
       },
       "ValidationProblemDetails": {
         "type": "object",
@@ -8426,123 +8943,22 @@
         },
         "additionalProperties": { }
       },
-      "ValidationRuleDateModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "minDate": {
-            "type": "string",
-            "format": "date"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleDateTimeModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "minDateTime": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleEnumModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "allowedValues": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleMinMaxDoubleModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "min": {
-            "type": "number",
-            "format": "double"
-          },
-          "max": {
-            "type": "number",
-            "format": "double"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleMinMaxIntegerModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "min": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "max": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationRuleTextModel": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "regex": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ValidationStatus": {
-        "enum": [
-          "Unknown",
-          "Failed",
-          "Success"
-        ],
-        "type": "string"
-      },
       "ValueWithUnit": {
         "type": "object",
         "properties": {
           "value": {
             "type": "number",
+            "description": "Property Value",
             "format": "double"
           },
           "unit": {
             "type": "string",
+            "description": "Property Unit",
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Represents a Calculation Point"
       }
     },
     "securitySchemes": {
