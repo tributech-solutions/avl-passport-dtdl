@@ -6,7 +6,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:group;1"
       },
-      "displayName": "Validation Group",
       "Name": "Product Model Validation Group",
       "DTMIReference": "dtmi:avl:product:model:battery;1"
     },
@@ -48,7 +47,6 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:rule:minMax:integer;1"
       },
-      "displayName": "Integer Number Min/Max Validation Rule",
       "Min": 0,
       "Max": 100,
       "Name": "PercentRange",

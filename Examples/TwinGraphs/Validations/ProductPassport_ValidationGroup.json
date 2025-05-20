@@ -6,7 +6,7 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:group;1"
       },
-            "Name": "Product Passport Validation Group",
+      "Name": "Product Passport Validation Group",
       "DTMIReference": "dtmi:avl:product:passport:battery;1"
     },
     {
@@ -26,7 +26,7 @@
       "$metadata": {
         "$model": "dtmi:avl:product:validation:rule:enum;1"
       },
-            "allowed_values": [
+            "AllowedValues": [
         1,
         2,
         3
