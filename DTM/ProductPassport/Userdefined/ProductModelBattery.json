@@ -236,7 +236,7 @@
       "@type": "Component",
       "@id": "dtmi:avl:product:model:battery:PrimaryRawMaterialsDocument;1",
       "name": "PrimaryRawMaterialsDocument",
-      "schema": "dtmi:avl:product:component:document;1",
+      "schema": "dtmi:avl:product:component:media;1",
       "displayName": "Primary Raw material document",
       "description": "A pdf Document that contains the primary raw materials used in the product"
     },

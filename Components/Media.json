@@ -1,22 +1,22 @@
 {
     "@context": "dtmi:dtdl:context;4",
-    "@id": "dtmi:avl:product:component:document;1",
+    "@id": "dtmi:avl:product:component:media;1",
     "@type": "Interface",
     "contents": [
         {
-            "@id": "dtmi:avl:product:component:document:Url;1",
+            "@id": "dtmi:avl:product:component:media:Url;1",
             "name": "Url",
             "@type": "Property",
             "schema": "string"
         },
         {
-            "@id": "dtmi:avl:product:component:document:Name;1",
+            "@id": "dtmi:avl:product:component:media:Name;1",
             "name": "Name",
             "@type": "Property",
             "schema": "string"
         },
         {
-            "@id": "dtmi:avl:product:component:document:type;1",
+            "@id": "dtmi:avl:product:component:media:type;1",
             "name": "Type",
             "@type": "Property",
             "schema": {
@@ -44,8 +44,8 @@
                 ]
             },
             "writable": false,
-            "displayName": "Document Type",
-            "description": "Represents the document type."
+            "displayName": "Media Type",
+            "description": "Represents the media type."
         }
     ]
 }
