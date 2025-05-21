@@ -5,6 +5,11 @@
     "description": "GatewayService to Tributech Node.",
     "version": "v1"
   },
+  "servers": [
+    {
+      "url": "https://avl.dev-z.tributech-node.com/avl-passport/api"
+    }
+  ],
   "paths": {
     "/configuration": {
       "get": {
@@ -2218,51 +2223,6 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ProblemDetails"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/datamodels/{dataModelId}/data-views/passports/unlock": {
-      "post": {
-        "tags": [
-          "DataModels"
-        ],
-        "summary": "Unlock all approved Passport Data View for a specific Data Model",
-        "parameters": [
-          {
-            "name": "dataModelId",
-            "in": "path",
-            "description": "Data Model Identifier",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ValidationProblemDetails"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ValidationProblemDetails"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ValidationProblemDetails"
                 }
               }
             }
@@ -9011,8 +8971,8 @@
         "type": "oauth2",
         "flows": {
           "authorizationCode": {
-            "authorizationUrl": "http://localhost:5081/realms/avl-passport/protocol/openid-connect/auth",
-            "tokenUrl": "http://localhost:5081/realms/avl-passport/protocol/openid-connect/token",
+            "authorizationUrl": "https://auth.avl.dev-z.tributech-node.com/realms/avl-passport/protocol/openid-connect/auth",
+            "tokenUrl": "https://auth.avl.dev-z.tributech-node.com/realms/avl-passport/protocol/openid-connect/token",
             "scopes": {
               "openid": "openid"
             }
