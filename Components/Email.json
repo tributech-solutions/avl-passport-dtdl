@@ -7,7 +7,10 @@
             "@id": "dtmi:avl:product:component:email:MailAddress;1",
             "name": "MailAddress",
             "@type": "Property",
-            "schema": "string"            
+            "schema": "string",
+            "displayName": "Email Address",
+            "description": "Represents the email address.",
+            "writable": true
         }
     ]
 }
