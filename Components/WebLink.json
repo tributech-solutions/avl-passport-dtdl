@@ -7,7 +7,10 @@
             "@id": "dtmi:avl:product:component:webLink:Url;1",
             "name": "Url",
             "@type": "Property",
-            "schema": "string"            
+            "schema": "string",
+            "displayName": "Web Link URL",
+            "description": "Represents the URL of the web link.",
+            "writable": true
         }
     ]
 }
