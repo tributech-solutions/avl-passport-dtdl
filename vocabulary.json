@@ -1,0 +1,30 @@
+{
+  "name": "AVL Passport Vocabulary",
+  "tags": ["tributech", "avl", "passport", "iot", "iiot"],
+  "issuer": "Tributech Solutions GmBH",
+  "issuerURL": "https://tributech.io",
+  "documentationURL": "https://github.com/tributech-solutions/avl-passport-dtdl",
+  "references": [
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/Components/Email.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/Components/Media.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/Components/WebLink.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/DataView/DataViewAttribute.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/DataView/DataViewCategory.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/DataView/DataViewConfiguration.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/DataView/DataViewGroup.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/DataView/DataViewPassport.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/DataView/DataViewPassportConfiguration.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/ProductPassport/ProductBase.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/ProductPassport/ProductModelBase.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/ProductPassport/ProductPassportBase.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/Validation/Rules/ValidationRuleDate.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/Validation/Rules/ValidationRuleDateTime.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/Validation/Rules/ValidationRuleEnum.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/Validation/Rules/ValidationRuleMinMaxDouble.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/Validation/Rules/ValidationRuleMinMaxInteger.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/Validation/Rules/ValidationRuleText.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/Validation/ValidationAttribute.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/Validation/ValidationGroup.json",
+    "https://raw.githubusercontent.com/tributech-solutions/avl-passport-dtdl/master/DTM/Validation/ValidationRuleBase.json"
+  ]
+}

@@ -1,4 +1,4 @@
-# avl-passport-dtdl WIP
+# avl-passport-dtdl 
 
 Digital Twin Models and Sample Instances for the AVL Battery Passport. This approach should enable us to define all kind of Product Passports in a generic manner. So AVL can customize the Project to its likings based on the [DTDL V4](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v4/DTDL.v4.md).
 
@@ -28,6 +28,3 @@ Also the Graph is just a subset of the real Graph displaying a Product Model and
 
 Simplified overview
 ![DTDL Overview Diagram](./Diagram.png)
-
-# REST Spec
-Current REST Spec openapi: 3.0.1 [Spec](./REST/RestSpec.json) (can be viewed in [swagger editor](https://editor.swagger.io/))
